@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.254" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/bacground_add.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/backdround_liked_list.xml" value="0.2425" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/background_account.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/background_add.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/background_done.xml" value="0.256" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/background_edit.xml" value="0.256" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/background_liked_list.xml" value="0.2425" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/background_list.xml" value="0.2425" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/background_location.xml" value="0.158" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/background_manage.xml" value="0.256" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/background_message.xml" value="0.254" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/background_search.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/backgroung_image.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/left_button_checked.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/left_button_selector.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/left_button_unchecked.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/left_view_checked.xml" value="0.116" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/left_view_selector.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/left_view_unchecked.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/right_button_checked.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/right_button_selector.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/right_button_unchecked.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/right_view_checked.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/right_view_selector.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/right_view_unchecked.xml" value="0.2265" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_add.xml" value="0.2803442028985507" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_add_event.xml" value="0.1" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_add_location.xml" value="0.10092592592592593" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_event.xml" value="0.2" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_liked_events.xml" value="0.2" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_list.xml" value="0.2" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_login.xml" value="0.1458966565349544" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_main_new.xml" value="0.2" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_map_view.xml" value="0.264" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_maps2.xml" value="0.1" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_user.xml" value="0.264" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/chip_buttons.xml" value="0.4" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/event_list_item.xml" value="0.2" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/liked_event_item.xml" value="0.2" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/manage_event_item.xml" value="0.264" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/map_marker.xml" value="0.536" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/popup_menu.xml" value="0.1453900709219858" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/menu/popup_menu.xml" value="0.2111111111111111" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/mipmap-anydpi-v26/ic_turnup.xml" value="0.254" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/mipmap-anydpi-v26/ic_turnup_round.xml" value="0.254" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

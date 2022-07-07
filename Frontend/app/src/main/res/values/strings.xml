@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TurnUp</string>
+    <string name="left_view_caption">List</string>
+    <string name="right_view_caption">Map</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="map_switch_caption">Explore Locations</string>
+    <string name="select">Select Color</string>
+</resources>
