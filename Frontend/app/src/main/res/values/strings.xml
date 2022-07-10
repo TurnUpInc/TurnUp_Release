@@ -5,4 +5,5 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="map_switch_caption">Explore Locations</string>
     <string name="select">Select Color</string>
+    <string name="guestuser"><u>Continue as Guest</u></string>
 </resources>

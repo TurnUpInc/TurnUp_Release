@@ -59,9 +59,9 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_marginTop="120dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,9 +95,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:gravity="center"
                     android:hint="Paste Image URL"
-                    android:textColorHint="@color/white"
-                    android:gravity="center"/>
+                    android:textColorHint="@color/white" />
 
                 <EditText
                     android:id="@+id/add_event_title"
@@ -122,16 +122,16 @@
 
                     <Button
                         android:id="@+id/add_event_date"
+                        style="?android:spinnerStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:minWidth="150dp"
                         android:layout_marginStart="5dp"
                         android:gravity="start"
                         android:hint="Event Date"
-                        android:textSize="20sp"
+                        android:minWidth="150dp"
                         android:textColor="@color/white"
                         android:textColorHint="#d3d3d3"
-                        style="?android:spinnerStyle"
+                        android:textSize="20sp"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -171,13 +171,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
                         android:gravity="center"
                         android:text="Event Category: "
                         android:textAlignment="center"
                         android:textColor="@color/white"
-                        android:textSize="20sp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginBottom="10dp"/>
+                        android:textSize="20sp" />
 
                     <Spinner
                         android:id="@+id/event_spinner"
@@ -219,10 +219,10 @@
                     android:id="@+id/add_event_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="Event Description"
                     android:paddingStart="10dp"
                     android:paddingTop="10dp"
                     android:paddingBottom="150dp"
-                    android:hint="Event Description"
                     android:textColorHint="#d3d3d3"
                     android:textSize="20sp"
                     tools:ignore="RtlSymmetry" />

@@ -2,14 +2,17 @@ package com.hkxps17.turnup;
 
 public class Event {
 
-    String eventTitle, eventLocations, eventDate, eventDescription, eventImages;
+    String eventTitle, eventLocation, eventDate, eventRating, eventCategory, eventDescription, eventImage;
 
-    public Event(String eventTitle, String eventLocations, String eventDate, String eventDescription, String eventImages) {
+    public Event(String eventTitle, String eventLocation, String eventDate, String eventDescription,
+                 String eventImage, String eventRating, String eventCategory) {
         this.eventTitle = eventTitle;
-        this.eventLocations = eventLocations;
+        this.eventLocation = eventLocation;
         this.eventDate = eventDate;
         this.eventDescription = eventDescription;
-        this.eventImages = eventImages;
+        this.eventImage = eventImage;
+        this.eventRating = eventRating;
+        this.eventCategory = eventCategory;
     }
 
 }

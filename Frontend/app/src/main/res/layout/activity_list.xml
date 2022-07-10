@@ -13,6 +13,7 @@
         android:layout_height="80dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
+        android:background="@color/black"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -65,38 +66,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="150dp"
+        android:clipToPadding="false"
         android:divider="@null"
         android:paddingBottom="130dp"
-        android:clipToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup"
         tools:listitem="@layout/event_list_item" />
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/chipGroupFilter"
-        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/search_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:singleSelection="true"
-        >
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/chip0"
-            style="@style/CustomChipStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="All"
-            android:checked="true"
-            android:textColor="@color/white" />
+        app:selectionRequired="true"
+        app:singleSelection="true">
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip1"
             style="@style/CustomChipStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="Sort Events By Rating"
             android:textColor="@color/white" />
 
@@ -105,32 +98,32 @@
             style="@style/CustomChipStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Club/Party/Concert" />
+            android:text="Club/Party/Concert"
+            android:textColor="@color/white" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip2"
             style="@style/CustomChipStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Adventure Events" />
+            android:text="Adventure Events"
+            android:textColor="@color/white" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip3"
             style="@style/CustomChipStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Leisure Events" />
+            android:text="Leisure Events"
+            android:textColor="@color/white" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip4"
             style="@style/CustomChipStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:text="Sports Events" />
+            android:text="Sports Events"
+            android:textColor="@color/white" />
 
     </com.google.android.material.chip.ChipGroup>
 

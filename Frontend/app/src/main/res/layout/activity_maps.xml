@@ -104,7 +104,7 @@
 
 
     <ImageButton
-        android:id="@+id/liked_button"
+        android:id="@+id/map_liked_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
@@ -121,7 +121,7 @@
 
 
     <ImageButton
-        android:id="@+id/account_button"
+        android:id="@+id/map_account_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -145,8 +145,10 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:visibility="invisible"
+        android:checked="true"
         app:layout_constraintBottom_toTopOf="@+id/map_search_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

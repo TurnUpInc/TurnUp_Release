@@ -31,27 +31,34 @@
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/right_view_selector.xml" value="0.2265" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/drawable/right_view_unchecked.xml" value="0.2265" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_add.xml" value="0.2803442028985507" />
-        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_add_event.xml" value="0.1" />
-        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_add_location.xml" value="0.10092592592592593" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_add_event.xml" value="0.264" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_add_location.xml" value="0.264" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_chat.xml" value="0.144" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_event.xml" value="0.2" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_liked_events.xml" value="0.2" />
-        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_list.xml" value="0.2" />
-        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_login.xml" value="0.1458966565349544" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_list.xml" value="0.25" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_main_new.xml" value="0.2" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_map_view.xml" value="0.264" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_maps.xml" value="0.1" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_maps2.xml" value="0.1" />
-        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_user.xml" value="0.264" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/activity_user.xml" value="0.2" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/chip_buttons.xml" value="0.4" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/event_list_item.xml" value="0.2" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/item_chat_box.xml" value="0.18297101449275363" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/liked_event_item.xml" value="0.2" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/manage_event_item.xml" value="0.264" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/map_event_marker.xml" value="0.1458966565349544" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/map_location_marker.xml" value="0.264" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/map_marker.xml" value="0.536" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/layout/popup_menu.xml" value="0.1453900709219858" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/menu/popup_menu.xml" value="0.2111111111111111" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/mipmap-anydpi-v26/ic_turnup.xml" value="0.254" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend/app/src/main/res/mipmap-anydpi-v26/ic_turnup_round.xml" value="0.254" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend_Old/app/src/main/res/layout/activity_list.xml" value="0.18115942028985507" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend_Old/app/src/main/res/layout/activity_login.xml" value="0.1458966565349544" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/Frontend_Old/app/src/main/res/layout/map_location_marker.xml" value="0.18115942028985507" />
       </map>
     </option>
   </component>

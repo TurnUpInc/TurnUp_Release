@@ -1,19 +1,17 @@
 package com.hkxps17.turnup;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.PorterDuff;
+import android.hardware.camera2.TotalCaptureResult;
 import android.location.Address;
 import android.location.Geocoder;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
+import android.preference.PreferenceManager;
 import android.text.format.DateFormat;
 import android.util.Log;
 import android.view.View;
@@ -24,19 +22,29 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.MediaController;
 import android.widget.Spinner;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
-import com.google.android.gms.maps.model.LatLng;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.squareup.picasso.Picasso;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 
 public class AddEventActivity extends AppCompatActivity {
 
@@ -48,7 +56,9 @@ public class AddEventActivity extends AppCompatActivity {
     Spinner spinner;
     String category;
     String[] spins = {"Adventure", "Leisure", "Sports", "Club/Concert/Party"};
+    String emailID = "", title, photoURL;
     JSONObject event = new JSONObject();
+    int pos = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +66,12 @@ public class AddEventActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_event);
 
         Intent intent = this.getIntent();
+
+        Set<String> retS = PreferenceManager.getDefaultSharedPreferences(AddEventActivity.this)
+                .getStringSet("id", new HashSet<String>());
+        List<String> retL = new ArrayList<String>(retS);
+        emailID = retL.get(0);
+
         img = findViewById(R.id.add_event_image);
         uploadImg = findViewById(R.id.image_upload_button);
         done = findViewById(R.id.event_done_button);
@@ -69,29 +85,31 @@ public class AddEventActivity extends AppCompatActivity {
 
         spinner.getBackground().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
 
-
         if (intent.getStringExtra("Manage") != null) {
-            titleText.setText(intent.getStringExtra("EventTitles"));
-            locationText.setText(intent.getStringExtra("EventLocations"));
+            titleText.setText(intent.getStringExtra("EventTitle"));
+            title = intent.getStringExtra("EventTitle");
+            locationText.setText(intent.getStringExtra("EventLocation"));
             dateButton.setText(intent.getStringExtra("EventDate"));
-            int eventImages = intent.getIntExtra("EventImages", R.drawable.hiking);
-            img.setImageResource(eventImages);
+            dateTime = intent.getStringExtra("EventDate");
+            photoURL = intent.getStringExtra("EventImage");
+            Picasso.get().load(photoURL).into(img);
             descriptionText.setText(intent.getStringExtra("EventDescription"));
+            String spin = intent.getStringExtra("EventCategory");
+
+            if (Objects.equals(spin, "Adventure")) pos = 0;
+            else if (Objects.equals(spin, "Leisure")) pos = 1;
+            else if (Objects.equals(spin, "Sports")) pos = 2;
+            else if (Objects.equals(spin, "Club/Concert/Party")) pos = 3;
+            else pos = 1;
         }
 
         uploadImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = imgURL.getText().toString();
-                if (!url.equals("")){
+                photoURL = imgURL.getText().toString();
+                if (!photoURL.equals("")){
                     imgURL.setText("");
-                    Picasso.get().load(url).into(img);
-                }
-
-                try {
-                    event.put("image", url);
-                } catch (JSONException e) {
-                    e.printStackTrace();
+                    Picasso.get().load(photoURL).into(img);
                 }
             }
         });
@@ -107,6 +125,7 @@ public class AddEventActivity extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(AddEventActivity.this, android.R.layout.simple_spinner_item, spins);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+        spinner.setSelection(pos);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -123,29 +142,39 @@ public class AddEventActivity extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String title = titleText.getText().toString();
+                String putUrl = "http://20.122.91.139:8081/event/" + emailID + "/" + title;
+                title = titleText.getText().toString();
                 String location = locationText.getText().toString();
+                String description = descriptionText.getText().toString();
                 String cord = getLocationFromAddress(AddEventActivity.this, location);
-                try {
-                    event.put("title", title);
-                    event.put("location", location);
-                    event.put("coordinates", cord);
-                    event.put("category", category);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+                if (title != "" && location != "" && cord != "" && category != "" &&
+                        description != "" && dateTime != "" && cord != null && title != null && location != null && cord != null && category != null &&
+                        description != null && dateTime != null) {
+                    try {
+                        event.put("title", title);
+                        event.put("location", location);
+                        event.put("coordinates", cord);
+                        event.put("category", category);
+                        event.put("description", description);
+                        event.put("date", dateTime);
+                        event.put("photoURL", photoURL);
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
 
-                Log.d("ADDEVENT", event.toString());
-
-
-                if (intent.getStringExtra("Manage") != null) {
-                    /* TODO: PUT TO DB */
+                    if (intent.getStringExtra("Manage") != null) {
+                        Log.e("check", event.toString());
+                        Log.e("check", putUrl);
+                        putEvent(event, putUrl);
+                    } else {
+                        postEvent(event, "http://20.122.91.139:8081/event/" + emailID);
+                    }
+                    Intent list = new Intent(AddEventActivity.this, EventListActivity.class);
+                    startActivity(list);
                 }
                 else {
-                    /* TODO: POST TO DB */
+                    Toast.makeText(AddEventActivity.this, "Please fill all fields", Toast.LENGTH_LONG);
                 }
-
             }
         });
 
@@ -153,14 +182,62 @@ public class AddEventActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (intent.getStringExtra("Manage") != null) {
-                    /* TODO: DELETE FROM DB */
+                    deleteEvent(event, "http://20.122.91.139:8081/event/"+title);
                 }
-                else {
-                    Intent list = new Intent(AddEventActivity.this, EventListActivity.class);
-                    startActivity(list);
-                }
+                //TODO: change delete button to close UI
+                Intent list = new Intent(AddEventActivity.this, EventListActivity.class);
+                startActivity(list);
             }
         });
+    }
+
+    public void postEvent(JSONObject obj, String addEventApiPostUrl) {
+        JsonObjectRequest eventsReq = new JsonObjectRequest(Request.Method.POST, addEventApiPostUrl, obj, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                //handle POST response
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Log.e("error", error.toString());
+                Toast.makeText(AddEventActivity.this, "Event Added!", Toast.LENGTH_LONG).show();
+            }});
+        RequestQueue queue = Volley.newRequestQueue(AddEventActivity.this);
+        queue.add(eventsReq);
+    }
+
+    public void putEvent(JSONObject obj, String addEventApiPutUrl) {
+        JsonObjectRequest eventsReq = new JsonObjectRequest(Request.Method.PUT, addEventApiPutUrl, obj, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                //handle POST response
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Toast.makeText(AddEventActivity.this, "Event Updated!", Toast.LENGTH_LONG).show();
+            }});
+        RequestQueue queue = Volley.newRequestQueue(AddEventActivity.this);
+        queue.add(eventsReq);
+    }
+
+    public void deleteEvent(JSONObject obj, String addEventApiPutUrl) {
+        JsonObjectRequest eventsReq = new JsonObjectRequest(Request.Method.DELETE, addEventApiPutUrl, obj, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                //handle POST response
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Toast.makeText(AddEventActivity.this, "Event Deleted!", Toast.LENGTH_LONG).show();
+            }});
+        RequestQueue queue = Volley.newRequestQueue(AddEventActivity.this);
+        queue.add(eventsReq);
     }
 
     public String getLocationFromAddress(Context context, String strAddress) {
@@ -209,7 +286,6 @@ public class AddEventActivity extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance();
         int HOUR = calendar.get(Calendar.HOUR);
         int MINUTE = calendar.get(Calendar.MINUTE);
-        boolean is24HourFormat = DateFormat.is24HourFormat(this);
 
         TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
             @Override
@@ -217,19 +293,11 @@ public class AddEventActivity extends AppCompatActivity {
                 Calendar calendar1 = Calendar.getInstance();
                 calendar1.set(Calendar.HOUR, hour);
                 calendar1.set(Calendar.MINUTE, minute);
-                dateTime += " @ " + DateFormat.format("h:mm a", calendar1).toString();
-                Log.d("DATETIME", dateTime);
+                dateTime += " @ " + DateFormat.format("hh:mm a", calendar1).toString();
                 dateButton.setText(dateTime);
-
-                try {
-                    event.put("date", dateTime);
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
             }
-        }, HOUR, MINUTE, is24HourFormat);
+        }, HOUR, MINUTE, true);
 
         timePickerDialog.show();
-
     }
 }

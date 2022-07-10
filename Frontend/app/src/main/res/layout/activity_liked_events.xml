@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
     tools:context=".LikedEventsActivity">
 
     <ImageView
@@ -68,7 +67,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:text="Liked Events"
-        android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/view"
