@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -12,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -32,10 +34,10 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
     private RecyclerView mRecyclerViewChat;
     private Button mSendButton;
     private EditText mEditTextChatBox;
-    private static  ChatAdapter chatAdapter;
+    private ChatAdapter chatAdapter;
     private ArrayList<String> mChatList = new ArrayList<>();
-    private boolean isConnected;
     private Socket mSocket;
+
 //    //To Integrate
 //    String userId = "91ea68724e1b8";
 //    String eventId = "EventA";
@@ -66,7 +68,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         try {
             mSocket = IO.socket("https://turnup-chat.herokuapp.com/");  //http://192.168.29.50:3000
         } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
+            Log.d("SOCKETERROR", e.toString());
         }
         mSocket.connect();
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
@@ -84,18 +86,22 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
 //        mSocket.emit("joinRoom", eventId);
     }
 
+    @SuppressLint({"NonConstantResourceId", "NotifyDataSetChanged"})
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_send:
                 String message = mEditTextChatBox.getText().toString().trim();
-                if (message!= null && !TextUtils.isEmpty(message)) {
+                if (message != null && !TextUtils.isEmpty(message)) {
                     //mChatList.add(message);
                     mEditTextChatBox.setText("");
                     if (chatAdapter != null)
                         chatAdapter.notifyDataSetChanged();
                 }
                 mSocket.emit("chatMessage", eventId, message);
+                break;
+            default:
+                Toast.makeText(this, "Chat", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
@@ -104,6 +110,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         public void call(final Object... args) {
             runOnUiThread(new Runnable() {
+                @SuppressLint("NotifyDataSetChanged")
                 @Override
                 public void run() {
                     JSONArray messageHistory = (JSONArray) args[0];
@@ -127,6 +134,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         public void call(final Object... args) {
             runOnUiThread(new Runnable() {
+                @SuppressLint("NotifyDataSetChanged")
                 @Override
                 public void run() {
                     JSONObject data = (JSONObject) args[0];

@@ -31,8 +31,10 @@ import java.util.Set;
 
 public class AddLocationActivity extends AppCompatActivity {
 
-    ImageButton done, delete;
-    EditText name, address;
+    ImageButton done;
+    ImageButton delete;
+    EditText name;
+    EditText address;
     JSONObject location = new JSONObject();
     String emailID = "";
 
@@ -40,8 +42,6 @@ public class AddLocationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_location);
-
-        Intent intent = AddLocationActivity.this.getIntent();
 
         Set<String> retS = PreferenceManager.getDefaultSharedPreferences(AddLocationActivity.this)
                 .getStringSet("id", new HashSet<String>());

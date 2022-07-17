@@ -6,16 +6,13 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.hkxps17.turnup.databinding.ItemChatBoxBinding;
 
 import java.util.ArrayList;
 
 public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder> {
 
-    private ArrayList<String> mChatList;
+    private final ArrayList<String> mChatList;
 
     public ChatAdapter(ArrayList<String> mChatList) {
         this.mChatList = mChatList;
@@ -40,11 +37,11 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder
     }
 
 
-    public class ChatViewHolder extends RecyclerView.ViewHolder {
+    public static class ChatViewHolder extends RecyclerView.ViewHolder {
         TextView mTextViewLeft;
         public ChatViewHolder (@NonNull View itemView) {
             super (itemView);
-            mTextViewLeft = (TextView) itemView.findViewById(R.id.tv_chat_message_left);
+            mTextViewLeft = itemView.findViewById(R.id.tv_chat_message_left);
         }
     }
 }

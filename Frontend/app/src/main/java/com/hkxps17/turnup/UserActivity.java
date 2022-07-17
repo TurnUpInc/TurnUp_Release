@@ -4,11 +4,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +17,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -34,7 +33,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -48,14 +46,23 @@ public class UserActivity extends AppCompatActivity {
     ImageButton done;
     EditText name;
 
-    Spinner color1, color2, color3;
+    Spinner color1;
+    Spinner color2;
+    Spinner color3;
     String[] colors = {"Green", "Blue", "Pink"};
     String[] prefs = {"Green", "Blue", "Pink"};
     String[] userprf = {"Green", "Blue", "Pink"};
 
     String emailID = "";
 
-    ArrayList<String> EventTitles = new ArrayList<>(), EventLocations = new ArrayList<>(), EventDates = new ArrayList<>(), EventRatings = new ArrayList<>(), EventCategories = new ArrayList<>(), EventDescriptions = new ArrayList<>(), EventImages = new ArrayList<>(), likedBy = new ArrayList<>();
+    ArrayList<String> EventTitles = new ArrayList<>();
+    ArrayList<String> EventLocations = new ArrayList<>();
+    ArrayList<String> EventDates = new ArrayList<>();
+    ArrayList<String> EventRatings = new ArrayList<>();
+    ArrayList<String> EventCategories = new ArrayList<>();
+    ArrayList<String> EventDescriptions = new ArrayList<>();
+    ArrayList<String> EventImages = new ArrayList<>();
+    ArrayList<String> likedBy = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,8 +149,8 @@ public class UserActivity extends AppCompatActivity {
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         color1.setAdapter(adapter1);
 
-        if (userprf[0] == "Blue") color1.setSelection(1);
-        else if (userprf[0] == "Pink") color1.setSelection(2);
+        if (Objects.equals(userprf[0], "Blue")) color1.setSelection(1);
+        else if (Objects.equals(userprf[0], "Pink")) color1.setSelection(2);
         else color1.setSelection(0);
 
 
@@ -166,8 +173,8 @@ public class UserActivity extends AppCompatActivity {
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         color2.setAdapter(adapter2);
 
-        if (userprf[1] == "Green") color2.setSelection(0);
-        else if (userprf[1] == "Pink") color2.setSelection(2);
+        if (Objects.equals(userprf[1], "Green")) color2.setSelection(0);
+        else if (Objects.equals(userprf[1], "Pink")) color2.setSelection(2);
         else color2.setSelection(1);
 
         color2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -241,11 +248,12 @@ public class UserActivity extends AppCompatActivity {
             this.eLocations = locations;
         }
 
+        @SuppressLint("UseCompatLoadingForDrawables")
         @NonNull
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
             LayoutInflater layoutInflater = (LayoutInflater) context.getApplicationContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View eventItem = layoutInflater.inflate(R.layout.manage_event_item, parent, false);
+            @SuppressLint("ViewHolder") View eventItem = layoutInflater.inflate(R.layout.manage_event_item, parent, false);
             TextView title = eventItem.findViewById(R.id.EventTitle);
             TextView date = eventItem.findViewById(R.id.EventDate);
             TextView loc = eventItem.findViewById(R.id.EventLocation);

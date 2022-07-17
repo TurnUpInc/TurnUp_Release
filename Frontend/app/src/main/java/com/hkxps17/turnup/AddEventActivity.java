@@ -7,7 +7,6 @@ import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.PorterDuff;
-import android.hardware.camera2.TotalCaptureResult;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
@@ -31,7 +30,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.squareup.picasso.Picasso;
 
@@ -49,14 +47,21 @@ import java.util.Set;
 public class AddEventActivity extends AppCompatActivity {
 
     ImageView img;
-    ImageButton uploadImg, done, delete;
-    EditText titleText, locationText, descriptionText, imgURL;
+    ImageButton uploadImg;
+    ImageButton done;
+    ImageButton delete;
+    EditText titleText;
+    EditText locationText;
+    EditText descriptionText;
+    EditText imgURL;
     Button dateButton;
     String dateTime;
     Spinner spinner;
     String category;
     String[] spins = {"Adventure", "Leisure", "Sports", "Club/Concert/Party"};
-    String emailID = "", title, photoURL;
+    String emailID = "";
+    String title;
+    String photoURL;
     JSONObject event = new JSONObject();
     int pos = 0;
 
@@ -135,7 +140,7 @@ public class AddEventActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-
+                Log.d("Nothing", "nothing selected");
             }
         });
 
@@ -147,9 +152,7 @@ public class AddEventActivity extends AppCompatActivity {
                 String location = locationText.getText().toString();
                 String description = descriptionText.getText().toString();
                 String cord = getLocationFromAddress(AddEventActivity.this, location);
-                if (title != "" && location != "" && cord != "" && category != "" &&
-                        description != "" && dateTime != "" && cord != null && title != null && location != null && cord != null && category != null &&
-                        description != null && dateTime != null) {
+                if (!Objects.equals(title, "") && !location.equals("") && !Objects.equals(cord, "") && !Objects.equals(category, "") && !description.equals("") && !Objects.equals(dateTime, "") && title != null && cord != null && category != null && dateTime != null) {
                     try {
                         event.put("title", title);
                         event.put("location", location);
@@ -173,7 +176,7 @@ public class AddEventActivity extends AppCompatActivity {
                     startActivity(list);
                 }
                 else {
-                    Toast.makeText(AddEventActivity.this, "Please fill all fields", Toast.LENGTH_LONG);
+                    Toast.makeText(AddEventActivity.this, "Please fill all fields", Toast.LENGTH_LONG).show();
                 }
             }
         });

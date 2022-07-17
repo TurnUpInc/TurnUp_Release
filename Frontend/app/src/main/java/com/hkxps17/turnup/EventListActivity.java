@@ -26,10 +26,8 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.google.android.gms.common.util.ArrayUtils;
 import com.google.android.material.chip.Chip;
 import com.squareup.picasso.Picasso;
 
@@ -38,7 +36,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
@@ -48,20 +45,33 @@ public class EventListActivity extends AppCompatActivity {
 
     int trigger = 1;
 
-    AppCompatRadioButton rbLeft, rbRight;
-    Chip byRating, adventure, club, leisure, sports;
+    AppCompatRadioButton rbLeft;
+    AppCompatRadioButton rbRight;
+    Chip byRating;
+    Chip adventure;
+    Chip club;
+    Chip leisure;
+    Chip sports;
     ListView listView;
-    ImageButton likedEvents, accountButton, add, filter;
+    ImageButton likedEvents;
+    ImageButton accountButton;
+    ImageButton add;
+    ImageButton filter;
     String emailID = "";
 
-    ArrayList<String> EventTitles = new ArrayList<>(), EventLocations = new ArrayList<>(), EventDates = new ArrayList<>(), EventRatings = new ArrayList<>(), EventCategories = new ArrayList<>(), EventDescriptions = new ArrayList<>(), EventImages = new ArrayList<>(), likedBy = new ArrayList<>();
+    ArrayList<String> EventTitles = new ArrayList<>();
+    ArrayList<String> EventLocations = new ArrayList<>();
+    ArrayList<String> EventDates = new ArrayList<>();
+    ArrayList<String> EventRatings = new ArrayList<>();
+    ArrayList<String> EventCategories = new ArrayList<>();
+    ArrayList<String> EventDescriptions = new ArrayList<>();
+    ArrayList<String> EventImages = new ArrayList<>();
+    ArrayList<String> likedBy = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
-
-        Intent intent = EventListActivity.this.getIntent();
 
         Set<String> retS = PreferenceManager.getDefaultSharedPreferences(EventListActivity.this)
                 .getStringSet("id", new HashSet<String>());

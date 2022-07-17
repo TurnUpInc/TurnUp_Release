@@ -42,7 +42,14 @@ public class LikedEventsActivity extends AppCompatActivity {
     ImageButton search;
     String emailID = "";
 
-    ArrayList<String> EventTitles = new ArrayList<>(), EventLocations = new ArrayList<>(), EventDates = new ArrayList<>(), EventRatings = new ArrayList<>(), EventCategories = new ArrayList<>(), EventDescriptions = new ArrayList<>(), EventImages = new ArrayList<>(), likedBy = new ArrayList<>();
+    ArrayList<String> EventTitles = new ArrayList<>();
+    ArrayList<String> EventLocations = new ArrayList<>();
+    ArrayList<String> EventDates = new ArrayList<>();
+    ArrayList<String> EventRatings = new ArrayList<>();
+    ArrayList<String> EventCategories = new ArrayList<>();
+    ArrayList<String> EventDescriptions = new ArrayList<>();
+    ArrayList<String> EventImages = new ArrayList<>();
+    ArrayList<String> likedBy = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

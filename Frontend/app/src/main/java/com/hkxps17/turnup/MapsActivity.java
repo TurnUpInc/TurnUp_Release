@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,23 +44,36 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
-    AppCompatRadioButton rbLeft, rbRight;
+    AppCompatRadioButton rbLeft;
+    AppCompatRadioButton rbRight;
     String emailID = "";
-    ImageButton likedEvents, accountButton, add, searchLoc;
+    ImageButton likedEvents;
+    ImageButton accountButton;
+    ImageButton add;
+    ImageButton searchLoc;
     int trigger = 1;
     int flag = 1;
 
-    ArrayList<String> EventTitles = new ArrayList<>(), EventLocations = new ArrayList<>(), EventDates = new ArrayList<>(), EventRatings = new ArrayList<>(), EventCategories = new ArrayList<>(), EventDescriptions = new ArrayList<>(), EventImages = new ArrayList<>(), likedBy = new ArrayList<>(), EventCoordinates = new ArrayList<>();
-    ArrayList<String> LocationCoordinates = new ArrayList<>(), LocationTitles = new ArrayList<>(), LocationLikes = new ArrayList<>(), LocationVisits = new ArrayList<>();
+    ArrayList<String> EventTitles = new ArrayList<>();
+    ArrayList<String> EventLocations = new ArrayList<>();
+    ArrayList<String> EventDates = new ArrayList<>();
+    ArrayList<String> EventRatings = new ArrayList<>();
+    ArrayList<String> EventCategories = new ArrayList<>();
+    ArrayList<String> EventDescriptions = new ArrayList<>();
+    ArrayList<String> EventImages = new ArrayList<>();
+    ArrayList<String> likedBy = new ArrayList<>();
+    ArrayList<String> EventCoordinates = new ArrayList<>();
+    ArrayList<String> LocationCoordinates = new ArrayList<>();
+    ArrayList<String> LocationTitles = new ArrayList<>();
+    ArrayList<String> LocationLikes = new ArrayList<>();
+    ArrayList<String> LocationVisits = new ArrayList<>();
 
     private GoogleMap mMap;
     private ActivityMapsBinding binding;
@@ -150,7 +162,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        if (mapFragment != null) {
+            mapFragment.getMapAsync(this);
+        }
 
     }
 
@@ -228,10 +242,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     i.putExtra("EventImage", EventImages.get(position));
                     i.putExtra("EventRating", EventRatings.get(position));
                     i.putExtra("EventCategory", EventCategories.get(position));
-                    if (!Objects.equals(emailID, "Guest")) {
-                        if (likedBy.get(position).contains(emailID)) {
-                            i.putExtra("isLiked", true);
-                        }
+                    if (!Objects.equals(emailID, "Guest") && likedBy.get(position).contains(emailID)) {
+                        i.putExtra("isLiked", true);
                     }
                     startActivity(i);
                 }
