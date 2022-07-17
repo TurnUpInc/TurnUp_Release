@@ -21,7 +21,7 @@ app.get('/events', async (req, res) => {
         const result =  await client.db('turnup').collection('event').find().sort({ 'rating' : -1 }).toArray()
         res.status(200).send(result)
     } 
-    catch {
+    catch(err) {
         console.log(err)
         res.send(400).send('No Events!')
     }
@@ -36,7 +36,7 @@ app.get('/events/:category', async (req, res) => {
         const result =  await client.db('turnup').collection('event').find({'category': category}).toArray()
         res.status(200).send(result)
     } 
-    catch {
+    catch(err) {
         console.log(err)
         res.send(400).send('No Events!')
     }
@@ -50,7 +50,7 @@ app.get('/likedevents/:user', async(req, res) => {
          ).toArray()
         res.status(200).send(result)
     }
-    catch {
+    catch(err){
         console.log(err)
         res.send(400).send('No Liked Events!')
     }
@@ -62,7 +62,7 @@ app.get('/myevents/:user', async(req, res) => {
         const result = await client.db('turnup').collection('event').find({'creator': creatorID}).toArray()
         res.status(200).send(result)
     }
-    catch {
+    catch(err){
         console.log(err)
         res.send(400).send('No Liked Events!')
     }
@@ -84,7 +84,7 @@ app.post('/event/:user', async (req, res) => {
          )
         res.status(200).send('New Event Added!')
     } 
-    catch {
+    catch(err){
         console.log(err)
         res.send(400).send(err)
     }
@@ -105,7 +105,7 @@ app.post('/eventliked/:title/:user', async (req,res) => {
          )
          res.status(200).send('Event Liked!')
     }
-    catch {
+    catch(err){
         console.log(err)
         res.send(400).send(err)
     }
@@ -129,7 +129,7 @@ app.put('/event/:user/:id', async (req, res) => {
         })
         res.status(200).send('Event Modified!')
     } 
-    catch {
+    catch(err){
         console.log(err)
         res.send(400).send(err)
     }
@@ -140,7 +140,7 @@ app.delete('/event/:title', async (req, res) => {
         await client.db('turnup').collection('event').deleteOne({'title': req.params.title})
         res.status(200).send(req.params.title + ' Deleted!')
     } 
-    catch {
+    catch(err){
         console.log(err)
         res.send(400).send(err)
     }
@@ -151,7 +151,7 @@ app.get('/locations', async (req, res) => {
         const result =  await client.db('turnup').collection('location').find().toArray()
         res.status(200).send(result)
     } 
-    catch {
+    catch(err){
         console.log(err)
         res.send(400).send('No Locations!')
     }
@@ -164,7 +164,7 @@ app.post('/location', async (req, res) => {
         await client.db('turnup').collection('location').insertOne(req.body)
         res.status(200).send('New location Added!')
     } 
-    catch {
+    catch(err){
         console.log(err)
         res.send(400).send(err)
     }
@@ -176,7 +176,7 @@ app.post('/likelocation/:title', async (req, res) => {
         await client.db('turnup').collection('location').updateOne({ 'title': loc_title },{ $inc: { 'likes': 1 }});
         res.status(200).send('Location Liked! \n')
     } 
-    catch {
+    catch(err){
         console.log(err)
         res.send(400).send(err)
     }

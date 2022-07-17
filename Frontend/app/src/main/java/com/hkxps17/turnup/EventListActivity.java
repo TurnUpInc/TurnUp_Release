@@ -427,6 +427,11 @@ public class EventListActivity extends AppCompatActivity {
                     startActivity(map);
                 }
                 break;
+            default:
+                if (isSelected) {
+                    rbRight.setChecked(true);
+                }
+                break;
         }
     }
 

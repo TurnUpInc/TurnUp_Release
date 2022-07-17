@@ -154,7 +154,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         queue.add(eventsReq);
 
 
-        com.hkxps17.turnup.databinding.ActivityMapsBinding binding = ActivityMapsBinding.inflate(getLayoutInflater());
+        ActivityMapsBinding binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
@@ -180,6 +180,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 if (isSelected) {
                     Intent list = new Intent(MapsActivity.this, EventListActivity.class);
                     startActivity(list);
+                }
+                break;
+            default:
+                if (isSelected) {
+                    rbRight.setChecked(true);
                 }
                 break;
         }
