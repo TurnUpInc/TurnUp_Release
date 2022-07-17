@@ -76,7 +76,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     ArrayList<String> LocationVisits = new ArrayList<>();
 
     private GoogleMap mMap;
-    private ActivityMapsBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -155,7 +154,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         queue.add(eventsReq);
 
 
-        binding = ActivityMapsBinding.inflate(getLayoutInflater());
+        com.hkxps17.turnup.databinding.ActivityMapsBinding binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
@@ -213,7 +212,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onInfoWindowClick(@NonNull Marker marker) {
                 if (flag == 1) {
-                    int position = LocationTitles.indexOf(marker.getTitle());
 
                     Log.d("TITLE", marker.getTitle());
 

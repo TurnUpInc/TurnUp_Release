@@ -31,8 +31,6 @@ import io.socket.emitter.Emitter;
 
 public class ChatActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private RecyclerView mRecyclerViewChat;
-    private Button mSendButton;
     private EditText mEditTextChatBox;
     private ChatAdapter chatAdapter;
     private ArrayList<String> mChatList = new ArrayList<>();
@@ -61,9 +59,9 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         eventId = intent.getStringExtra("EventTitle");
 
 
-        mRecyclerViewChat = findViewById(R.id.rv_chat);
+        RecyclerView mRecyclerViewChat = findViewById(R.id.rv_chat);
         mEditTextChatBox = findViewById(R.id.et_chat_box); // EditText
-        mSendButton = findViewById(R.id.btn_send); // Button
+        Button mSendButton = findViewById(R.id.btn_send); // Button
         mSendButton.setOnClickListener(this);
         try {
             mSocket = IO.socket("https://turnup-chat.herokuapp.com/");  //http://192.168.29.50:3000
