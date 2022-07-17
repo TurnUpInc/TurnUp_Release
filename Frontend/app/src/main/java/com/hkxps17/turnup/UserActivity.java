@@ -187,7 +187,7 @@ public class UserActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-
+                Log.d("Nothing", "nothing selected");
             }
         });
 
@@ -211,7 +211,7 @@ public class UserActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
-
+                Log.d("Nothing", "nothing selected");
             }
         });
 
