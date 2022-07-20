@@ -216,40 +216,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(@NonNull Marker marker) {
-                if (flag == 1) {
-
-                    Log.d("TITLE", marker.getTitle());
-
-                    String addLikedLocationPostApiUrl = "http://20.122.91.139:8081/likelocation/" + marker.getTitle();
-                    JsonObjectRequest eventsReq = new JsonObjectRequest(Request.Method.POST, addLikedLocationPostApiUrl, null, new Response.Listener<JSONObject>() {
-                        @Override
-                        public void onResponse(JSONObject response) {
-                            //handle POST response
-                        }
-                    }, new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                            error.printStackTrace();
-                            Toast.makeText(MapsActivity.this, "Location Liked!", Toast.LENGTH_LONG).show();
-                        }});
-                    RequestQueue queue = Volley.newRequestQueue(MapsActivity.this);
-                    queue.add(eventsReq);
-                }
-                else {
-                    int position = EventTitles.indexOf(marker.getTitle());
-                    Intent i = new Intent(MapsActivity.this, EventActivity.class);
-                    i.putExtra("EventTitle", EventTitles.get(position));
-                    i.putExtra("EventLocation", EventLocations.get(position));
-                    i.putExtra("EventDate", EventDates.get(position));
-                    i.putExtra("EventDescription", EventDescriptions.get(position));
-                    i.putExtra("EventImage", EventImages.get(position));
-                    i.putExtra("EventRating", EventRatings.get(position));
-                    i.putExtra("EventCategory", EventCategories.get(position));
-                    if (!Objects.equals(emailID, "Guest") && likedBy.get(position).contains(emailID)) {
-                        i.putExtra("isLiked", true);
-                    }
-                    startActivity(i);
-                }
+                onWindowClick(marker);
             }
         });
 
@@ -363,6 +330,43 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
             }
         });
+    }
+
+    private void onWindowClick(Marker marker) {
+        if (flag == 1) {
+
+            Log.d("TITLE", marker.getTitle());
+
+            String addLikedLocationPostApiUrl = "http://20.122.91.139:8081/likelocation/" + marker.getTitle();
+            JsonObjectRequest eventsReq = new JsonObjectRequest(Request.Method.POST, addLikedLocationPostApiUrl, null, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    //handle POST response
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    error.printStackTrace();
+                    Toast.makeText(MapsActivity.this, "Location Liked!", Toast.LENGTH_LONG).show();
+                }});
+            RequestQueue queue = Volley.newRequestQueue(MapsActivity.this);
+            queue.add(eventsReq);
+        }
+        else {
+            int position = EventTitles.indexOf(marker.getTitle());
+            Intent i = new Intent(MapsActivity.this, EventActivity.class);
+            i.putExtra("EventTitle", EventTitles.get(position));
+            i.putExtra("EventLocation", EventLocations.get(position));
+            i.putExtra("EventDate", EventDates.get(position));
+            i.putExtra("EventDescription", EventDescriptions.get(position));
+            i.putExtra("EventImage", EventImages.get(position));
+            i.putExtra("EventRating", EventRatings.get(position));
+            i.putExtra("EventCategory", EventCategories.get(position));
+            if (!Objects.equals(emailID, "Guest") && likedBy.get(position).contains(emailID)) {
+                i.putExtra("isLiked", true);
+            }
+            startActivity(i);
+        }
     }
 
     public void updateEventCoordinates(ArrayList<LatLng> evnts) {
