@@ -140,44 +140,7 @@ public class EventListActivity extends AppCompatActivity {
 
 
         if (byRating.isChecked()){
-            String getAllEventsApiUrl = "http://20.122.91.139:8081/events";
-
-            StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsApiUrl, new Response.Listener<String>() {
-                @Override
-                public void onResponse(String response) {
-                    try {
-                        JSONArray jsonEventsArray = new JSONArray(response);
-                        clearArrayLists();
-
-                        for(int i = 0; i<jsonEventsArray.length(); i++) {
-                            JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                            EventTitles.add(jsonEventObj.getString("title"));
-                            EventLocations.add(jsonEventObj.getString("location"));
-                            EventDates.add(jsonEventObj.getString("date"));
-                            EventDescriptions.add(jsonEventObj.getString("description"));
-                            EventImages.add(jsonEventObj.getString("photoURL"));
-                            EventRatings.add(jsonEventObj.getString("rating"));
-                            EventCategories.add(jsonEventObj.getString("category"));
-                            likedBy.add(jsonEventObj.getString("likedBy"));
-                        }
-
-                        EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                        listView.setAdapter(eventAdapter);
-
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                        Log.e("hk", e.toString());
-                        Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
-                    }
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    error.printStackTrace();
-                    Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
-                }
-            });
-
+            StringRequest eventsReq = getAllEevntsApiCall();
             RequestQueue queue = Volley.newRequestQueue(EventListActivity.this);
             queue.add(eventsReq);
         }
@@ -185,39 +148,7 @@ public class EventListActivity extends AppCompatActivity {
         byRating.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String getAllEventsApiUrl = "http://20.122.91.139:8081/events";
-                StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsApiUrl, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONArray jsonEventsArray = new JSONArray(response);
-                            clearArrayLists();
-
-                            for(int i = 0; i<jsonEventsArray.length(); i++) {
-                                JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                                EventTitles.add(jsonEventObj.getString("title"));
-                                EventLocations.add(jsonEventObj.getString("location"));
-                                EventDates.add(jsonEventObj.getString("date"));
-                                EventDescriptions.add(jsonEventObj.getString("description"));
-                                EventImages.add(jsonEventObj.getString("photoURL"));
-                                EventRatings.add(jsonEventObj.getString("rating"));
-                                EventCategories.add(jsonEventObj.getString("category"));
-                                likedBy.add(jsonEventObj.getString("likedBy"));
-                            }
-                            EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                            listView.setAdapter(eventAdapter);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                            Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
-                        }
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        error.printStackTrace();
-                        Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
-                    }
-                });
+                StringRequest eventsReq = getAllEventsByRatingApiCall();
                 RequestQueue queue = Volley.newRequestQueue(EventListActivity.this);
                 queue.add(eventsReq);
             }
@@ -226,39 +157,7 @@ public class EventListActivity extends AppCompatActivity {
         club.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String getAllEventsClubApiUrl = "http://20.122.91.139:8081/events/club";
-                StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsClubApiUrl, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONArray jsonEventsArray = new JSONArray(response);
-                            clearArrayLists();
-
-                            for(int i = 0; i<jsonEventsArray.length(); i++) {
-                                JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                                EventTitles.add(jsonEventObj.getString("title"));
-                                EventLocations.add(jsonEventObj.getString("location"));
-                                EventDates.add(jsonEventObj.getString("date"));
-                                EventDescriptions.add(jsonEventObj.getString("description"));
-                                EventImages.add(jsonEventObj.getString("photoURL"));
-                                EventRatings.add(jsonEventObj.getString("rating"));
-                                EventCategories.add(jsonEventObj.getString("category"));
-                                likedBy.add(jsonEventObj.getString("likedBy"));
-                            }
-                            EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                            listView.setAdapter(eventAdapter);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                            Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
-                        }
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        error.printStackTrace();
-                        Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
-                    }
-                });
+                StringRequest eventsReq = getAllEventsClubApiCall();
                 RequestQueue queue = Volley.newRequestQueue(EventListActivity.this);
                 queue.add(eventsReq);
             }
@@ -267,39 +166,7 @@ public class EventListActivity extends AppCompatActivity {
         adventure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String getAllEventsAdventureApiUrl = "http://20.122.91.139:8081/events/Adventure";
-                StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsAdventureApiUrl, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONArray jsonEventsArray = new JSONArray(response);
-                            clearArrayLists();
-
-                            for(int i = 0; i<jsonEventsArray.length(); i++) {
-                                JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                                EventTitles.add(jsonEventObj.getString("title"));
-                                EventLocations.add(jsonEventObj.getString("location"));
-                                EventDates.add(jsonEventObj.getString("date"));
-                                EventDescriptions.add(jsonEventObj.getString("description"));
-                                EventImages.add(jsonEventObj.getString("photoURL"));
-                                EventRatings.add(jsonEventObj.getString("rating"));
-                                EventCategories.add(jsonEventObj.getString("category"));
-                                likedBy.add(jsonEventObj.getString("likedBy"));
-                            }
-                            EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                            listView.setAdapter(eventAdapter);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                            Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
-                        }
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        error.printStackTrace();
-                        Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
-                    }
-                });
+                StringRequest eventsReq = getAllEventsAdventureApiCall();
                 RequestQueue queue = Volley.newRequestQueue(EventListActivity.this);
                 queue.add(eventsReq);
             }
@@ -308,39 +175,7 @@ public class EventListActivity extends AppCompatActivity {
         leisure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String getAllEventsLeisureApiUrl = "http://20.122.91.139:8081/events/Leisure";
-                StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsLeisureApiUrl, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONArray jsonEventsArray = new JSONArray(response);
-                            clearArrayLists();
-
-                            for(int i = 0; i<jsonEventsArray.length(); i++) {
-                                JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                                EventTitles.add(jsonEventObj.getString("title"));
-                                EventLocations.add(jsonEventObj.getString("location"));
-                                EventDates.add(jsonEventObj.getString("date"));
-                                EventDescriptions.add(jsonEventObj.getString("description"));
-                                EventImages.add(jsonEventObj.getString("photoURL"));
-                                EventRatings.add(jsonEventObj.getString("rating"));
-                                EventCategories.add(jsonEventObj.getString("category"));
-                                likedBy.add(jsonEventObj.getString("likedBy"));
-                            }
-                            EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                            listView.setAdapter(eventAdapter);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                            Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
-                        }
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        error.printStackTrace();
-                        Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
-                    }
-                });
+                StringRequest eventsReq = getAllEventsLeisureApiCall();
                 RequestQueue queue = Volley.newRequestQueue(EventListActivity.this);
                 queue.add(eventsReq);
             }
@@ -349,67 +184,261 @@ public class EventListActivity extends AppCompatActivity {
         sports.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String getAllEventsSportsApiUrl = "http://20.122.91.139:8081/events/Sports";
-                StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsSportsApiUrl, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONArray jsonEventsArray = new JSONArray(response);
-                            clearArrayLists();
-
-                            for(int i = 0; i<jsonEventsArray.length(); i++) {
-                                JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                                EventTitles.add(jsonEventObj.getString("title"));
-                                EventLocations.add(jsonEventObj.getString("location"));
-                                EventDates.add(jsonEventObj.getString("date"));
-                                EventDescriptions.add(jsonEventObj.getString("description"));
-                                EventImages.add(jsonEventObj.getString("photoURL"));
-                                EventRatings.add(jsonEventObj.getString("rating"));
-                                EventCategories.add(jsonEventObj.getString("category"));
-                                likedBy.add(jsonEventObj.getString("likedBy"));
-                            }
-                            EventAdapter eventSportsAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                            listView.setAdapter(eventSportsAdapter);
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                            Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
-                        }
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        error.printStackTrace();
-                        Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
-                    }
-                });
+                StringRequest eventsReq = getAllEventsSportsApiCall();
                 RequestQueue queue = Volley.newRequestQueue(EventListActivity.this);
                 queue.add(eventsReq);
             }
         });
-
-
-        //TODO:
-
+        
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(EventListActivity.this, EventActivity.class);
-                i.putExtra("EventTitle", EventTitles.get(position));
-                i.putExtra("EventLocation", EventLocations.get(position));
-                i.putExtra("EventDate", EventDates.get(position));
-                i.putExtra("EventDescription", EventDescriptions.get(position));
-                i.putExtra("EventImage", EventImages.get(position));
-                i.putExtra("EventRating", EventRatings.get(position));
-                i.putExtra("EventCategory", EventCategories.get(position));
-                if (!Objects.equals(emailID, "")) {
-                    i.putExtra("user", emailID);
-                    if (likedBy.get(position).contains(emailID)) {
-                        i.putExtra("isLiked", true);
-                    }
-                }
-                startActivity(i);
+                putEventIntent(position);
             }
         });
+    }
+
+    private StringRequest getAllEevntsApiCall() {
+        String getAllEventsApiUrl = "http://20.122.91.139:8081/events";
+        StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsApiUrl, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray jsonEventsArray = new JSONArray(response);
+                    clearArrayLists();
+
+                    for(int i = 0; i<jsonEventsArray.length(); i++) {
+                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
+                        EventTitles.add(jsonEventObj.getString("title"));
+                        EventLocations.add(jsonEventObj.getString("location"));
+                        EventDates.add(jsonEventObj.getString("date"));
+                        EventDescriptions.add(jsonEventObj.getString("description"));
+                        EventImages.add(jsonEventObj.getString("photoURL"));
+                        EventRatings.add(jsonEventObj.getString("rating"));
+                        EventCategories.add(jsonEventObj.getString("category"));
+                        likedBy.add(jsonEventObj.getString("likedBy"));
+                    }
+
+                    EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
+                    listView.setAdapter(eventAdapter);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Log.e("hk", e.toString());
+                    Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
+            }
+        });
+        return eventsReq;
+    }
+
+    private StringRequest getAllEventsByRatingApiCall() {
+        String getAllEventsApiUrl = "http://20.122.91.139:8081/events";
+        StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsApiUrl, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray jsonEventsArray = new JSONArray(response);
+                    clearArrayLists();
+
+                    for(int i = 0; i<jsonEventsArray.length(); i++) {
+                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
+                        EventTitles.add(jsonEventObj.getString("title"));
+                        EventLocations.add(jsonEventObj.getString("location"));
+                        EventDates.add(jsonEventObj.getString("date"));
+                        EventDescriptions.add(jsonEventObj.getString("description"));
+                        EventImages.add(jsonEventObj.getString("photoURL"));
+                        EventRatings.add(jsonEventObj.getString("rating"));
+                        EventCategories.add(jsonEventObj.getString("category"));
+                        likedBy.add(jsonEventObj.getString("likedBy"));
+                    }
+                    EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
+                    listView.setAdapter(eventAdapter);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
+            }
+        });
+        return eventsReq;
+    }
+
+    private void putEventIntent(int position) {
+        Intent i = new Intent(EventListActivity.this, EventActivity.class);
+        i.putExtra("EventTitle", EventTitles.get(position));
+        i.putExtra("EventLocation", EventLocations.get(position));
+        i.putExtra("EventDate", EventDates.get(position));
+        i.putExtra("EventDescription", EventDescriptions.get(position));
+        i.putExtra("EventImage", EventImages.get(position));
+        i.putExtra("EventRating", EventRatings.get(position));
+        i.putExtra("EventCategory", EventCategories.get(position));
+        if (!Objects.equals(emailID, "")) {
+            i.putExtra("user", emailID);
+            if (likedBy.get(position).contains(emailID)) {
+                i.putExtra("isLiked", true);
+            }
+        }
+        startActivity(i);
+    }
+
+    private StringRequest getAllEventsSportsApiCall() {
+        String getAllEventsSportsApiUrl = "http://20.122.91.139:8081/events/Sports";
+        StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsSportsApiUrl, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray jsonEventsArray = new JSONArray(response);
+                    clearArrayLists();
+
+                    for(int i = 0; i<jsonEventsArray.length(); i++) {
+                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
+                        EventTitles.add(jsonEventObj.getString("title"));
+                        EventLocations.add(jsonEventObj.getString("location"));
+                        EventDates.add(jsonEventObj.getString("date"));
+                        EventDescriptions.add(jsonEventObj.getString("description"));
+                        EventImages.add(jsonEventObj.getString("photoURL"));
+                        EventRatings.add(jsonEventObj.getString("rating"));
+                        EventCategories.add(jsonEventObj.getString("category"));
+                        likedBy.add(jsonEventObj.getString("likedBy"));
+                    }
+                    EventAdapter eventSportsAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
+                    listView.setAdapter(eventSportsAdapter);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
+            }
+        });
+        return eventsReq;
+    }
+
+    private StringRequest getAllEventsLeisureApiCall() {
+        String getAllEventsLeisureApiUrl = "http://20.122.91.139:8081/events/Leisure";
+        StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsLeisureApiUrl, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray jsonEventsArray = new JSONArray(response);
+                    clearArrayLists();
+
+                    for(int i = 0; i<jsonEventsArray.length(); i++) {
+                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
+                        EventTitles.add(jsonEventObj.getString("title"));
+                        EventLocations.add(jsonEventObj.getString("location"));
+                        EventDates.add(jsonEventObj.getString("date"));
+                        EventDescriptions.add(jsonEventObj.getString("description"));
+                        EventImages.add(jsonEventObj.getString("photoURL"));
+                        EventRatings.add(jsonEventObj.getString("rating"));
+                        EventCategories.add(jsonEventObj.getString("category"));
+                        likedBy.add(jsonEventObj.getString("likedBy"));
+                    }
+                    EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
+                    listView.setAdapter(eventAdapter);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
+            }
+        });
+        return eventsReq;
+    }
+
+    private StringRequest getAllEventsAdventureApiCall() {
+        String getAllEventsAdventureApiUrl = "http://20.122.91.139:8081/events/Adventure";
+        StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsAdventureApiUrl, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray jsonEventsArray = new JSONArray(response);
+                    clearArrayLists();
+
+                    for(int i = 0; i<jsonEventsArray.length(); i++) {
+                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
+                        EventTitles.add(jsonEventObj.getString("title"));
+                        EventLocations.add(jsonEventObj.getString("location"));
+                        EventDates.add(jsonEventObj.getString("date"));
+                        EventDescriptions.add(jsonEventObj.getString("description"));
+                        EventImages.add(jsonEventObj.getString("photoURL"));
+                        EventRatings.add(jsonEventObj.getString("rating"));
+                        EventCategories.add(jsonEventObj.getString("category"));
+                        likedBy.add(jsonEventObj.getString("likedBy"));
+                    }
+                    EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
+                    listView.setAdapter(eventAdapter);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
+            }
+        });
+        return eventsReq;
+    }
+
+    private StringRequest getAllEventsClubApiCall() {
+        String getAllEventsClubApiUrl = "http://20.122.91.139:8081/events/club";
+        StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsClubApiUrl, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray jsonEventsArray = new JSONArray(response);
+                    clearArrayLists();
+
+                    for(int i = 0; i<jsonEventsArray.length(); i++) {
+                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
+                        EventTitles.add(jsonEventObj.getString("title"));
+                        EventLocations.add(jsonEventObj.getString("location"));
+                        EventDates.add(jsonEventObj.getString("date"));
+                        EventDescriptions.add(jsonEventObj.getString("description"));
+                        EventImages.add(jsonEventObj.getString("photoURL"));
+                        EventRatings.add(jsonEventObj.getString("rating"));
+                        EventCategories.add(jsonEventObj.getString("category"));
+                        likedBy.add(jsonEventObj.getString("likedBy"));
+                    }
+                    EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
+                    listView.setAdapter(eventAdapter);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Toast.makeText(EventListActivity.this, "Loading...", Toast.LENGTH_LONG).show();
+            }
+        });
+        return eventsReq;
     }
 
     @SuppressLint("NonConstantResourceId")
