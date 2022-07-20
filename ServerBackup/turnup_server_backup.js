@@ -79,7 +79,7 @@ app.post('/event/:user', async (req, res) => {
         await client.db('turnup').collection('event').insertOne(req.body)
         await client.db('UserDB').collection('users').updateOne(
             { 'id': creatorID, 'name': creatorID},
-            { $push: 'likedEvents': req.body.title }, 
+            { $push: {'likedEvents': req.body.title} }, 
             { upsert: true }
          )
         res.status(200).send('New Event Added!')
