@@ -29,7 +29,7 @@ const axios = require('axios').default;
  */
  router.put("/:UserId", async (req, res)=>{
     try{
-        const result = await axios.put('http://localhost:8080/users/'+req.params.UserId, {
+        await axios.put('http://localhost:8080/users/'+req.params.UserId, {
             "UIPreferences" : req.body
         });
         res.status(200).send("Success: New ui-preference: "+req.body)

@@ -39,7 +39,7 @@ const axios = require('axios').default;
             location_arr.push(req.params.LocationID)
         }
         console.log(location_arr)        
-        const result = await axios.put('http://localhost:8080/users/'+req.params.UserId, {
+        await axios.put('http://localhost:8080/users/'+req.params.UserId, {
             "likedLocations" : location_arr
         });
         res.status(200).send("Success: New liked-locations: "+location_arr)

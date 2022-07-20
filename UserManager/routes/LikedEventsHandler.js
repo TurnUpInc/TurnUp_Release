@@ -41,7 +41,7 @@ const axios = require('axios').default;
         const result = await axios.put('http://localhost:8080/users/'+req.params.UserId, {
             "likedEvents" : event_arr
         });
-        res.status(200).send("Success: New liked-events: "+event_arr)
+        res.status(200).send("Success: New liked-events: "+event_arr+" "+result)
     }
     catch(err){
         console.log(err)

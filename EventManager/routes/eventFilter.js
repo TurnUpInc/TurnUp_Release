@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const axios = require("axios").default;
+// const axios = require("axios").default;
 const { MongoClient } = require("mongodb");
 const client = new MongoClient(process.env.DB_SECRET);
 
@@ -12,7 +12,7 @@ router.get("/events-by-category", async (req, res) => {
     const result = client
       .db("EventManager")
       .collection("events")
-      .find({ category: category });
+      .find({ category });
     let payload = await result.toArray();
     res.status(200).send(payload);
   } catch (err) {

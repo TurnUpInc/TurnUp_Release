@@ -132,8 +132,8 @@ function connectChat(db){
                         sendStatus("Event not found in the database")
                     }
                 }
-                catch{
-                    sendStatus("Couldn't find the linked event in user DB")
+                catch(err){
+                    sendStatus("Couldn't find the linked event in user DB: "+err.message)
                 }
             }
         })

@@ -33,7 +33,7 @@ app.get('/events/:category', async (req, res) => {
         if (category == 'club'){
             category = 'Club/Concert/Party'
         }
-        const result =  await client.db('turnup').collection('event').find({'category': category}).toArray()
+        const result =  await client.db('turnup').collection('event').find({category}).toArray()
         res.status(200).send(result)
     } 
     catch(err) {
@@ -95,7 +95,7 @@ app.post('/eventliked/:title/:user', async (req,res) => {
         let userid = req.params.user
         let title = req.params.title
         await client.db('turnup').collection('event').updateOne(
-            { 'title': title },
+            { title },
             { $push: { 'likedBy': userid } }
          )
         await client.db('UserDB').collection('users').updateOne(
