@@ -126,7 +126,7 @@ it('Gets liked events of the user', async () => {
     }
 
   axios.get.mockResolvedValue(
-    {data: data,
+    {data,
       status: 200}
   );
 
@@ -165,7 +165,7 @@ it('Gets liked locations of the user', async () => {
     }
 
   axios.get.mockResolvedValue(
-    {data: data,
+    {data,
       status: 200}
   );
 
