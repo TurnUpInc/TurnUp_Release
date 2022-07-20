@@ -91,21 +91,7 @@ public class AddEventActivity extends AppCompatActivity {
         spinner.getBackground().setColorFilter(getResources().getColor(R.color.white), PorterDuff.Mode.SRC_ATOP);
 
         if (intent.getStringExtra("Manage") != null) {
-            titleText.setText(intent.getStringExtra("EventTitle"));
-            title = intent.getStringExtra("EventTitle");
-            locationText.setText(intent.getStringExtra("EventLocation"));
-            dateButton.setText(intent.getStringExtra("EventDate"));
-            dateTime = intent.getStringExtra("EventDate");
-            photoURL = intent.getStringExtra("EventImage");
-            Picasso.get().load(photoURL).into(img);
-            descriptionText.setText(intent.getStringExtra("EventDescription"));
-            String spin = intent.getStringExtra("EventCategory");
-
-            if (Objects.equals(spin, "Adventure")) pos = 0;
-            else if (Objects.equals(spin, "Leisure")) pos = 1;
-            else if (Objects.equals(spin, "Sports")) pos = 2;
-            else if (Objects.equals(spin, "Club/Concert/Party")) pos = 3;
-            else pos = 1;
+            setValuesFromIntent(intent);
         }
 
         uploadImg.setOnClickListener(new View.OnClickListener() {
@@ -147,37 +133,7 @@ public class AddEventActivity extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String putUrl = "http://20.122.91.139:8081/event/" + emailID + "/" + title;
-                title = titleText.getText().toString();
-                String location = locationText.getText().toString();
-                String description = descriptionText.getText().toString();
-                String cord = getLocationFromAddress(AddEventActivity.this, location);
-                if (!Objects.equals(title, "") && !location.equals("") && !Objects.equals(cord, "") && !Objects.equals(category, "") && !description.equals("") && !Objects.equals(dateTime, "") && title != null && cord != null && category != null && dateTime != null) {
-                    try {
-                        event.put("title", title);
-                        event.put("location", location);
-                        event.put("coordinates", cord);
-                        event.put("category", category);
-                        event.put("description", description);
-                        event.put("date", dateTime);
-                        event.put("photoURL", photoURL);
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-
-                    if (intent.getStringExtra("Manage") != null) {
-                        Log.e("check", event.toString());
-                        Log.e("check", putUrl);
-                        putEvent(event, putUrl);
-                    } else {
-                        postEvent(event, "http://20.122.91.139:8081/event/" + emailID);
-                    }
-                    Intent list = new Intent(AddEventActivity.this, EventListActivity.class);
-                    startActivity(list);
-                }
-                else {
-                    Toast.makeText(AddEventActivity.this, "Please fill all fields", Toast.LENGTH_LONG).show();
-                }
+                apiCall(intent);
             }
         });
 
@@ -192,6 +148,58 @@ public class AddEventActivity extends AppCompatActivity {
                 startActivity(list);
             }
         });
+    }
+
+    private void setValuesFromIntent(Intent intent) {
+        titleText.setText(intent.getStringExtra("EventTitle"));
+        title = intent.getStringExtra("EventTitle");
+        locationText.setText(intent.getStringExtra("EventLocation"));
+        dateButton.setText(intent.getStringExtra("EventDate"));
+        dateTime = intent.getStringExtra("EventDate");
+        photoURL = intent.getStringExtra("EventImage");
+        Picasso.get().load(photoURL).into(img);
+        descriptionText.setText(intent.getStringExtra("EventDescription"));
+        String spin = intent.getStringExtra("EventCategory");
+
+        if (Objects.equals(spin, "Adventure")) pos = 0;
+        else if (Objects.equals(spin, "Leisure")) pos = 1;
+        else if (Objects.equals(spin, "Sports")) pos = 2;
+        else if (Objects.equals(spin, "Club/Concert/Party")) pos = 3;
+        else pos = 1;
+    }
+
+    private void apiCall(Intent intent) {
+        String putUrl = "http://20.122.91.139:8081/event/" + emailID + "/" + title;
+        title = titleText.getText().toString();
+        String location = locationText.getText().toString();
+        String description = descriptionText.getText().toString();
+        String cord = getLocationFromAddress(AddEventActivity.this, location);
+        if (!Objects.equals(title, "") && !location.equals("") && !Objects.equals(cord, "") && !Objects.equals(category, "") && !description.equals("") && !Objects.equals(dateTime, "") && title != null && cord != null && category != null && dateTime != null) {
+            try {
+                event.put("title", title);
+                event.put("location", location);
+                event.put("coordinates", cord);
+                event.put("category", category);
+                event.put("description", description);
+                event.put("date", dateTime);
+                event.put("photoURL", photoURL);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            if (intent.getStringExtra("Manage") != null) {
+                Log.e("check", event.toString());
+                Log.e("check", putUrl);
+                putEvent(event, putUrl);
+            } else {
+                postEvent(event, "http://20.122.91.139:8081/event/" + emailID);
+            }
+            Intent list = new Intent(AddEventActivity.this, EventListActivity.class);
+            startActivity(list);
+        }
+        else {
+            Toast.makeText(AddEventActivity.this, "Please fill all fields", Toast.LENGTH_LONG).show();
+        }
     }
 
     public void postEvent(JSONObject obj, String addEventApiPostUrl) {
