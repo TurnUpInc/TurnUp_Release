@@ -80,8 +80,9 @@ function connectChat(db){
                     });
                 }
             }
-            catch{
-                sendStatus("User doesn't contain this Event in the likedEvents list")
+            catch(err){
+                console.log("User doesn't contain this Event in the likedEvents list:: Error:"+err.message);
+                sendStatus("User doesn't contain this Event in the likedEvents list:: Error:"+err.message);
             }
         })
 
