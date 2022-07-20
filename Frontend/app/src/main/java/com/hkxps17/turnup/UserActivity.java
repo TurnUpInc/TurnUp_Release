@@ -81,46 +81,7 @@ public class UserActivity extends AppCompatActivity {
             findViewById(R.id.manageview).setVisibility(View.INVISIBLE);
         }
 
-        String getAllMyEventsApiUrl = "http://20.122.91.139:8081/myevents/"+emailID;
-        StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllMyEventsApiUrl, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                try {
-                    JSONArray jsonEventsArray = new JSONArray(response);
-
-                    for(int i = 0; i<jsonEventsArray.length(); i++) {
-                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                        EventTitles.add(jsonEventObj.getString("title"));
-                        EventLocations.add(jsonEventObj.getString("location"));
-                        EventDates.add(jsonEventObj.getString("date"));
-                        EventDescriptions.add(jsonEventObj.getString("description"));
-                        EventImages.add(jsonEventObj.getString("photoURL"));
-                        EventRatings.add(jsonEventObj.getString("rating"));
-                        EventCategories.add(jsonEventObj.getString("category"));
-                        likedBy.add(jsonEventObj.getString("likedBy"));
-                    }
-
-                    if (!Objects.equals(emailID, "Guest")) {
-                        ManageEventAdapter eventAdapter = new ManageEventAdapter(UserActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]));
-                        listView.setAdapter(eventAdapter);
-                    }
-                    else {
-                        findViewById(R.id.managelist).setVisibility(View.INVISIBLE);
-                        findViewById(R.id.manageview).setVisibility(View.INVISIBLE);
-                    }
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Toast.makeText(UserActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                error.printStackTrace();
-                Toast.makeText(UserActivity.this, "Loading", Toast.LENGTH_LONG).show();
-            }
-        });
+        StringRequest eventsReq = apiCall();
         RequestQueue queue = Volley.newRequestQueue(UserActivity.this);
         queue.add(eventsReq);
 
@@ -232,6 +193,50 @@ public class UserActivity extends AppCompatActivity {
                 startActivity(list);
             }
         });
+    }
+
+    private StringRequest apiCall() {
+        String getAllMyEventsApiUrl = "http://20.122.91.139:8081/myevents/"+emailID;
+        StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllMyEventsApiUrl, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONArray jsonEventsArray = new JSONArray(response);
+
+                    for(int i = 0; i<jsonEventsArray.length(); i++) {
+                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
+                        EventTitles.add(jsonEventObj.getString("title"));
+                        EventLocations.add(jsonEventObj.getString("location"));
+                        EventDates.add(jsonEventObj.getString("date"));
+                        EventDescriptions.add(jsonEventObj.getString("description"));
+                        EventImages.add(jsonEventObj.getString("photoURL"));
+                        EventRatings.add(jsonEventObj.getString("rating"));
+                        EventCategories.add(jsonEventObj.getString("category"));
+                        likedBy.add(jsonEventObj.getString("likedBy"));
+                    }
+
+                    if (!Objects.equals(emailID, "Guest")) {
+                        ManageEventAdapter eventAdapter = new ManageEventAdapter(UserActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]));
+                        listView.setAdapter(eventAdapter);
+                    }
+                    else {
+                        findViewById(R.id.managelist).setVisibility(View.INVISIBLE);
+                        findViewById(R.id.manageview).setVisibility(View.INVISIBLE);
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    Toast.makeText(UserActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+                Toast.makeText(UserActivity.this, "Loading", Toast.LENGTH_LONG).show();
+            }
+        });
+        return eventsReq;
     }
 
     public class ManageEventAdapter extends ArrayAdapter<String> {
