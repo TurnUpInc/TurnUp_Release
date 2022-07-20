@@ -1,4 +1,4 @@
-const {getAllUsers, getOneUser, addNewUser, updateUser, deleteUser,
+const {getAllUsers, getOneUser, addNewUser, updateUser,
   getUIPreferences, updateUIPreferences, getLikedLocations, addLikedLocation,
   deleteLikedLocation, getLikedEvents, addLikedEvents, deleteLikedEvents} = require('./UserHandlerCalls');
 const axios = require('axios');
@@ -30,7 +30,7 @@ it('Gets all the user data in the database', async () => {
   ]
 
   axios.get.mockResolvedValue(
-    {data: data,
+    {data,
       status: 200}
   );
 
@@ -48,7 +48,7 @@ it('Gets one user data from the database', async () => {
     ]
   }
   axios.get.mockResolvedValue(
-    {data: data,
+    {data,
       status: 200}
   );
 
@@ -96,7 +96,7 @@ it('Gets the UI prefs of the current user', async () => {
     }
 
   axios.get.mockResolvedValue(
-    {data: data,
+    {data,
       status: 200}
   );
 
