@@ -48,7 +48,7 @@ it('Gets one user data from the database', async () => {
     ]
   }
   axios.get.mockResolvedValue(
-    {data: data,
+    {data,
       status: 200}
   );
 
