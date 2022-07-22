@@ -8,7 +8,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -46,9 +46,6 @@ public class UserActivity extends AppCompatActivity {
     ImageButton done;
     EditText name;
 
-    Spinner color1;
-    Spinner color2;
-    Spinner color3;
     String[] colors = {"Green", "Blue", "Pink"};
     String[] prefs = {"Green", "Blue", "Pink"};
     String[] userprf = {"Green", "Blue", "Pink"};
@@ -105,11 +102,11 @@ public class UserActivity extends AppCompatActivity {
         name = findViewById(R.id.your_name);
         name.setText(emailID);
 
-        setColor1();
+        setColor(R.id.color1_spinner);
 
-        setColor2();
+        setColor(R.id.color2_spinner);
 
-        setColor3();
+        setColor(R.id.color3_spinner);
 
 
         done = findViewById(R.id.done_button);
@@ -130,69 +127,19 @@ public class UserActivity extends AppCompatActivity {
         });
     }
 
-    private void setColor3() {
-        color3 = findViewById(R.id.color3_spinner);
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(UserActivity.this, android.R.layout.simple_spinner_item, colors);
-        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        color3.setAdapter(adapter3);
 
-        if (Objects.equals(userprf[2], "Green")) color3.setSelection(0);
-        else if (Objects.equals(userprf[2], "Pink")) color3.setSelection(2);
-        else color3.setSelection(1);
-
-
-        color3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 0) prefs[2] = "LikeGreen";
-                else if (i == 1) prefs[2] = "LikeBlue";
-                else prefs[2] = "LikePink";
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-                Log.d("Nothing", "nothing selected");
-            }
-        });
-    }
-
-    private void setColor2() {
-        color2 = findViewById(R.id.color2_spinner);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(UserActivity.this, android.R.layout.simple_spinner_item, colors);
-        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        color2.setAdapter(adapter2);
-
-        if (Objects.equals(userprf[1], "Green")) color2.setSelection(0);
-        else if (Objects.equals(userprf[1], "Pink")) color2.setSelection(2);
-        else color2.setSelection(1);
-
-        color2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 0) prefs[1] = "ManageGreen";
-                else if (i == 1) prefs[1] = "ManageBlue";
-                else prefs[1] = "ManagePink";
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-                Log.d("Nothing", "nothing selected");
-            }
-        });
-    }
-
-    private void setColor1() {
-        color1 = findViewById(R.id.color1_spinner);
+    private void setColor(int resource) {
+        Spinner color = findViewById(resource);
         ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(UserActivity.this, android.R.layout.simple_spinner_item, colors);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        color1.setAdapter(adapter1);
+        color.setAdapter(adapter1);
 
-        if (Objects.equals(userprf[0], "Blue")) color1.setSelection(1);
-        else if (Objects.equals(userprf[0], "Pink")) color1.setSelection(2);
-        else color1.setSelection(0);
+        if (Objects.equals(userprf[0], "Blue")) color.setSelection(1);
+        else if (Objects.equals(userprf[0], "Pink")) color.setSelection(2);
+        else color.setSelection(0);
 
 
-        color1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        color.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i == 0) prefs[0] = "ListGreen";

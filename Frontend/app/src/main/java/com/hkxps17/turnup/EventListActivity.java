@@ -204,23 +204,7 @@ public class EventListActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 try {
-                    JSONArray jsonEventsArray = new JSONArray(response);
-                    clearArrayLists();
-
-                    for(int i = 0; i<jsonEventsArray.length(); i++) {
-                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                        EventTitles.add(jsonEventObj.getString("title"));
-                        EventLocations.add(jsonEventObj.getString("location"));
-                        EventDates.add(jsonEventObj.getString("date"));
-                        EventDescriptions.add(jsonEventObj.getString("description"));
-                        EventImages.add(jsonEventObj.getString("photoURL"));
-                        EventRatings.add(jsonEventObj.getString("rating"));
-                        EventCategories.add(jsonEventObj.getString("category"));
-                        likedBy.add(jsonEventObj.getString("likedBy"));
-                    }
-
-                    EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                    listView.setAdapter(eventAdapter);
+                    OnAPIResponse(response);
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -244,22 +228,7 @@ public class EventListActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 try {
-                    JSONArray jsonEventsArray = new JSONArray(response);
-                    clearArrayLists();
-
-                    for(int i = 0; i<jsonEventsArray.length(); i++) {
-                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                        EventTitles.add(jsonEventObj.getString("title"));
-                        EventLocations.add(jsonEventObj.getString("location"));
-                        EventDates.add(jsonEventObj.getString("date"));
-                        EventDescriptions.add(jsonEventObj.getString("description"));
-                        EventImages.add(jsonEventObj.getString("photoURL"));
-                        EventRatings.add(jsonEventObj.getString("rating"));
-                        EventCategories.add(jsonEventObj.getString("category"));
-                        likedBy.add(jsonEventObj.getString("likedBy"));
-                    }
-                    EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                    listView.setAdapter(eventAdapter);
+                    OnAPIResponse(response);
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
@@ -275,46 +244,13 @@ public class EventListActivity extends AppCompatActivity {
         return eventsReq;
     }
 
-    private void putEventIntent(int position) {
-        Intent i = new Intent(EventListActivity.this, EventActivity.class);
-        i.putExtra("EventTitle", EventTitles.get(position));
-        i.putExtra("EventLocation", EventLocations.get(position));
-        i.putExtra("EventDate", EventDates.get(position));
-        i.putExtra("EventDescription", EventDescriptions.get(position));
-        i.putExtra("EventImage", EventImages.get(position));
-        i.putExtra("EventRating", EventRatings.get(position));
-        i.putExtra("EventCategory", EventCategories.get(position));
-        if (!Objects.equals(emailID, "")) {
-            i.putExtra("user", emailID);
-            if (likedBy.get(position).contains(emailID)) {
-                i.putExtra("isLiked", true);
-            }
-        }
-        startActivity(i);
-    }
-
     private StringRequest getAllEventsSportsApiCall() {
         String getAllEventsSportsApiUrl = "http://20.122.91.139:8081/events/Sports";
         StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsSportsApiUrl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try {
-                    JSONArray jsonEventsArray = new JSONArray(response);
-                    clearArrayLists();
-
-                    for(int i = 0; i<jsonEventsArray.length(); i++) {
-                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                        EventTitles.add(jsonEventObj.getString("title"));
-                        EventLocations.add(jsonEventObj.getString("location"));
-                        EventDates.add(jsonEventObj.getString("date"));
-                        EventDescriptions.add(jsonEventObj.getString("description"));
-                        EventImages.add(jsonEventObj.getString("photoURL"));
-                        EventRatings.add(jsonEventObj.getString("rating"));
-                        EventCategories.add(jsonEventObj.getString("category"));
-                        likedBy.add(jsonEventObj.getString("likedBy"));
-                    }
-                    EventAdapter eventSportsAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                    listView.setAdapter(eventSportsAdapter);
+                    OnAPIResponse(response);
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
@@ -336,22 +272,7 @@ public class EventListActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 try {
-                    JSONArray jsonEventsArray = new JSONArray(response);
-                    clearArrayLists();
-
-                    for(int i = 0; i<jsonEventsArray.length(); i++) {
-                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                        EventTitles.add(jsonEventObj.getString("title"));
-                        EventLocations.add(jsonEventObj.getString("location"));
-                        EventDates.add(jsonEventObj.getString("date"));
-                        EventDescriptions.add(jsonEventObj.getString("description"));
-                        EventImages.add(jsonEventObj.getString("photoURL"));
-                        EventRatings.add(jsonEventObj.getString("rating"));
-                        EventCategories.add(jsonEventObj.getString("category"));
-                        likedBy.add(jsonEventObj.getString("likedBy"));
-                    }
-                    EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                    listView.setAdapter(eventAdapter);
+                    OnAPIResponse(response);
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
@@ -373,22 +294,7 @@ public class EventListActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 try {
-                    JSONArray jsonEventsArray = new JSONArray(response);
-                    clearArrayLists();
-
-                    for(int i = 0; i<jsonEventsArray.length(); i++) {
-                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                        EventTitles.add(jsonEventObj.getString("title"));
-                        EventLocations.add(jsonEventObj.getString("location"));
-                        EventDates.add(jsonEventObj.getString("date"));
-                        EventDescriptions.add(jsonEventObj.getString("description"));
-                        EventImages.add(jsonEventObj.getString("photoURL"));
-                        EventRatings.add(jsonEventObj.getString("rating"));
-                        EventCategories.add(jsonEventObj.getString("category"));
-                        likedBy.add(jsonEventObj.getString("likedBy"));
-                    }
-                    EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                    listView.setAdapter(eventAdapter);
+                    OnAPIResponse(response);
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
@@ -410,22 +316,7 @@ public class EventListActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 try {
-                    JSONArray jsonEventsArray = new JSONArray(response);
-                    clearArrayLists();
-
-                    for(int i = 0; i<jsonEventsArray.length(); i++) {
-                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                        EventTitles.add(jsonEventObj.getString("title"));
-                        EventLocations.add(jsonEventObj.getString("location"));
-                        EventDates.add(jsonEventObj.getString("date"));
-                        EventDescriptions.add(jsonEventObj.getString("description"));
-                        EventImages.add(jsonEventObj.getString("photoURL"));
-                        EventRatings.add(jsonEventObj.getString("rating"));
-                        EventCategories.add(jsonEventObj.getString("category"));
-                        likedBy.add(jsonEventObj.getString("likedBy"));
-                    }
-                    EventAdapter eventAdapter = new EventAdapter(EventListActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
-                    listView.setAdapter(eventAdapter);
+                    OnAPIResponse(response);
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Toast.makeText(EventListActivity.this, "Error Loading Event Data", Toast.LENGTH_LONG).show();
@@ -521,5 +412,44 @@ public class EventListActivity extends AppCompatActivity {
         EventDescriptions.clear();
         EventImages.clear();
         likedBy.clear();
+    }
+
+    private void OnAPIResponse(String response) throws JSONException {
+        JSONArray jsonEventsArray = new JSONArray(response);
+        clearArrayLists();
+
+        for (int i = 0; i < jsonEventsArray.length(); i++) {
+            JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
+            EventTitles.add(jsonEventObj.getString("title"));
+            EventLocations.add(jsonEventObj.getString("location"));
+            EventDates.add(jsonEventObj.getString("date"));
+            EventDescriptions.add(jsonEventObj.getString("description"));
+            EventImages.add(jsonEventObj.getString("photoURL"));
+            EventRatings.add(jsonEventObj.getString("rating"));
+            EventCategories.add(jsonEventObj.getString("category"));
+            likedBy.add(jsonEventObj.getString("likedBy"));
+        }
+        EventAdapter eventAdapter = new EventAdapter(EventListActivity.this,
+                EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]),
+                EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
+        listView.setAdapter(eventAdapter);
+    }
+
+    private void putEventIntent(int position) {
+        Intent i = new Intent(EventListActivity.this, EventActivity.class);
+        i.putExtra("EventTitle", EventTitles.get(position));
+        i.putExtra("EventLocation", EventLocations.get(position));
+        i.putExtra("EventDate", EventDates.get(position));
+        i.putExtra("EventDescription", EventDescriptions.get(position));
+        i.putExtra("EventImage", EventImages.get(position));
+        i.putExtra("EventRating", EventRatings.get(position));
+        i.putExtra("EventCategory", EventCategories.get(position));
+        if (!Objects.equals(emailID, "")) {
+            i.putExtra("user", emailID);
+            if (likedBy.get(position).contains(emailID)) {
+                i.putExtra("isLiked", true);
+            }
+        }
+        startActivity(i);
     }
 }
