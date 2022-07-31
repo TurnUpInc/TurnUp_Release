@@ -109,6 +109,7 @@ public class LocationAddTest {
                                 2),
                         isDisplayed()));
         appCompatImageButton.check(matches(isEnabled()));
+        appCompatImageButton.perform(click());
     }
 
     private static Matcher<View> childAtPosition(
