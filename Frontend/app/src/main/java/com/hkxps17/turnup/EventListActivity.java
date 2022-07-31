@@ -36,6 +36,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
@@ -361,14 +362,16 @@ public class EventListActivity extends AppCompatActivity {
         String[] eLocations;
         String[] eDates;
         String[] eImages;
+        String[] eCategory;
 
-        EventAdapter(Context c, String[] titles, String[] locations, String[] dates, String[] images) {
+        EventAdapter(Context c, String[] titles, String[] locations, String[] dates, String[] images, String[] category) {
             super(c, R.layout.event_list_item, R.id.EventTitle, titles);
             this.context = c;
             this.eTitles = titles;
             this.eDates = dates;
             this.eLocations = locations;
             this.eImages = images;
+            this.eCategory = category;
         }
 
         @SuppressLint("UseCompatLoadingForDrawables")
@@ -381,11 +384,12 @@ public class EventListActivity extends AppCompatActivity {
             TextView title = eventItem.findViewById(R.id.EventTitle);
             TextView date = eventItem.findViewById(R.id.EventDate);
             TextView loc = eventItem.findViewById(R.id.EventLocation);
-
+            TextView des = eventItem.findViewById(R.id.EventCategory);
             Picasso.get().load(eImages[position]).into(img);
             title.setText(eTitles[position]);
             date.setText((eDates[position]));
             loc.setText(eLocations[position]);
+            des.setText(eCategory[position]);
 
             Set<String> tasksSet = PreferenceManager.getDefaultSharedPreferences(context)
                     .getStringSet("tasks_set", new HashSet<String>());
@@ -431,7 +435,7 @@ public class EventListActivity extends AppCompatActivity {
         }
         EventAdapter eventAdapter = new EventAdapter(EventListActivity.this,
                 EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]),
-                EventDates.toArray(new String[0]), EventImages.toArray(new String[0]));
+                EventDates.toArray(new String[0]), EventImages.toArray(new String[0]), EventCategories.toArray(new String[0]));
         listView.setAdapter(eventAdapter);
     }
 
