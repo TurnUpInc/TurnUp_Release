@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1659316408425" clover="3.2.0">
-  <project timestamp="1659316408425" name="All files">
+<coverage generated="1659318427402" clover="3.2.0">
+  <project timestamp="1659318427402" name="All files">
     <metrics statements="195" coveredstatements="181" conditionals="8" coveredconditionals="4" methods="34" coveredmethods="33" elements="237" coveredelements="218" complexity="0" loc="195" ncloc="195" packages="3" files="6" classes="6"/>
     <package name="TestsWithMocking">
       <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="UserHandlerTest.js" path="C:\Users\herei\Desktop\TurnUp\TurnUp_Dev\TurnUp_Release\UserManager\TestsWithMocking\UserHandlerTest.js">
+      <file name="UserHandlerTest.js" path="C:\Users\herei\Desktop\TurnUp\Final\TurnUp_Release\Backend\UserManager\TestsWithMocking\UserHandlerTest.js">
         <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -22,7 +22,7 @@
     </package>
     <package name="routes">
       <metrics statements="153" coveredstatements="141" conditionals="8" coveredconditionals="4" methods="21" coveredmethods="21"/>
-      <file name="LikedEventsHandler.js" path="C:\Users\herei\Desktop\TurnUp\TurnUp_Dev\TurnUp_Release\UserManager\routes\LikedEventsHandler.js">
+      <file name="LikedEventsHandler.js" path="C:\Users\herei\Desktop\TurnUp\Final\TurnUp_Release\Backend\UserManager\routes\LikedEventsHandler.js">
         <metrics statements="40" coveredstatements="40" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -65,7 +65,7 @@
         <line num="76" count="1" type="stmt"/>
         <line num="80" count="1" type="stmt"/>
       </file>
-      <file name="LikedLocationsHandler.js" path="C:\Users\herei\Desktop\TurnUp\TurnUp_Dev\TurnUp_Release\UserManager\routes\LikedLocationsHandler.js">
+      <file name="LikedLocationsHandler.js" path="C:\Users\herei\Desktop\TurnUp\Final\TurnUp_Release\Backend\UserManager\routes\LikedLocationsHandler.js">
         <metrics statements="39" coveredstatements="39" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -107,7 +107,7 @@
         <line num="76" count="1" type="stmt"/>
         <line num="80" count="1" type="stmt"/>
       </file>
-      <file name="UIPreferencesHandler.js" path="C:\Users\herei\Desktop\TurnUp\TurnUp_Dev\TurnUp_Release\UserManager\routes\UIPreferencesHandler.js">
+      <file name="UIPreferencesHandler.js" path="C:\Users\herei\Desktop\TurnUp\Final\TurnUp_Release\Backend\UserManager\routes\UIPreferencesHandler.js">
         <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -128,7 +128,7 @@
         <line num="39" count="1" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
       </file>
-      <file name="UserStore.js" path="C:\Users\herei\Desktop\TurnUp\TurnUp_Dev\TurnUp_Release\UserManager\routes\UserStore.js">
+      <file name="UserStore.js" path="C:\Users\herei\Desktop\TurnUp\Final\TurnUp_Release\Backend\UserManager\routes\UserStore.js">
         <metrics statements="56" coveredstatements="44" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -190,7 +190,7 @@
     </package>
     <package name="tests">
       <metrics statements="30" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="12"/>
-      <file name="UserHandlerCalls.js" path="C:\Users\herei\Desktop\TurnUp\TurnUp_Dev\TurnUp_Release\UserManager\tests\UserHandlerCalls.js">
+      <file name="UserHandlerCalls.js" path="C:\Users\herei\Desktop\TurnUp\Final\TurnUp_Release\Backend\UserManager\tests\UserHandlerCalls.js">
         <metrics statements="30" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="12"/>
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
