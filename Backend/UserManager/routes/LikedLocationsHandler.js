@@ -19,7 +19,7 @@ const axios = require('axios').default;
     }
     catch(err){
         console.log(err)
-        res.send(400).send(err)
+        res.status(400).send(err)
     }
 })
 
@@ -42,11 +42,11 @@ const axios = require('axios').default;
         await axios.put('http://localhost:8080/users/'+req.params.UserId, {
             "likedLocations" : location_arr
         });
-        res.status(200).send("Success: New liked-locations: "+location_arr)
+        res.status(200).send(location_arr)
     }
     catch(err){
         console.log(err)
-        res.send(400).send(err)
+        res.status(400).send(err)
     }
 })
 
@@ -69,11 +69,11 @@ const axios = require('axios').default;
         await axios.put('http://localhost:8080/users/'+req.params.UserId, {
             "likedLocations" : location_arr
         });
-        res.status(200).send("Success: New liked-locations: "+location_arr)
+        res.status(200).send(location_arr)
     }
     catch(err){
         console.log(err)
-        res.send(400).send(err)
+        res.status(400).send(err)
     }
 })
 
