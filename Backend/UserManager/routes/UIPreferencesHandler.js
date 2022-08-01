@@ -19,7 +19,7 @@ const axios = require('axios').default;
     }
     catch(err){
         console.log(err)
-        res.send(400).send(err)
+        res.status(400).send(err)
     }
 })
 
@@ -32,11 +32,11 @@ const axios = require('axios').default;
         await axios.put('http://localhost:8080/users/'+req.params.UserId, {
             "UIPreferences" : req.body
         });
-        res.status(200).send("Success: New ui-preference: "+req.body)
+        res.status(200).send(req.body)
     }
     catch(err){
         console.log(err)
-        res.send(400).send(err)
+        res.status(400).send(err)
     }
 })
 

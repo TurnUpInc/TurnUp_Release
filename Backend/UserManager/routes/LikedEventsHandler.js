@@ -18,7 +18,7 @@ const axios = require('axios').default;
     }
     catch(err){
         console.log(err)
-        res.send(400).send(err)
+        res.status(400).send(err)
     }
 })
 
@@ -38,19 +38,20 @@ const axios = require('axios').default;
             event_arr.push(req.params.EventID)
         }
         console.log(event_arr)        
-        const result = await axios.put('http://localhost:8080/users/'+req.params.UserId, {
+        await axios.put('http://localhost:8080/users/'+req.params.UserId, {
             "likedEvents" : event_arr
         });
-        res.status(200).send("Success: New liked-events: "+event_arr+" "+result)
+        console.log("Updated the user")
+        res.status(200).send(event_arr)
     }
     catch(err){
         console.log(err)
-        res.send(400).send(err)
+        res.status(400).send(err)
     }
 })
 
 /**
- * Deletes user from the database
+ * Deletes liked event for the user from the database
  */
  router.delete("/:UserId/:EventID", async (req, res)=>{
     try{
@@ -68,11 +69,11 @@ const axios = require('axios').default;
         await axios.put('http://localhost:8080/users/'+req.params.UserId, {
             "likedEvents" : event_arr
         });
-        res.status(200).send("Success: New liked-events: "+event_arr)
+        res.status(200).send(event_arr)
     }
     catch(err){
         console.log(err)
-        res.send(400).send(err)
+        res.status(400).send(err)
     }
 })
 
