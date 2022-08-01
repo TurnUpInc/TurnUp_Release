@@ -1,0 +1,337 @@
+2022-08-01 08:58:44.757 10125-10170/com.hkxps17.turnup I/TestRunner: started: guestLoginTest(com.hkxps17.turnup.GuestLoginTest)
+2022-08-01 08:58:44.778 10125-10170/com.hkxps17.turnup W/Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+2022-08-01 08:58:46.305 10125-10136/com.hkxps17.turnup I/.hkxps17.turnu: Background young concurrent copying GC freed 12154(2864KB) AllocSpace objects, 2(104KB) LOS objects, 82% free, 1272KB/7416KB, paused 110us total 664.771ms
+2022-08-01 08:58:46.441 10125-10125/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@abf2ada
+2022-08-01 08:58:46.573 10125-10206/com.hkxps17.turnup W/libc: Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+2022-08-01 08:58:46.487 10125-10125/com.hkxps17.turnup W/RenderThread: type=1400 audit(0.0:59): avc: denied { write } for name="property_service" dev="tmpfs" ino=7413 scontext=u:r:untrusted_app:s0:c186,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+2022-08-01 08:58:47.051 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+2022-08-01 08:58:47.052 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+2022-08-01 08:58:47.269 10125-10125/com.hkxps17.turnup I/.hkxps17.turnu: The ClassLoaderContext is a special shared library.
+2022-08-01 08:58:47.308 10125-10125/com.hkxps17.turnup I/.hkxps17.turnu: The ClassLoaderContext is a special shared library.
+2022-08-01 08:58:47.484 10125-10125/com.hkxps17.turnup I/DynamiteModule: Considering local module com.google.android.gms.signinbutton_dynamite:0 and remote module com.google.android.gms.signinbutton_dynamite:2
+2022-08-01 08:58:47.484 10125-10125/com.hkxps17.turnup I/DynamiteModule: Selected remote version of com.google.android.gms.signinbutton_dynamite, version >= 2
+2022-08-01 08:58:48.288 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:58:48.290 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:48.290 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:48.290 10125-10213/com.hkxps17.turnup I/chatty: uid=10186(com.hkxps17.turnup) pool-13-thread- identical 1 line
+2022-08-01 08:58:48.290 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:48.291 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:58:48.303 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:48.304 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:58:48.308 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:58:48.308 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:48.308 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:58:48.308 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+2022-08-01 08:58:48.322 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+2022-08-01 08:58:48.322 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+2022-08-01 08:58:48.322 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+2022-08-01 08:58:48.322 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+2022-08-01 08:58:48.322 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+2022-08-01 08:58:48.322 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+2022-08-01 08:58:48.322 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+2022-08-01 08:58:48.322 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+2022-08-01 08:58:48.323 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+2022-08-01 08:58:48.323 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+2022-08-01 08:58:48.323 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+2022-08-01 08:58:48.324 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+2022-08-01 08:58:48.325 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+2022-08-01 08:58:48.325 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+2022-08-01 08:58:48.325 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+2022-08-01 08:58:48.325 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+2022-08-01 08:58:48.325 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+2022-08-01 08:58:48.356 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:48.358 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:48.412 10125-10170/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+2022-08-01 08:58:48.412 10125-10170/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+2022-08-01 08:58:48.412 10125-10170/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+2022-08-01 08:58:48.521 10125-10204/com.hkxps17.turnup W/OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2022-08-01 08:58:48.607 10125-10204/com.hkxps17.turnup W/Gralloc3: mapper 3.x is not supported
+2022-08-01 08:58:48.952 10125-10125/com.hkxps17.turnup I/Choreographer: Skipped 39 frames!  The application may be doing too much work on its main thread.
+2022-08-01 08:58:49.099 10125-10170/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+2022-08-01 08:58:49.106 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+2022-08-01 08:58:49.106 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+2022-08-01 08:58:49.106 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+2022-08-01 08:58:49.110 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+2022-08-01 08:58:49.110 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+2022-08-01 08:58:49.110 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+2022-08-01 08:58:49.119 10125-10125/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230972/com.hkxps17.turnup:id/guest_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Continue as Guest" and Child at position 4 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 08:58:49.263 10125-10170/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:58:49.263 10125-10170/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:58:49.323 10125-10170/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:58:49.323 10125-10170/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:49.530 10125-10153/com.hkxps17.turnup I/.hkxps17.turnu: Waiting for a blocking GC ProfileSaver
+2022-08-01 08:58:49.553 10125-10125/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@a78b60d
+2022-08-01 08:58:49.818 10125-10136/com.hkxps17.turnup I/.hkxps17.turnu: NativeAlloc concurrent copying GC freed 12194(1714KB) AllocSpace objects, 2(40KB) LOS objects, 49% free, 3158KB/6316KB, paused 66us total 1.167s
+2022-08-01 08:58:49.819 10125-10153/com.hkxps17.turnup I/.hkxps17.turnu: WaitForGcToComplete blocked ProfileSaver on ClassLinker for 288.485ms
+2022-08-01 08:58:49.871 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: JNI critical lock held for 31.943ms on Thread[1,tid=10125,Runnable,Thread*=0xe8a37800,peer=0x72d0d1f0,"main"]
+2022-08-01 08:58:50.849 10125-10125/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230800/com.hkxps17.turnup:id/add_button> and Child at position 5 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 08:58:51.360 10125-10125/com.hkxps17.turnup I/ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please Log In!"}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please Log In!"
+2022-08-01 08:58:51.365 10125-10125/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131231016/com.hkxps17.turnup:id/liked_button> and Child at position 6 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 08:58:51.474 10125-10227/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 08:58:51.644 10125-10125/com.hkxps17.turnup I/ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please Log In!"}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please Log In!"
+2022-08-01 08:58:51.804 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (greylist,core-platform-api, reflection, allowed)
+2022-08-01 08:58:51.805 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (greylist,core-platform-api, reflection, allowed)
+2022-08-01 08:58:51.805 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (greylist,core-platform-api, reflection, allowed)
+2022-08-01 08:58:51.868 10125-10125/com.hkxps17.turnup I/chatty: uid=10186(com.hkxps17.turnup) identical 1 line
+2022-08-01 08:58:52.254 10125-10234/com.hkxps17.turnup W/.hkxps17.turnu: Verification of okhttp3.Response okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(okhttp3.Interceptor$Chain) took 322.670ms
+2022-08-01 08:58:52.261 10125-10125/com.hkxps17.turnup I/ViewInteraction: Performing 'load adapter data' action on view (view.getId() is <2131231024/com.hkxps17.turnup:id/listview> and Child at position 2 in parent view.getClass().getName() matches: is "androidx.constraintlayout.widget.ConstraintLayout")
+2022-08-01 08:58:52.372 10125-10125/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view  displaying data matching: ANYTHING within adapter view matching: (view.getId() is <2131231024/com.hkxps17.turnup:id/listview> and Child at position 2 in parent view.getClass().getName() matches: is "androidx.constraintlayout.widget.ConstraintLayout")
+2022-08-01 08:58:52.576 10125-10125/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@9b92743
+2022-08-01 08:58:52.706 10125-10234/com.hkxps17.turnup W/.hkxps17.turnu: Verification of void okhttp3.internal.connection.StreamAllocation.<init>(okhttp3.ConnectionPool, okhttp3.Address, okhttp3.Call, okhttp3.EventListener, java.lang.Object) took 170.897ms
+2022-08-01 08:58:52.850 10125-10136/com.hkxps17.turnup I/.hkxps17.turnu: NativeAlloc concurrent copying GC freed 15890(1170KB) AllocSpace objects, 2(104KB) LOS objects, 49% free, 3566KB/7132KB, paused 9.280ms total 991.112ms
+2022-08-01 08:58:53.295 10125-10131/com.hkxps17.turnup I/.hkxps17.turnu: JIT allocated 70KB for compiled code of void android.view.View.<init>(android.content.Context, android.util.AttributeSet, int, int)
+2022-08-01 08:58:53.461 10125-10125/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230937/com.hkxps17.turnup:id/event_like_button> and Child at position 3 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 08:58:53.550 10125-10235/com.hkxps17.turnup W/.hkxps17.turnu: Verification of boolean com.android.org.conscrypt.AbstractConscryptSocket.isBound() took 125.092ms
+2022-08-01 08:58:53.761 10125-10235/com.hkxps17.turnup W/.hkxps17.turnu: Verification of void com.android.org.conscrypt.ConscryptFileDescriptorSocket.startHandshake() took 183.326ms
+2022-08-01 08:58:53.796 10125-10125/com.hkxps17.turnup I/ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please Log In!"}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please Log In!"
+2022-08-01 08:58:53.801 10125-10125/com.hkxps17.turnup I/ViewInteraction: Performing 'send keyCode: 4, metaState: 0 key event' action on view view.getRootView() to equal view
+2022-08-01 08:58:53.848 10125-10125/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:53.848 10125-10125/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:53.951 10125-10125/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:53.951 10125-10125/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:54.094 10125-10235/com.hkxps17.turnup W/.hkxps17.turnu: Verification of java.security.PublicKey com.android.org.conscrypt.OpenSSLX509Certificate.getPublicKey() took 147.222ms
+2022-08-01 08:58:54.262 10125-10125/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131231144/com.hkxps17.turnup:id/rbright> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Map" and Child at position 1 in parent (view.getId() is <2131231141/com.hkxps17.turnup:id/radioGroup> and Child at position 1 in parent view.getClass().getName() matches: is "androidx.constraintlayout.widget.ConstraintLayout") and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 08:58:54.372 10125-10125/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@65e5f28
+2022-08-01 08:58:54.460 10125-10125/com.hkxps17.turnup I/zzca: Making Creator dynamically
+2022-08-01 08:58:54.476 10125-10125/com.hkxps17.turnup I/DynamiteModule: Considering local module com.google.android.gms.maps_dynamite:0 and remote module com.google.android.gms.maps_dynamite:203115000
+2022-08-01 08:58:54.476 10125-10125/com.hkxps17.turnup I/DynamiteModule: Selected remote version of com.google.android.gms.maps_dynamite, version >= 203115000
+2022-08-01 08:58:54.569 10125-10125/com.hkxps17.turnup I/Google Maps Android API: Google Play services client version: 12451000
+2022-08-01 08:58:54.595 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:58:54.596 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:58:54.596 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:54.620 10125-10125/com.hkxps17.turnup I/SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.maps#com.hkxps17.turnup, using defaults.
+2022-08-01 08:58:54.623 10125-10125/com.hkxps17.turnup I/Google Maps Android API: Google Play services package version: 222615031
+2022-08-01 08:58:54.623 10125-10125/com.hkxps17.turnup I/Google Maps Android API: Google Play services maps renderer version(legacy): 203115000
+2022-08-01 08:58:54.644 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:58:54.814 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:58:54.814 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:54.814 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+2022-08-01 08:58:54.814 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:54.814 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:58:54.815 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:58:54.825 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+2022-08-01 08:58:54.825 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+2022-08-01 08:58:54.826 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+2022-08-01 08:58:54.841 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:58:54.854 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:58:54.878 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:58:54.886 10125-10125/com.hkxps17.turnup I/Google Maps Android API: Google Play services package version: 222615031
+2022-08-01 08:58:54.887 10125-10125/com.hkxps17.turnup I/Google Maps Android API: Google Play services maps renderer version(legacy): 203115000
+2022-08-01 08:58:54.912 10125-10251/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:54.924 10125-10251/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 08:58:55.105 10125-10249/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 08:58:55.162 10125-10162/com.hkxps17.turnup W/System: Ignoring header If-None-Match because its value was null.
+2022-08-01 08:58:55.165 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 08:58:55.165 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_trace_event_count_fg'.
+2022-08-01 08:58:55.165 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 08:58:55.166 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_trace_event_count_bg'.
+2022-08-01 08:58:55.167 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 08:58:55.167 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_network_event_count_fg'.
+2022-08-01 08:58:55.167 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 08:58:55.167 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_network_event_count_bg'.
+2022-08-01 08:58:55.190 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_log_source'.
+2022-08-01 08:58:55.209 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.209 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.214 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:55.214 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.214 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.215 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:58:55.217 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 08:58:55.217 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:55.218 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:58:55.223 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:55.313 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.313 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.313 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:55.313 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:58:55.313 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:58:55.313 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.313 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.314 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 08:58:55.315 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.315 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.315 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:55.315 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.315 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.319 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 08:58:55.323 10125-10136/com.hkxps17.turnup I/.hkxps17.turnu: Background young concurrent copying GC freed 39445(2671KB) AllocSpace objects, 3(60KB) LOS objects, 20% free, 5691KB/7132KB, paused 1.564ms total 411.233ms
+2022-08-01 08:58:55.390 10125-10235/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 08:58:55.392 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.392 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.393 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:55.393 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.393 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.394 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 08:58:55.459 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:58:55.460 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:58:55.461 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:55.462 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:58:55.462 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:58:55.578 10125-10125/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:58:55.597 10125-10125/com.hkxps17.turnup I/Choreographer: Skipped 72 frames!  The application may be doing too much work on its main thread.
+2022-08-01 08:58:55.614 10125-10204/com.hkxps17.turnup I/OpenGLRenderer: Davey! duration=1219ms; Flags=0, IntendedVsync=933063579828, Vsync=934263579780, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=934272803705, AnimationStart=934272899082, PerformTraversalsStart=934273965263, DrawStart=934276378815, SyncQueued=934278710398, SyncStart=934285568218, IssueDrawCommandsStart=934285686107, SwapBuffers=934288683763, FrameCompleted=934289648634, DequeueBufferDuration=97000, QueueBufferDuration=182000, 
+2022-08-01 08:58:55.683 10125-10236/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 08:58:55.683 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.684 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.684 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:55.684 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.684 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.688 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 08:58:55.751 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.751 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.751 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:55.752 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:55.752 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:55.753 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 08:58:55.790 10125-10234/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 08:58:56.443 10125-10287/com.hkxps17.turnup W/Gralloc3: allocator 3.x is not supported
+2022-08-01 08:58:57.245 10125-10204/com.hkxps17.turnup I/OpenGLRenderer: Davey! duration=2847ms; Flags=1, IntendedVsync=933063579828, Vsync=934263579780, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=934272803705, AnimationStart=934272899082, PerformTraversalsStart=934273965263, DrawStart=935075234636, SyncQueued=935093107904, SyncStart=935101717604, IssueDrawCommandsStart=935101863358, SwapBuffers=935643610932, FrameCompleted=935919482665, DequeueBufferDuration=66847000, QueueBufferDuration=5048000, 
+2022-08-01 08:58:57.248 10125-10264/com.hkxps17.turnup W/.hkxps17.turnu: Verification of boolean hv.c(android.content.pm.PackageInfo, boolean) took 276.861ms
+2022-08-01 08:58:57.625 10125-10264/com.hkxps17.turnup W/.hkxps17.turnu: Verification of void agw.<init>() took 368.808ms
+2022-08-01 08:58:58.176 10125-10288/com.hkxps17.turnup W/DynamiteModule: Local module descriptor class for com.google.android.gms.googlecertificates not found.
+2022-08-01 08:58:58.354 10125-10288/com.hkxps17.turnup I/DynamiteModule: Considering local module com.google.android.gms.googlecertificates:0 and remote module com.google.android.gms.googlecertificates:7
+2022-08-01 08:58:58.357 10125-10288/com.hkxps17.turnup I/DynamiteModule: Selected remote version of com.google.android.gms.googlecertificates, version >= 7
+2022-08-01 08:58:58.371 10125-10125/com.hkxps17.turnup I/Choreographer: Skipped 37 frames!  The application may be doing too much work on its main thread.
+2022-08-01 08:58:58.543 10125-10204/com.hkxps17.turnup I/OpenGLRenderer: Davey! duration=790ms; Flags=0, IntendedVsync=936419598185, Vsync=937036264827, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=937046026914, AnimationStart=937046066260, PerformTraversalsStart=937046070297, DrawStart=937052538310, SyncQueued=937091330537, SyncStart=937099540376, IssueDrawCommandsStart=937100111612, SwapBuffers=937204111187, FrameCompleted=937218311179, DequeueBufferDuration=1088000, QueueBufferDuration=746000, 
+2022-08-01 08:58:58.608 10125-10204/com.hkxps17.turnup I/OpenGLRenderer: Davey! duration=835ms; Flags=0, IntendedVsync=936419598185, Vsync=937036264827, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=937046026914, AnimationStart=937046066260, PerformTraversalsStart=937046070297, DrawStart=937219032485, SyncQueued=937223938158, SyncStart=937228615737, IssueDrawCommandsStart=937229119395, SwapBuffers=937251858475, FrameCompleted=937259904487, DequeueBufferDuration=148000, QueueBufferDuration=880000, 
+2022-08-01 08:58:58.709 10125-10125/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 08:58:58.717 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:58.718 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:58.718 10125-10213/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:58.718 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:58:58.719 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:58:58.719 10125-10213/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_trace_sampling_rate'.
+2022-08-01 08:58:58.969 10125-10125/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131231035/com.hkxps17.turnup:id/map_add_button> and Child at position 4 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 08:58:58.974 10125-10255/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:58:59.008 10125-10255/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:58:59.116 10125-10255/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:58:59.301 10125-10288/com.hkxps17.turnup I/.hkxps17.turnu: Waiting for a blocking GC ClassLinker
+2022-08-01 08:59:00.078 10125-10125/com.hkxps17.turnup I/ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please Log In!"}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please Log In!"
+2022-08-01 08:59:00.088 10125-10125/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131231036/com.hkxps17.turnup:id/map_liked_button> and Child at position 5 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 08:59:00.150 10125-10147/com.hkxps17.turnup I/ba: Successfully registered with Phenotype.
+2022-08-01 08:59:00.311 10125-10136/com.hkxps17.turnup I/.hkxps17.turnu: NativeAlloc concurrent copying GC freed 27468(1878KB) AllocSpace objects, 35(860KB) LOS objects, 49% free, 4889KB/9778KB, paused 2.498ms total 2.134s
+2022-08-01 08:59:00.312 10125-10288/com.hkxps17.turnup I/.hkxps17.turnu: WaitForGcToComplete blocked ClassLinker on HeapTrim for 1.010s
+2022-08-01 08:59:00.362 10125-10288/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.362 10125-10288/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.362 10125-10288/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.362 10125-10288/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:59:00.362 10125-10288/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.362 10125-10288/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:59:00.363 10125-10288/com.hkxps17.turnup I/chatty: uid=10186(com.hkxps17.turnup) androidmapsapi- identical 7 lines
+2022-08-01 08:59:00.363 10125-10288/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:59:00.364 10125-10264/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:59:00.364 10125-10264/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.364 10125-10264/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:59:00.364 10125-10264/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:59:00.368 10125-10288/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:59:00.368 10125-10288/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:59:00.378 10125-10125/com.hkxps17.turnup I/ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please Log In!"}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please Log In!"
+2022-08-01 08:59:00.425 10125-10292/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.425 10125-10292/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:59:00.432 10125-10125/com.hkxps17.turnup E/FirebaseInstanceId: binding to the service failed
+2022-08-01 08:59:00.434 10125-10125/com.hkxps17.turnup E/libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+2022-08-01 08:59:00.440 10125-10314/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.447 10125-10314/com.hkxps17.turnup I/chatty: uid=10186(com.hkxps17.turnup) androidmapsapi- identical 1 line
+2022-08-01 08:59:00.447 10125-10314/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.489 10125-10314/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.490 10125-10314/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:59:00.528 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.528 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:59:00.528 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+2022-08-01 08:59:00.528 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.528 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.528 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.651 10125-10254/com.hkxps17.turnup I/SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.libraries.consentverifier#com.hkxps17.turnup, using defaults.
+2022-08-01 08:59:00.657 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.657 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.657 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.657 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.659 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.659 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.660 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.660 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.672 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.672 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.673 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.673 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.674 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.674 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.674 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.674 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.674 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.674 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.674 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.674 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.675 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.675 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.684 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.684 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.686 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.686 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.695 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.695 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.697 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.698 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.698 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.698 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.699 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.699 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.699 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.699 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.705 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.705 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.705 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.705 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.707 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.707 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.707 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.707 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.715 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.715 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.716 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.716 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.719 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:59:00.719 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.720 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:59:00.720 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:59:00.770 10125-10254/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:59:00.775 10125-10255/com.hkxps17.turnup W/MobStoreFlagStore: Unable to update local snapshot for com.google.android.libraries.consentverifier#com.hkxps17.turnup, may result in stale flags.
+    java.util.concurrent.ExecutionException: java.lang.SecurityException: GoogleCertificatesRslt: not allowed: pkg=com.hkxps17.turnup, sha256=[fbb91f4af50e45cc832402c10982972864a29aa417fb90c7cd2224741b3a2f7c], atk=false, ver=222615031.true (go/gsrlt)
+        at aif.s(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):3)
+        at aif.get(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+        at ajp.g(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+        at yg.d(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):1)
+        at yi.run(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):0)
+        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+        at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+        at java.lang.Thread.run(Thread.java:919)
+     Caused by: java.lang.SecurityException: GoogleCertificatesRslt: not allowed: pkg=com.hkxps17.turnup, sha256=[fbb91f4af50e45cc832402c10982972864a29aa417fb90c7cd2224741b3a2f7c], atk=false, ver=222615031.true (go/gsrlt)
+        at android.os.Parcel.createException(Parcel.java:2071)
+        at android.os.Parcel.readException(Parcel.java:2039)
+        at android.os.Parcel.readException(Parcel.java:1987)
+        at es.bc(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+        at rs.a(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):4)
+        at iz.e(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+        at jy.t(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+        at jy.u(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):3)
+        at jy.e(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+        at kc.handleMessage(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):69)
+        at android.os.Handler.dispatchMessage(Handler.java:103)
+        at android.os.Looper.loop(Looper.java:214)
+        at android.os.HandlerThread.run(HandlerThread.java:67)
+2022-08-01 08:59:00.972 10125-10170/com.hkxps17.turnup I/TestRunner: finished: guestLoginTest(com.hkxps17.turnup.GuestLoginTest)
