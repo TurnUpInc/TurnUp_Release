@@ -59,6 +59,9 @@ public class LocationAddTest {
         SystemClock.sleep(1000);
 
         device.click(707, 1006);
+
+        SystemClock.sleep(1000);
+
         ViewInteraction appCompatRadioButton = onView(
                 allOf(withId(R.id.rbright), withText("Map"),
                         childAtPosition(
@@ -69,6 +72,8 @@ public class LocationAddTest {
                                 1),
                         isDisplayed()));
         appCompatRadioButton.perform(click());
+
+        SystemClock.sleep(500);
 
         ViewInteraction imageButton = onView(
                 allOf(withId(R.id.map_add_button),

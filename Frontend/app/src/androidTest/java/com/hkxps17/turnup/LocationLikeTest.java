@@ -61,6 +61,7 @@ public class LocationLikeTest {
 
         device.click(707, 1006);
 
+        SystemClock.sleep(1000);
 
         ViewInteraction appCompatRadioButton = onView(
                 allOf(withId(R.id.rbright), withText("Map"),

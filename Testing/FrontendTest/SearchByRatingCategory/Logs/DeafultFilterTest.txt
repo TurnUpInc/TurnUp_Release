@@ -1,0 +1,219 @@
+08-01 07:52:20.844  6664  6695 I TestRunner: started: defaultFilterTest(com.hkxps17.turnup.DefaultFilterTest)
+08-01 07:52:20.854  6664  6695 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+08-01 07:52:20.875  2037  2059 E system_server: Invalid ID 0x00000000.
+08-01 07:52:20.881  2037  3982 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:20.881  2037  3982 I chatty  : uid=1000(system) Binder:2037_17 identical 8 lines
+08-01 07:52:20.881  2037  3982 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:20.890  1778  1778 D Zygote  : Forked child process 6697
+08-01 07:52:20.895  6697  6697 I s17.turnup.tes: Late-enabling -Xcheck:jni
+08-01 07:52:20.902  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:20.909  6697  6697 E s17.turnup.tes: Unknown bits set in runtime_flags: 0x8000
+08-01 07:52:20.910  6697  6697 W s17.turnup.tes: Unexpected CPU variant for X86 using defaults: x86
+08-01 07:52:20.961  2037  5320 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:20.971  2037  5320 I chatty  : uid=1000(system) Binder:2037_1F identical 28 lines
+08-01 07:52:20.971  2037  5320 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:20.975  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:20.975  2037  2059 I chatty  : uid=1000(system) android.anim identical 8 lines
+08-01 07:52:20.975  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:20.982  6697  6697 I s17.turnup.tes: The ClassLoaderContext is a special shared library.
+08-01 07:52:20.985  6697  6697 I s17.turnup.tes: The ClassLoaderContext is a special shared library.
+08-01 07:52:20.991  3995  4125 I MicroDetectionState: (REDACTED) Should stop hotword detection immediately - %b
+08-01 07:52:20.991  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 07:52:20.992  3995  4125 I A       : Using proto config with mendel
+08-01 07:52:20.992  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 07:52:20.992  3995  4125 I A       : Using proto config with mendel
+08-01 07:52:21.011  1824  1919 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 07:52:21.012  1824  2077 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 07:52:21.015  6697  6730 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+08-01 07:52:21.016  6697  6730 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+08-01 07:52:21.006  6697  6697 W RenderThread: type=1400 audit(0.0:575): avc: denied { write } for name="property_service" dev="tmpfs" ino=6968 scontext=u:r:untrusted_app:s0:c135,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+08-01 07:52:21.044  6697  6730 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+08-01 07:52:21.050  6697  6730 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+08-01 07:52:21.053  6697  6730 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+08-01 07:52:21.078  2037  4575 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:21.079  2037  4575 I chatty  : uid=1000(system) Binder:2037_1D identical 38 lines
+08-01 07:52:21.079  2037  4575 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:21.080  6664  6664 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@40513b6
+08-01 07:52:21.080  2037  4575 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:21.082  2037  4575 I chatty  : uid=1000(system) Binder:2037_1D identical 18 lines
+08-01 07:52:21.082  2037  4575 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:21.090  1824  1919 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 07:52:21.092  1824  2630 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 07:52:21.093  6664  6733 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+08-01 07:52:21.094  6664  6733 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+08-01 07:52:21.098  6664  6733 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+08-01 07:52:21.098  6664  6733 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+08-01 07:52:21.100  6664  6733 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+08-01 07:52:21.086  6664  6664 W RenderThread: type=1400 audit(0.0:576): avc: denied { write } for name="property_service" dev="tmpfs" ino=6968 scontext=u:r:untrusted_app:s0:c164,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+08-01 07:52:21.176  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: PRE_ON_CREATE
+08-01 07:52:21.177  6664  6664 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+08-01 07:52:21.229  6664  6664 W .hkxps17.turnu: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+08-01 07:52:21.229  6664  6664 W .hkxps17.turnu: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+08-01 07:52:21.273  2701  3296 D EGL_emulation: eglMakeCurrent: 0xd5d1a900: ver 2 0 (tinfo 0xd5d0f7a0)
+08-01 07:52:21.274 25936 25978 D EGL_emulation: eglMakeCurrent: 0xd5d1aa80: ver 2 0 (tinfo 0xd5d0f4e0)
+08-01 07:52:21.274  3995  4202 D EGL_emulation: eglMakeCurrent: 0xe90545e0: ver 2 0 (tinfo 0xb32f8b60)
+08-01 07:52:21.304  6664  6664 I .hkxps17.turnu: The ClassLoaderContext is a special shared library.
+08-01 07:52:21.310  6664  6664 I .hkxps17.turnu: The ClassLoaderContext is a special shared library.
+08-01 07:52:21.351  6664  6664 I DynamiteModule: Considering local module com.google.android.gms.signinbutton_dynamite:0 and remote module com.google.android.gms.signinbutton_dynamite:2
+08-01 07:52:21.351  6664  6664 I DynamiteModule: Selected remote version of com.google.android.gms.signinbutton_dynamite, version >= 2
+08-01 07:52:21.512  6664  6664 D LoginActivity: OnCreate
+08-01 07:52:21.515  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: CREATED
+08-01 07:52:21.515  6664  6664 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 07:52:21.527  6664  6664 D LoginActivity: OnStart
+08-01 07:52:21.533  6664  6664 D LoginActivity: No user signed in
+08-01 07:52:21.533  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: STARTED
+08-01 07:52:21.533  6664  6664 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 07:52:21.535  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: RESUMED
+08-01 07:52:21.535  6664  6664 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 07:52:21.562 25037 25037 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.api.signin.service.START pkg=com.google.android.gms }
+08-01 07:52:21.562 25037 25037 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.api.signin.service.START pkg=com.google.android.gms }
+08-01 07:52:21.582  6664  6732 D HostConnection: HostConnection::get() New Host Connection established 0xd2b0f860, tid 6732
+08-01 07:52:21.582  6664  6732 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 07:52:21.585  6664  6732 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-01 07:52:21.585  6664  6695 D EventInjectionStrategy: Creating injection strategy with input manager.
+08-01 07:52:21.585  6664  6695 W .hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+08-01 07:52:21.585  6664  6695 W .hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+08-01 07:52:21.585  6664  6695 W .hkxps17.turnu: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+08-01 07:52:21.595  6664  6732 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+08-01 07:52:21.595  6664  6732 D EGL_emulation: eglCreateContext: 0xdde5cc60: maj 2 min 0 rcv 2
+08-01 07:52:21.630  6664  6732 D EGL_emulation: eglMakeCurrent: 0xdde5cc60: ver 2 0 (tinfo 0xdde95b10)
+08-01 07:52:21.640  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:21.692  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+08-01 07:52:21.693  6664  6732 W Gralloc3: mapper 3.x is not supported
+08-01 07:52:21.694  6664  6732 D HostConnection: createUnique: call
+08-01 07:52:21.694  6664  6732 D HostConnection: HostConnection::get() New Host Connection established 0xd2b12740, tid 6732
+08-01 07:52:21.694  6664  6732 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 07:52:21.694  6664  6732 D eglCodecCommon: allocate: Ask for block of size 0x1000
+08-01 07:52:21.694  6664  6732 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffff4000 size 0x2000
+08-01 07:52:21.696  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:21.698  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:21.712  6664  6732 D EGL_emulation: eglMakeCurrent: 0xdde5cc60: ver 2 0 (tinfo 0xdde95b10)
+08-01 07:52:21.721  6664  6732 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+08-01 07:52:21.777  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 07:52:21.777  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 07:52:21.794  2037  2063 I ActivityTaskManager: Displayed com.hkxps17.turnup/.LoginActivity: +925ms
+08-01 07:52:21.836  6664  6695 W .hkxps17.turnu: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+08-01 07:52:21.847  6664  6664 W .hkxps17.turnu: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+08-01 07:52:21.847  6664  6664 W .hkxps17.turnu: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+08-01 07:52:21.847  6664  6664 W .hkxps17.turnu: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+08-01 07:52:21.849  6664  6695 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+08-01 07:52:21.849  6664  6695 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+08-01 07:52:21.849  6664  6695 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 07:52:21.855  3995  5790 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+08-01 07:52:21.855  6664  6695 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 07:52:21.856  6664  6695 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 07:52:21.860  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 07:52:21.860  3995  4125 I A       : Using proto config with mendel
+08-01 07:52:21.861  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 07:52:21.861  3995  4125 I A       : Using proto config with mendel
+08-01 07:52:21.861  3995  4125 W SearchServiceCore: Abort, client detached.
+08-01 07:52:21.861  6664  6664 W .hkxps17.turnu: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+08-01 07:52:21.861  6664  6664 W .hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+08-01 07:52:21.861  6664  6664 W .hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+08-01 07:52:21.871  6664  6664 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230972/com.hkxps17.turnup:id/guest_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Continue as Guest" and Child at position 4 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 07:52:21.935  1784  7977 W audio_hw_generic: Not supplying enough data to HAL, expected position 42039711 , only wrote 42039600
+08-01 07:52:21.944  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: PAUSED
+08-01 07:52:21.944  6664  6664 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 07:52:21.945  2037  2448 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:21.948  2037  2448 I chatty  : uid=1000(system) Binder:2037_8 identical 48 lines
+08-01 07:52:21.948  2037  2448 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:21.960  6664  6664 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@1e15f2b
+08-01 07:52:21.973  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: PRE_ON_CREATE
+08-01 07:52:21.974  6664  6664 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 07:52:22.087  6664  6664 D EMAIL   : Guest
+08-01 07:52:22.107  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: CREATED
+08-01 07:52:22.107  6664  6664 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 07:52:22.113  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: STARTED
+08-01 07:52:22.113  6664  6664 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 07:52:22.114  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: RESUMED
+08-01 07:52:22.114  6664  6664 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 07:52:22.125  6664  6745 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-01 07:52:22.150  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:22.154  1796  1796 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+08-01 07:52:22.160  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:22.170  6664  6732 D EGL_emulation: eglMakeCurrent: 0xdde5cc60: ver 2 0 (tinfo 0xdde95b10)
+08-01 07:52:22.196  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:22.196  2037  2059 I chatty  : uid=1000(system) android.anim identical 8 lines
+08-01 07:52:22.196  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:22.197  6664  6732 D EGL_emulation: eglMakeCurrent: 0xdde5cc60: ver 2 0 (tinfo 0xdde95b10)
+08-01 07:52:22.198  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:22.198  2037  2059 I chatty  : uid=1000(system) android.anim identical 8 lines
+08-01 07:52:22.198  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:22.207  6664  6732 D EGL_emulation: eglMakeCurrent: 0xdde5cc60: ver 2 0 (tinfo 0xdde95b10)
+08-01 07:52:22.218 10808 11088 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-01 07:52:22.218 10808 11088 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-01 07:52:22.219 10808 11088 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-01 07:52:22.229 10808 11088 I FontLog : Pulling font file for id = 209, cache size = 4 [CONTEXT service_id=132 ]
+08-01 07:52:22.233 10808 11088 I FontLog : Pulling font file for id = 209, cache size = 4 [CONTEXT service_id=132 ]
+08-01 07:52:22.234  6664  6732 D EGL_emulation: eglMakeCurrent: 0xdde5cc60: ver 2 0 (tinfo 0xdde95b10)
+08-01 07:52:22.288  6664  6732 I chatty  : uid=10164(com.hkxps17.turnup) RenderThread identical 1 line
+08-01 07:52:22.294  6664  6732 D EGL_emulation: eglMakeCurrent: 0xdde5cc60: ver 2 0 (tinfo 0xdde95b10)
+08-01 07:52:22.439  6664  6695 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 07:52:22.441  6664  6664 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131231169/com.hkxps17.turnup:id/search_button> and Child at position 4 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 07:52:22.509  6664  6732 D EGL_emulation: eglMakeCurrent: 0xdde5cc60: ver 2 0 (tinfo 0xdde95b10)
+08-01 07:52:22.644  6664  6664 W .hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (greylist,core-platform-api, reflection, allowed)
+08-01 07:52:22.645  6664  6664 W .hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (greylist,core-platform-api, reflection, allowed)
+08-01 07:52:22.645  6664  6664 W .hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (greylist,core-platform-api, reflection, allowed)
+08-01 07:52:22.662  6664  6664 D TEST    : []!!!!
+08-01 07:52:22.672  6664  6664 D TEST    : []!!!!
+08-01 07:52:22.708  1777  6756 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+08-01 07:52:22.709  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: STOPPED
+08-01 07:52:22.709  6664  6664 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 07:52:22.777  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 07:52:22.777  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 07:52:22.794  6664  6695 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 07:52:22.795  6664  6664 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (view.getId() is <2131230855/com.hkxps17.turnup:id/chip1> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Sort Events By Rating" and view.getParent() (view.getId() is <2131230860/com.hkxps17.turnup:id/chipGroupFilter> and view.getParent() an instance of android.view.ViewGroup) and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 07:52:22.806  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: PAUSED
+08-01 07:52:22.806  6664  6664 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 07:52:22.807  2037  2319 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:22.811  2037  2319 I chatty  : uid=1000(system) Binder:2037_4 identical 48 lines
+08-01 07:52:22.811  2037  2319 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:22.812  6697  6697 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@16e073a
+08-01 07:52:22.838  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: DESTROYED
+08-01 07:52:22.838  6664  6664 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+08-01 07:52:22.849  2037  2448 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:22.853  2037  2448 I chatty  : uid=1000(system) Binder:2037_8 identical 48 lines
+08-01 07:52:22.853  2037  2448 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:22.867  6697  6728 D HostConnection: HostConnection::get() New Host Connection established 0xd2b0ee10, tid 6728
+08-01 07:52:22.868  6697  6728 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 07:52:22.875  6697  6728 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-01 07:52:22.886  6697  6728 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+08-01 07:52:22.886  6697  6728 D EGL_emulation: eglCreateContext: 0xdde5c7e0: maj 2 min 0 rcv 2
+08-01 07:52:22.920  6697  6728 D EGL_emulation: eglMakeCurrent: 0xdde5c7e0: ver 2 0 (tinfo 0xdde95f60)
+08-01 07:52:22.927  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:22.929  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+08-01 07:52:22.929  6697  6728 W Gralloc3: mapper 3.x is not supported
+08-01 07:52:22.930  6697  6728 D HostConnection: createUnique: call
+08-01 07:52:22.931  6697  6728 D HostConnection: HostConnection::get() New Host Connection established 0xd2b10760, tid 6728
+08-01 07:52:22.931  6697  6728 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 07:52:22.931  6697  6728 D eglCodecCommon: allocate: Ask for block of size 0x1000
+08-01 07:52:22.932  6697  6728 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ff70a000 size 0x2000
+08-01 07:52:22.934  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:22.936  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:22.936  6697  6728 D EGL_emulation: eglMakeCurrent: 0xdde5c7e0: ver 2 0 (tinfo 0xdde95f60)
+08-01 07:52:22.939  6697  6728 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+08-01 07:52:23.055  6697  6697 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@f2d551d
+08-01 07:52:23.094  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:23.102  1796  1796 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+08-01 07:52:23.104  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:23.104  6697  6728 D EGL_emulation: eglMakeCurrent: 0xdde5c7e0: ver 2 0 (tinfo 0xdde95f60)
+08-01 07:52:23.126  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:23.127  2037  2059 I chatty  : uid=1000(system) android.anim identical 18 lines
+08-01 07:52:23.127  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:23.133  2037  2063 I ActivityTaskManager: Displayed com.hkxps17.turnup.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +255ms
+08-01 07:52:23.141  2037  4575 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:23.141  2037  4575 I chatty  : uid=1000(system) Binder:2037_1D identical 8 lines
+08-01 07:52:23.141  2037  4575 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:23.148  2037  2319 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:23.154  2037  2319 I chatty  : uid=1000(system) Binder:2037_4 identical 48 lines
+08-01 07:52:23.154  2037  2319 W InputReader: Device has associated, but no associated display id.
+08-01 07:52:23.159  6664  6732 D EGL_emulation: eglMakeCurrent: 0xdde5cc60: ver 2 0 (tinfo 0xdde95b10)
+08-01 07:52:23.166  6664  6664 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: RESUMED
+08-01 07:52:23.166  6664  6664 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 07:52:23.172  6697  6728 D EGL_emulation: eglMakeCurrent: 0xdde5c7e0: ver 2 0 (tinfo 0xdde95f60)
+08-01 07:52:23.194  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:23.203  1796  1796 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+08-01 07:52:23.205  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 07:52:23.216  6664  6732 D EGL_emulation: eglMakeCurrent: 0xdde5cc60: ver 2 0 (tinfo 0xdde95b10)
+08-01 07:52:23.246  6664  6695 I TestRunner: finished: defaultFilterTest(com.hkxps17.turnup.DefaultFilterTest)
+

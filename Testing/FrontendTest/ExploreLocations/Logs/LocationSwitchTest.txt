@@ -1,0 +1,708 @@
+08-01 08:11:42.160  8326  8357 I TestRunner: started: locationSwitchTest(com.hkxps17.turnup.LocationSwitchTest)
+08-01 08:11:42.169  8326  8357 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+08-01 08:11:42.194  2037  2059 E system_server: Invalid ID 0x00000000.
+08-01 08:11:42.198  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:42.198  2037  5119 I chatty  : uid=1000(system) Binder:2037_1E identical 8 lines
+08-01 08:11:42.198  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:42.212  1778  1778 D Zygote  : Forked child process 8359
+08-01 08:11:42.219  8359  8359 I s17.turnup.tes: Late-enabling -Xcheck:jni
+08-01 08:11:42.221  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:42.238  8359  8359 E s17.turnup.tes: Unknown bits set in runtime_flags: 0x8000
+08-01 08:11:42.239  8359  8359 W s17.turnup.tes: Unexpected CPU variant for X86 using defaults: x86
+08-01 08:11:42.268  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:42.272  2037  5119 I chatty  : uid=1000(system) Binder:2037_1E identical 28 lines
+08-01 08:11:42.273  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:42.277  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:42.277  2037  2059 I chatty  : uid=1000(system) android.anim identical 8 lines
+08-01 08:11:42.277  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:42.289  8359  8359 I s17.turnup.tes: The ClassLoaderContext is a special shared library.
+08-01 08:11:42.291  8359  8359 I s17.turnup.tes: The ClassLoaderContext is a special shared library.
+08-01 08:11:42.301  3995  4125 I MicroDetectionState: (REDACTED) Should stop hotword detection immediately - %b
+08-01 08:11:42.302  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 08:11:42.302  3995  4125 I A       : Using proto config with mendel
+08-01 08:11:42.303  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 08:11:42.303  3995  4125 I A       : Using proto config with mendel
+08-01 08:11:42.323  1824  2131 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 08:11:42.324  1824  2131 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 08:11:42.327  8359  8392 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+08-01 08:11:42.328  8359  8392 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+08-01 08:11:42.316  8359  8359 W RenderThread: type=1400 audit(0.0:600): avc: denied { write } for name="property_service" dev="tmpfs" ino=6968 scontext=u:r:untrusted_app:s0:c135,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+08-01 08:11:42.345  8359  8392 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+08-01 08:11:42.352  8359  8392 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+08-01 08:11:42.353  8359  8392 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+08-01 08:11:42.387  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:42.393  2037  5119 I chatty  : uid=1000(system) Binder:2037_1E identical 58 lines
+08-01 08:11:42.393  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:42.395  8326  8326 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@40513b6
+08-01 08:11:42.413  1824  1919 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 08:11:42.414  1824  1919 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 08:11:42.416  8326  8396 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+08-01 08:11:42.417  8326  8396 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+08-01 08:11:42.425  8326  8396 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+08-01 08:11:42.425  8326  8396 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+08-01 08:11:42.426  8326  8396 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+08-01 08:11:42.406  8326  8326 W RenderThread: type=1400 audit(0.0:601): avc: denied { write } for name="property_service" dev="tmpfs" ino=6968 scontext=u:r:untrusted_app:s0:c164,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+08-01 08:11:42.525  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: PRE_ON_CREATE
+08-01 08:11:42.526  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+08-01 08:11:42.578  8326  8326 W .hkxps17.turnu: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+08-01 08:11:42.578  8326  8326 W .hkxps17.turnu: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+08-01 08:11:42.589  3995  4202 D EGL_emulation: eglMakeCurrent: 0xe90545e0: ver 2 0 (tinfo 0xb32f8b60)
+08-01 08:11:42.590 25936 25978 D EGL_emulation: eglMakeCurrent: 0xd5d1aa80: ver 2 0 (tinfo 0xd5d0f4e0)
+08-01 08:11:42.591  2701  3296 D EGL_emulation: eglMakeCurrent: 0xd5d1a900: ver 2 0 (tinfo 0xd5d0f7a0)
+08-01 08:11:42.640  8326  8326 I .hkxps17.turnu: The ClassLoaderContext is a special shared library.
+08-01 08:11:42.645  8326  8326 I .hkxps17.turnu: The ClassLoaderContext is a special shared library.
+08-01 08:11:42.680  8326  8326 I DynamiteModule: Considering local module com.google.android.gms.signinbutton_dynamite:0 and remote module com.google.android.gms.signinbutton_dynamite:2
+08-01 08:11:42.680  8326  8326 I DynamiteModule: Selected remote version of com.google.android.gms.signinbutton_dynamite, version >= 2
+08-01 08:11:42.818  8326  8326 D LoginActivity: OnCreate
+08-01 08:11:42.822  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: CREATED
+08-01 08:11:42.822  8326  8326 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:11:42.831  8326  8326 D LoginActivity: OnStart
+08-01 08:11:42.839  8326  8326 D LoginActivity: No user signed in
+08-01 08:11:42.839  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: STARTED
+08-01 08:11:42.839  8326  8326 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:11:42.842  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: RESUMED
+08-01 08:11:42.842  8326  8326 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:11:42.863 25037 25037 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.api.signin.service.START pkg=com.google.android.gms }
+08-01 08:11:42.863 25037 25037 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.api.signin.service.START pkg=com.google.android.gms }
+08-01 08:11:42.865  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:11:42.865  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:11:42.897  8326  8394 D HostConnection: HostConnection::get() New Host Connection established 0xd2b0f770, tid 8394
+08-01 08:11:42.899  8326  8394 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:11:42.902  8326  8357 D EventInjectionStrategy: Creating injection strategy with input manager.
+08-01 08:11:42.903  8326  8357 W .hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+08-01 08:11:42.903  8326  8357 W .hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+08-01 08:11:42.903  8326  8357 W .hkxps17.turnu: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+08-01 08:11:42.910  8326  8394 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-01 08:11:42.920  8326  8394 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+08-01 08:11:42.920  8326  8394 D EGL_emulation: eglCreateContext: 0xdde5ee80: maj 2 min 0 rcv 2
+08-01 08:11:42.959  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:42.964  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:43.002  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+08-01 08:11:43.002  8326  8394 W Gralloc3: mapper 3.x is not supported
+08-01 08:11:43.006  8326  8394 D HostConnection: createUnique: call
+08-01 08:11:43.007  8326  8394 D HostConnection: HostConnection::get() New Host Connection established 0xd2b12600, tid 8394
+08-01 08:11:43.008  8326  8394 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:11:43.009  8326  8394 D eglCodecCommon: allocate: Ask for block of size 0x1000
+08-01 08:11:43.009  8326  8394 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffff4000 size 0x2000
+08-01 08:11:43.011  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:43.013  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:43.021  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:43.030  8326  8394 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+08-01 08:11:43.144  2037  2063 I ActivityTaskManager: Displayed com.hkxps17.turnup/.LoginActivity: +954ms
+08-01 08:11:43.171  8326  8357 W .hkxps17.turnu: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+08-01 08:11:43.189  8326  8357 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+08-01 08:11:43.189  8326  8357 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+08-01 08:11:43.189  8326  8357 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:43.193  8326  8326 W .hkxps17.turnu: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+08-01 08:11:43.193  8326  8326 W .hkxps17.turnu: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+08-01 08:11:43.193  8326  8326 W .hkxps17.turnu: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+08-01 08:11:43.193  8326  8357 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:43.193  8326  8357 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:43.199  8326  8326 W .hkxps17.turnu: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+08-01 08:11:43.199  8326  8326 W .hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+08-01 08:11:43.199  8326  8326 W .hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+08-01 08:11:43.201  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 08:11:43.201  3995  4125 I A       : Using proto config with mendel
+08-01 08:11:43.204  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 08:11:43.204  3995  4125 I A       : Using proto config with mendel
+08-01 08:11:43.205  3995  4125 W SearchServiceCore: Abort, client detached.
+08-01 08:11:43.211  3995  8402 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+08-01 08:11:43.213  8326  8326 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230972/com.hkxps17.turnup:id/guest_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Continue as Guest" and Child at position 4 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:11:43.287  1784  7977 W audio_hw_generic: Not supplying enough data to HAL, expected position 42957095 , only wrote 42957068
+08-01 08:11:43.295  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: PAUSED
+08-01 08:11:43.295  8326  8326 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:11:43.296  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:43.299  2037  5119 I chatty  : uid=1000(system) Binder:2037_1E identical 48 lines
+08-01 08:11:43.299  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:43.310  8326  8326 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@1e15f2b
+08-01 08:11:43.311  1819  1987 D AF::Track: interceptBuffer: took 213us to intercept 0 tracks
+08-01 08:11:43.324  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: PRE_ON_CREATE
+08-01 08:11:43.324  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 08:11:43.418  8326  8326 D EMAIL   : Guest
+08-01 08:11:43.447  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: CREATED
+08-01 08:11:43.447  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 08:11:43.449  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: STARTED
+08-01 08:11:43.449  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 08:11:43.450  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: RESUMED
+08-01 08:11:43.450  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 08:11:43.454  8326  8412 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-01 08:11:43.479  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:43.486  1796  3402 I chatty  : uid=1000(system) HwBinder:1796_2 identical 1 line
+08-01 08:11:43.487  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:43.514  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:43.539  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:43.567  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:43.570  2037  2059 I chatty  : uid=1000(system) android.anim identical 18 lines
+08-01 08:11:43.570  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:43.586 10808 10946 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-01 08:11:43.586 10808 10946 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-01 08:11:43.588 10808 10946 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-01 08:11:43.594 10808 10826 I FontLog : Pulling font file for id = 214, cache size = 5 [CONTEXT service_id=132 ]
+08-01 08:11:43.599  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:43.600 10808 10826 I FontLog : Pulling font file for id = 214, cache size = 5 [CONTEXT service_id=132 ]
+08-01 08:11:43.606  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:43.616  8326  8394 I chatty  : uid=10164(com.hkxps17.turnup) RenderThread identical 1 line
+08-01 08:11:43.676  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:43.835  8326  8357 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:43.837  8326  8326 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131231144/com.hkxps17.turnup:id/rbright> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Map" and Child at position 1 in parent (view.getId() is <2131231141/com.hkxps17.turnup:id/radioGroup> and Child at position 1 in parent view.getClass().getName() matches: is "androidx.constraintlayout.widget.ConstraintLayout") and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:11:43.863  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:11:43.864  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:11:43.901  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:43.908  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: PAUSED
+08-01 08:11:43.908  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 08:11:43.909  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:43.912  2037  5119 I chatty  : uid=1000(system) Binder:2037_1E identical 48 lines
+08-01 08:11:43.912  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:43.993  8326  8326 W .hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (greylist,core-platform-api, reflection, allowed)
+08-01 08:11:43.993  8326  8326 W .hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (greylist,core-platform-api, reflection, allowed)
+08-01 08:11:43.993  8326  8326 W .hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (greylist,core-platform-api, reflection, allowed)
+08-01 08:11:44.015  8326  8326 D TEST    : []!!!!
+08-01 08:11:44.027  8326  8326 D TEST    : []!!!!
+08-01 08:11:44.043  8326  8326 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@c4d9a87
+08-01 08:11:44.055  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@a224ad9 in: PRE_ON_CREATE
+08-01 08:11:44.055  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@a224ad9
+08-01 08:11:44.091  8326  8326 D MapsInitializer: preferredRenderer: null
+08-01 08:11:44.092  8326  8326 D zzca    : preferredRenderer: null
+08-01 08:11:44.097  8326  8326 I zzca    : Making Creator dynamically
+08-01 08:11:44.119  8326  8326 I DynamiteModule: Considering local module com.google.android.gms.maps_dynamite:0 and remote module com.google.android.gms.maps_dynamite:203115000
+08-01 08:11:44.119  8326  8326 I DynamiteModule: Selected remote version of com.google.android.gms.maps_dynamite, version >= 203115000
+08-01 08:11:44.148  8326  8326 I Google Maps Android API: Google Play services client version: 12451000
+08-01 08:11:44.175  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.176 10808 10808 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+08-01 08:11:44.176 10808 10808 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.phenotype.service.START pkg=com.google.android.gms }
+08-01 08:11:44.178  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:44.178  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.219  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+08-01 08:11:44.220  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:44.220  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:44.220  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.220  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.220  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+08-01 08:11:44.224  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.225  8326  8326 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+08-01 08:11:44.225  8326  8326 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+08-01 08:11:44.225  8326  8326 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+08-01 08:11:44.225  8326  8326 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+08-01 08:11:44.225  8326  8326 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+08-01 08:11:44.225  8326  8326 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+08-01 08:11:44.226  8326  8326 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+08-01 08:11:44.226  8326  8326 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+08-01 08:11:44.226  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+08-01 08:11:44.226  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:44.226  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+08-01 08:11:44.226  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.226  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+08-01 08:11:44.226  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:44.226  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.227  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+08-01 08:11:44.227  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+08-01 08:11:44.227  8326  8326 W .hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+08-01 08:11:44.227  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+08-01 08:11:44.227  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+08-01 08:11:44.227  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+08-01 08:11:44.227  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+08-01 08:11:44.227  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+08-01 08:11:44.227  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+08-01 08:11:44.230  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.230  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+08-01 08:11:44.236  8326  8326 I Google Maps Android API: Google Play services package version: 222615031
+08-01 08:11:44.237  8326  8326 I Google Maps Android API: Google Play services maps renderer version(legacy): 203115000
+08-01 08:11:44.244  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:44.260  1777  8434 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+08-01 08:11:44.305  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.311  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+08-01 08:11:44.311  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:44.314  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.314  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:44.335  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:44.339  8326  8326 D MapsInitializer: loadedRenderer: LEGACY
+08-01 08:11:44.339  8326  8326 D zzca    : preferredRenderer: null
+08-01 08:11:44.340  8326  8326 I Google Maps Android API: Google Play services package version: 222615031
+08-01 08:11:44.341  8326  8326 I Google Maps Android API: Google Play services maps renderer version(legacy): 203115000
+08-01 08:11:44.419  8326  8453 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+08-01 08:11:44.419  8326  8453 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:44.419  8326  8453 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:44.420  8326  8453 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.420  8326  8453 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.428  8326  8453 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.428  8326  8453 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.432  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.432  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.443  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+08-01 08:11:44.443  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.443  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.443  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:44.446  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.518  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:44.519  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.519  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.519  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:44.521  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+08-01 08:11:44.554  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@a224ad9 in: CREATED
+08-01 08:11:44.554  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@a224ad9
+08-01 08:11:44.558  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:44.559  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@a224ad9 in: STARTED
+08-01 08:11:44.560  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@a224ad9
+08-01 08:11:44.560  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@a224ad9 in: RESUMED
+08-01 08:11:44.560  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@a224ad9
+08-01 08:11:44.619  8326  8343 I ba      : Successfully registered with Phenotype.
+08-01 08:11:44.632  8326  8438 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+08-01 08:11:44.638  8326  8438 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:44.640  8326  8438 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:44.656  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:44.695  1796  3402 I chatty  : uid=1000(system) HwBinder:1796_2 identical 1 line
+08-01 08:11:44.696  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:44.697  8326  8466 D HostConnection: HostConnection::get() New Host Connection established 0xd5d51270, tid 8466
+08-01 08:11:44.698  8326  8466 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:11:44.707  8326  8466 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+08-01 08:11:44.707  8326  8466 D EGL_emulation: eglCreateContext: 0xd5d1b5c0: maj 1 min 0 rcv 1
+08-01 08:11:44.707  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:44.708  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device manifest.
+08-01 08:11:44.708  8326  8466 W Gralloc3: allocator 3.x is not supported
+08-01 08:11:44.710  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 8478720
+08-01 08:11:44.738  8326  8466 D EGL_emulation: eglMakeCurrent: 0xd5d1b5c0: ver 1 0 (tinfo 0xd5d0fec0)
+08-01 08:11:44.759  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:44.781  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:44.787  2037  2059 I chatty  : uid=1000(system) android.anim identical 18 lines
+08-01 08:11:44.787  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:44.790  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:44.801  8326  8394 I chatty  : uid=10164(com.hkxps17.turnup) RenderThread identical 1 line
+08-01 08:11:44.826  8326  8394 D EGL_emulation: eglMakeCurrent: 0xdde5ee80: ver 2 0 (tinfo 0xdde95f90)
+08-01 08:11:44.838  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.838  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:44.841  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: STOPPED
+08-01 08:11:44.841  8326  8326 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:11:44.845  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.846  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:44.846  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.847  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:44.861  8326  8455 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.863  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:11:44.863  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:11:44.870  8326  8472 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.872  8326  8472 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:44.884  8326  8339 I .hkxps17.turnu: NativeAlloc concurrent copying GC freed 45838(3630KB) AllocSpace objects, 34(712KB) LOS objects, 49% free, 4637KB/9274KB, paused 469us total 140.087ms
+08-01 08:11:44.923  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:44.925  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.931  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 8478720
+08-01 08:11:44.938  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.945  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 8478720
+08-01 08:11:44.954  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:44.989  8326  8473 I chatty  : uid=10164(com.hkxps17.turnup) androidmapsapi- identical 2 lines
+08-01 08:11:45.005  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.023  8326  8472 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:45.024  8326  8472 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:45.024  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.039  8326  8326 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:45.042  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.113  8326  8473 I chatty  : uid=10164(com.hkxps17.turnup) androidmapsapi- identical 4 lines
+08-01 08:11:45.132  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.143  8326  8357 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:45.145  8326  8326 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230806/com.hkxps17.turnup:id/add_location> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Explore Locations" and Child at position 7 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:11:45.147  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.203  8326  8473 I chatty  : uid=10164(com.hkxps17.turnup) androidmapsapi- identical 3 lines
+08-01 08:11:45.225  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.229  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@7a04a5d in: STOPPED
+08-01 08:11:45.229  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@7a04a5d
+08-01 08:11:45.243  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.338  8326  8473 I chatty  : uid=10164(com.hkxps17.turnup) androidmapsapi- identical 6 lines
+08-01 08:11:45.350  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.352  1819  1987 D AF::Track: interceptBuffer: took 508us to intercept 0 tracks
+08-01 08:11:45.367  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.643  8326  8473 I chatty  : uid=10164(com.hkxps17.turnup) androidmapsapi- identical 16 lines
+08-01 08:11:45.661  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.674  8326  8357 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:45.676  8326  8326 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230806/com.hkxps17.turnup:id/add_location> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Explore Locations" and Child at position 7 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:11:45.680  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.761  8326  8473 I chatty  : uid=10164(com.hkxps17.turnup) androidmapsapi- identical 5 lines
+08-01 08:11:45.779  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.779  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.796  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.796  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.813  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.813  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.830  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.830  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.848  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.849  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.864  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:11:45.864  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:11:45.865  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.865  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.882  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.882  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.899  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.899  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.915  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.915  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.932  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.932  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.949  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.949  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.967  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.967  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:45.985  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:45.985  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.002  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.002  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.019  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.019  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.037  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.037  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.054  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.055  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.072  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.072  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.089  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.089  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.106  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.106  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.124  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.124  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.141  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.141  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.159  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.159  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.175  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.175  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.193  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.194  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.211  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.211  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.229  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.229  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.247  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.247  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.266  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.266  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.283  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.283  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.300  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.300  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.318  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.318  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.335  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.335  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.344  8326  8447 W DynamiteModule: Local module descriptor class for com.google.android.gms.googlecertificates not found.
+08-01 08:11:46.353  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.353  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.353  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.355  8326  8447 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:0 and remote module com.google.android.gms.googlecertificates:7
+08-01 08:11:46.356  8326  8447 I DynamiteModule: Selected remote version of com.google.android.gms.googlecertificates, version >= 7
+08-01 08:11:46.370  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.370  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.389  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.389  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.389  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.389  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.394  8326  8447 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:46.394  8326  8447 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.395  8326  8447 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:46.405  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.405  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.419  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+08-01 08:11:46.419  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:46.419  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.420  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.420  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.420  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.427  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:46.429  8326  8437 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.libraries.consentverifier#com.hkxps17.turnup, using defaults.
+08-01 08:11:46.431  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.442  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.442  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.442  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.445  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: Unable to update local snapshot for com.google.android.libraries.consentverifier#com.hkxps17.turnup, may result in stale flags.
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: java.util.concurrent.ExecutionException: java.lang.SecurityException: GoogleCertificatesRslt: not allowed: pkg=com.hkxps17.turnup, sha256=[b88f376c2f33757ef6b3f12a23238906ee0ee76f1eac0df575b0e642f43fa802], atk=false, ver=222615031.true (go/gsrlt)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at aif.s(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):3)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at aif.get(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at ajp.g(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at yg.d(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):1)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at yi.run(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):0)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at java.lang.Thread.run(Thread.java:919)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: Caused by: java.lang.SecurityException: GoogleCertificatesRslt: not allowed: pkg=com.hkxps17.turnup, sha256=[b88f376c2f33757ef6b3f12a23238906ee0ee76f1eac0df575b0e642f43fa802], atk=false, ver=222615031.true (go/gsrlt)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at android.os.Parcel.createException(Parcel.java:2071)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at android.os.Parcel.readException(Parcel.java:2039)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at android.os.Parcel.readException(Parcel.java:1987)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at es.bc(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at rs.a(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):4)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at iz.e(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at jy.t(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at jy.u(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):3)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at jy.e(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):2)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at kc.handleMessage(:com.google.android.gms.dynamite_mapsdynamite@222615068@22.26.15 (100700-0):69)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at android.os.Looper.loop(Looper.java:214)
+08-01 08:11:46.446  8326  8438 W MobStoreFlagStore: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+08-01 08:11:46.459  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.459  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.477  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.477  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.495  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.495  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.513  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.513  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.525  8326  8467 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:46.525  8326  8467 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.525  8326  8467 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:46.526  8326  8467 I chatty  : uid=10164(com.hkxps17.turnup) androidmapsapi- identical 9 lines
+08-01 08:11:46.526  8326  8467 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:46.531  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:46.532  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.532  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.532  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.532  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.532  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.535  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.535  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.537  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.537  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.539  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.539  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.542  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.542  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.544  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.544  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.545  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.545  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.546  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.548  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.548  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.548  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.551  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.551  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.553  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.554  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.554  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.555  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.556  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.556  8326  8437 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.564  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:46.564  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.564  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.582  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.582  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.599  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.599  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.616  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.616  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.634  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.634  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.652  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.652  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.670  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.670  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.689  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.689  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.710  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.710  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.727  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.728  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.744  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.744  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.762  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.763  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.779  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.779  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.797  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.797  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.815  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.816  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.833  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.833  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.852  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.852  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.864  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:11:46.864  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:11:46.869  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.869  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.885  8326  8466 W .hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->position:I (greylist, JNI, allowed)
+08-01 08:11:46.885  8326  8466 W .hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->limit:I (greylist, JNI, allowed)
+08-01 08:11:46.885  8326  8466 W .hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->_elementSizeShift:I (greylist, JNI, allowed)
+08-01 08:11:46.889  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.889  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.903  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.903  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.919  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.919  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.937  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.937  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.954  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.954  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.971  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.971  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:46.993  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:46.993  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.010  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.010  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.023  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.023  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.041  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.041  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.058  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.058  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.075  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.075  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.093  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.093  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.112  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.112  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.130  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.130  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.146  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.146  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.162  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.162  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.179  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.179  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.196  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.196  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.214  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.214  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.232  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.232  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.250  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.250  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.268  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.269  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.285  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.285  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.305  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.312  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.320  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.320  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.337  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.337  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.354  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.354  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.371  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.371  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.388  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.388  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.406  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.406  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.434  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.434  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.448  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.448  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.459  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.459  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.477  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.478  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.498  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.507  8326  8476 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.579  8326  8477 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.792  8326  8477 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:11:47.792  8326  8477 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:47.828  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:47.828  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.864  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:11:47.864  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:11:47.879  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.879  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.889  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.889  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.902  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.902  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.921  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.922  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.937  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.938  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.954  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.954  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.970  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.970  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:47.988  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:47.988  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.006  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.006  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.024  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.024  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.036  8326  8476 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.036  8326  8476 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:48.041  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:48.042  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.062  8326  8480 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.069  8326  8481 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.105  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.129  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.129  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.147  8326  8482 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.159  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.178  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.178  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.212  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.212  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.229  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.229  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.238 10808 10808 D BoundBrokerSvc: onBind: Intent { act=com.google.android.contextmanager.service.ContextManagerService.START pkg=com.google.android.gms }
+08-01 08:11:48.244 10808 10808 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.contextmanager.service.ContextManagerService.START pkg=com.google.android.gms }
+08-01 08:11:48.251  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.251  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.270  8326  8473 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.270  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.270  8326  8332 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.286  8326  8480 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:48.295  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.330  8326  8473 I chatty  : uid=10164(com.hkxps17.turnup) androidmapsapi- identical 2 lines
+08-01 08:11:48.348  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.353  8326  8482 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.353  8326  8482 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:48.353  8326  8482 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:48.364  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.431  8326  8473 I chatty  : uid=10164(com.hkxps17.turnup) androidmapsapi- identical 4 lines
+08-01 08:11:48.451  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.463  8326  8481 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:11:48.464  8326  8481 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:11:48.465  8326  8481 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:48.469  8326  8332 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:11:48.470  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.830  8326  8473 I chatty  : uid=10164(com.hkxps17.turnup) androidmapsapi- identical 21 lines
+08-01 08:11:48.847  8326  8473 I Counters: exceeded sample count in FrameTime
+08-01 08:11:48.863  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:11:48.863  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:11:48.893  1784  1951 W audio_hw_generic: Not supplying enough data to HAL, expected position 43449810 , only wrote 43204282
+08-01 08:11:49.267  8326  8357 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:11:49.269  8326  8326 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (view.getId() is <2131230806/com.hkxps17.turnup:id/add_location> and view.getParent() view.getParent() view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:11:49.277  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@a224ad9 in: PAUSED
+08-01 08:11:49.284  8326  8326 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@a224ad9
+08-01 08:11:49.284  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:49.286  2037  5119 I chatty  : uid=1000(system) Binder:2037_1E identical 38 lines
+08-01 08:11:49.286  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:49.286  8359  8359 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@16e073a
+08-01 08:11:49.287  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:49.287  2037  5119 I chatty  : uid=1000(system) Binder:2037_1E identical 8 lines
+08-01 08:11:49.287  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:49.293  8326  8326 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+08-01 08:11:49.308  8326  8326 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: DESTROYED
+08-01 08:11:49.308  8326  8326 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+08-01 08:11:49.327  8359  8388 D HostConnection: HostConnection::get() New Host Connection established 0xd2b0ee10, tid 8388
+08-01 08:11:49.328  8359  8388 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:11:49.331  8359  8388 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-01 08:11:49.342  8359  8388 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+08-01 08:11:49.342  8359  8388 D EGL_emulation: eglCreateContext: 0xdde5ea00: maj 2 min 0 rcv 2
+08-01 08:11:49.374  8359  8388 D EGL_emulation: eglMakeCurrent: 0xdde5ea00: ver 2 0 (tinfo 0xdde4fe20)
+08-01 08:11:49.380  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:49.382  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+08-01 08:11:49.382  8359  8388 W Gralloc3: mapper 3.x is not supported
+08-01 08:11:49.384  8359  8388 D HostConnection: createUnique: call
+08-01 08:11:49.385  8359  8388 D HostConnection: HostConnection::get() New Host Connection established 0xd2b10800, tid 8388
+08-01 08:11:49.386  8359  8388 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:11:49.387  8359  8388 D eglCodecCommon: allocate: Ask for block of size 0x1000
+08-01 08:11:49.387  8359  8388 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ff70a000 size 0x2000
+08-01 08:11:49.390  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:49.391  1796  3402 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:11:49.392  8359  8388 D EGL_emulation: eglMakeCurrent: 0xdde5ea00: ver 2 0 (tinfo 0xdde4fe20)
+08-01 08:11:49.395  8359  8388 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+08-01 08:11:49.506  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:49.509  2037  5119 I chatty  : uid=1000(system) Binder:2037_1E identical 48 lines
+08-01 08:11:49.509  2037  5119 W InputReader: Device has associated, but no associated display id.
+08-01 08:11:49.517  8359  8359 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@f2d551d
+08-01 08:11:49.530  8326  8357 I TestRunner: finished: locationSwitchTest(com.hkxps17.turnup.LocationSwitchTest)
+

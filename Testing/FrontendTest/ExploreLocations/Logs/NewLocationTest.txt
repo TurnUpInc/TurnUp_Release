@@ -1,0 +1,760 @@
+08-01 08:22:19.420 14475 14506 I TestRunner: started: newLocationTest(com.hkxps17.turnup.NewLocationTest)
+08-01 08:22:19.427 14475 14506 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+08-01 08:22:19.447  2037  2059 E system_server: Invalid ID 0x00000000.
+08-01 08:22:19.451  2037  2844 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:19.451  2037  2844 I chatty  : uid=1000(system) Binder:2037_9 identical 8 lines
+08-01 08:22:19.451  2037  2844 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:19.459  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:19.468  1778  1778 D Zygote  : Forked child process 14508
+08-01 08:22:19.471 14508 14508 I s17.turnup.tes: Late-enabling -Xcheck:jni
+08-01 08:22:19.503 14508 14508 E s17.turnup.tes: Unknown bits set in runtime_flags: 0x8000
+08-01 08:22:19.504 14508 14508 W s17.turnup.tes: Unexpected CPU variant for X86 using defaults: x86
+08-01 08:22:19.532  2037  2844 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:19.535  2037  2844 I chatty  : uid=1000(system) Binder:2037_9 identical 28 lines
+08-01 08:22:19.535  2037  2844 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:19.538  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:19.539  2037  2059 I chatty  : uid=1000(system) android.anim identical 8 lines
+08-01 08:22:19.539  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:19.553  3995  4125 I MicroDetectionState: (REDACTED) Should stop hotword detection immediately - %b
+08-01 08:22:19.553  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 08:22:19.553  3995  4125 I A       : Using proto config with mendel
+08-01 08:22:19.554  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 08:22:19.554  3995  4125 I A       : Using proto config with mendel
+08-01 08:22:19.556 14508 14508 I s17.turnup.tes: The ClassLoaderContext is a special shared library.
+08-01 08:22:19.561 14508 14508 I s17.turnup.tes: The ClassLoaderContext is a special shared library.
+08-01 08:22:19.588  1824  2131 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 08:22:19.590  1824  2131 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 08:22:19.599 14508 14542 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+08-01 08:22:19.600 14508 14542 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+08-01 08:22:19.586 14508 14508 W RenderThread: type=1400 audit(0.0:672): avc: denied { write } for name="property_service" dev="tmpfs" ino=6968 scontext=u:r:untrusted_app:s0:c135,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+08-01 08:22:19.627 14508 14542 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+08-01 08:22:19.629 14508 14542 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+08-01 08:22:19.631 14508 14542 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+08-01 08:22:19.671  2037  3689 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:19.673  2037  3689 I chatty  : uid=1000(system) Binder:2037_16 identical 38 lines
+08-01 08:22:19.673  2037  3689 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:19.673 14475 14475 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@40513b6
+08-01 08:22:19.674  2037  3689 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:19.676  2037  3689 I chatty  : uid=1000(system) Binder:2037_16 identical 18 lines
+08-01 08:22:19.676  2037  3689 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:19.684  1824  1921 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 08:22:19.684  1824  1921 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 08:22:19.715 14475 14546 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+08-01 08:22:19.715 14475 14546 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+08-01 08:22:19.717 14475 14546 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+08-01 08:22:19.718 14475 14546 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+08-01 08:22:19.719 14475 14546 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+08-01 08:22:19.706 14475 14475 W RenderThread: type=1400 audit(0.0:673): avc: denied { write } for name="property_service" dev="tmpfs" ino=6968 scontext=u:r:untrusted_app:s0:c171,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+08-01 08:22:19.793 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: PRE_ON_CREATE
+08-01 08:22:19.794 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+08-01 08:22:19.854  2701  3296 D EGL_emulation: eglMakeCurrent: 0xd5d1a900: ver 2 0 (tinfo 0xd5d0f7a0)
+08-01 08:22:19.857  3995  4202 D EGL_emulation: eglMakeCurrent: 0xe90545e0: ver 2 0 (tinfo 0xb32f8b60)
+08-01 08:22:19.858 25936 25978 D EGL_emulation: eglMakeCurrent: 0xd5d1aa80: ver 2 0 (tinfo 0xd5d0f4e0)
+08-01 08:22:19.870 14475 14475 W .hkxps17.turnu: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+08-01 08:22:19.870 14475 14475 W .hkxps17.turnu: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+08-01 08:22:19.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:22:19.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:22:19.950 14475 14475 I .hkxps17.turnu: The ClassLoaderContext is a special shared library.
+08-01 08:22:19.952 14475 14475 I .hkxps17.turnu: The ClassLoaderContext is a special shared library.
+08-01 08:22:19.977 14475 14475 I DynamiteModule: Considering local module com.google.android.gms.signinbutton_dynamite:0 and remote module com.google.android.gms.signinbutton_dynamite:2
+08-01 08:22:19.977 14475 14475 I DynamiteModule: Selected remote version of com.google.android.gms.signinbutton_dynamite, version >= 2
+08-01 08:22:20.146 14475 14475 D LoginActivity: OnCreate
+08-01 08:22:20.148 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: CREATED
+08-01 08:22:20.149 14475 14475 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:22:20.157 14475 14475 D LoginActivity: OnStart
+08-01 08:22:20.163 14475 14475 D LoginActivity: No user signed in
+08-01 08:22:20.163 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: STARTED
+08-01 08:22:20.163 14475 14475 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:22:20.165 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: RESUMED
+08-01 08:22:20.166 14475 14475 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:22:20.186  3995  4114 I A       : NGA disabled since it's running Panthera and at least one a11y feature is on.
+08-01 08:22:20.186  3995  4114 I A       : (REDACTED) Nga state changed to %s
+08-01 08:22:20.187  3995 13058 I Search.LoginHelperImpl: (REDACTED) Successfully received auth token for scope: %s in time %d ms
+08-01 08:22:20.189  4090  4112 I A       : (REDACTED) APA or Classic session decision: %s.
+08-01 08:22:20.190  4090  4148 I A       : Unsubscribed to apa or classic variant change.
+08-01 08:22:20.196 25037 25037 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.api.signin.service.START pkg=com.google.android.gms }
+08-01 08:22:20.197 25037 25037 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.api.signin.service.START pkg=com.google.android.gms }
+08-01 08:22:20.221 14475 14544 D HostConnection: HostConnection::get() New Host Connection established 0xd2b0f720, tid 14544
+08-01 08:22:20.221 14475 14544 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:22:20.246 14475 14506 D EventInjectionStrategy: Creating injection strategy with input manager.
+08-01 08:22:20.246 14475 14506 W .hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+08-01 08:22:20.246 14475 14506 W .hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+08-01 08:22:20.246 14475 14506 W .hkxps17.turnu: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+08-01 08:22:20.274 14475 14544 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-01 08:22:20.283 14475 14544 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+08-01 08:22:20.283 14475 14544 D EGL_emulation: eglCreateContext: 0xdde5cb40: maj 2 min 0 rcv 2
+08-01 08:22:20.319 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:20.325  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:20.327  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+08-01 08:22:20.327 14475 14544 W Gralloc3: mapper 3.x is not supported
+08-01 08:22:20.328 14475 14544 D HostConnection: createUnique: call
+08-01 08:22:20.328 14475 14544 D HostConnection: HostConnection::get() New Host Connection established 0xd2b12600, tid 14544
+08-01 08:22:20.329 14475 14544 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:22:20.329 14475 14544 D eglCodecCommon: allocate: Ask for block of size 0x1000
+08-01 08:22:20.329 14475 14544 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ff706000 size 0x2000
+08-01 08:22:20.330  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:20.337  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:20.344 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:20.352 14475 14544 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+08-01 08:22:20.434  2037  2063 I ActivityTaskManager: Displayed com.hkxps17.turnup/.LoginActivity: +987ms
+08-01 08:22:20.476 14475 14506 W .hkxps17.turnu: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+08-01 08:22:20.492  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 08:22:20.492  3995  4125 I A       : Using proto config with mendel
+08-01 08:22:20.492  3995  4125 I A       : getLocaleToModelSpecsMap
+08-01 08:22:20.493  3995  4125 I A       : Using proto config with mendel
+08-01 08:22:20.493  3995  4125 W SearchServiceCore: Abort, client detached.
+08-01 08:22:20.494  3995  8406 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+08-01 08:22:20.502 14475 14475 W .hkxps17.turnu: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+08-01 08:22:20.502 14475 14475 W .hkxps17.turnu: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+08-01 08:22:20.502 14475 14475 W .hkxps17.turnu: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+08-01 08:22:20.504 14475 14506 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+08-01 08:22:20.504 14475 14506 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+08-01 08:22:20.504 14475 14506 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:20.507 14475 14551 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:20.507 14475 14551 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:20.507 14475 14475 W .hkxps17.turnu: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+08-01 08:22:20.507 14475 14475 W .hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+08-01 08:22:20.507 14475 14475 W .hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+08-01 08:22:20.521 14475 14475 I ViewInteraction: Performing 'single click' action on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Sign in" and Child at position 0 in parent (view.getId() is <2131231188/com.hkxps17.turnup:id/sign_in_button> and Child at position 3 in parent view.getClass().getName() matches: is "androidx.constraintlayout.widget.ConstraintLayout") and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:22:20.567 14475 14475 D LoginActivity: signIN
+08-01 08:22:20.580  1784  7977 W audio_hw_generic: Not supplying enough data to HAL, expected position 47100893 , only wrote 47100877
+08-01 08:22:20.585 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: PAUSED
+08-01 08:22:20.585 14475 14475 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:22:20.586  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:20.589  2037  4565 I chatty  : uid=1000(system) Binder:2037_1C identical 38 lines
+08-01 08:22:20.589  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:20.595 14475 14475 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@15e07a0
+08-01 08:22:20.601 14475 14475 D LifecycleMonitor: Lifecycle status change: com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a in: PRE_ON_CREATE
+08-01 08:22:20.601 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { act=com.google.android.gms.auth.GOOGLE_SIGN_IN flg=0x800000 pkg=com.hkxps17.turnup cmp=com.hkxps17.turnup/com.google.android.gms.auth.api.signin.internal.SignInHubActivity (has extras) }, activity=com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a
+08-01 08:22:20.616 14475 14475 D LifecycleMonitor: Lifecycle status change: com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a in: CREATED
+08-01 08:22:20.617 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { act=com.google.android.gms.auth.GOOGLE_SIGN_IN flg=0x800000 pkg=com.hkxps17.turnup cmp=com.hkxps17.turnup/com.google.android.gms.auth.api.signin.internal.SignInHubActivity (has extras) }, activity=com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a
+08-01 08:22:20.618 14475 14475 D LifecycleMonitor: Lifecycle status change: com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a in: STARTED
+08-01 08:22:20.618 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { act=com.google.android.gms.auth.GOOGLE_SIGN_IN flg=0x800000 pkg=com.hkxps17.turnup cmp=com.hkxps17.turnup/com.google.android.gms.auth.api.signin.internal.SignInHubActivity (has extras) }, activity=com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a
+08-01 08:22:20.619 14475 14475 D LifecycleMonitor: Lifecycle status change: com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a in: RESUMED
+08-01 08:22:20.620 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { act=com.google.android.gms.auth.GOOGLE_SIGN_IN flg=0x800000 pkg=com.hkxps17.turnup cmp=com.hkxps17.turnup/com.google.android.gms.auth.api.signin.internal.SignInHubActivity (has extras) }, activity=com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a
+08-01 08:22:20.646  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:20.651  1796  1796 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+08-01 08:22:20.652  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:20.653 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:20.668 14475 14475 D LifecycleMonitor: Lifecycle status change: com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a in: PAUSED
+08-01 08:22:20.668 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { act=com.google.android.gms.auth.GOOGLE_SIGN_IN flg=0x800000 pkg=com.hkxps17.turnup cmp=com.hkxps17.turnup/com.google.android.gms.auth.api.signin.internal.SignInHubActivity (has extras) }, activity=com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a
+08-01 08:22:20.669  2037  3689 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:20.670  2037  3689 I chatty  : uid=1000(system) Binder:2037_16 identical 8 lines
+08-01 08:22:20.670  2037  3689 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:20.679  1778  1778 D Zygote  : Forked child process 14560
+08-01 08:22:20.684 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:20.687 14560 14560 W .android.gms.u: Unexpected CPU variant for X86 using defaults: x86
+08-01 08:22:20.687 14560 14560 E .android.gms.u: Not starting debugger since process cannot load the jdwp agent.
+08-01 08:22:20.691 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:20.707  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:20.711  2037  4565 I chatty  : uid=1000(system) Binder:2037_1C identical 28 lines
+08-01 08:22:20.711  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:20.719 10808 11897 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-01 08:22:20.719 10808 11897 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-01 08:22:20.720 10808 11897 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-01 08:22:20.727 14560 14560 I .android.gms.u: The ClassLoaderContext is a special shared library.
+08-01 08:22:20.728 14560 14560 I .android.gms.u: The ClassLoaderContext is a special shared library.
+08-01 08:22:20.729 10808 11897 I FontLog : Pulling font file for id = 244, cache size = 5 [CONTEXT service_id=132 ]
+08-01 08:22:20.732 14560 14560 I .android.gms.u: The ClassLoaderContext is a special shared library.
+08-01 08:22:20.734 10808 11897 I FontLog : Pulling font file for id = 244, cache size = 5 [CONTEXT service_id=132 ]
+08-01 08:22:20.737 14560 14560 W .android.gms.u: JIT profile information will not be recorded: profile file does not exits.
+08-01 08:22:20.738 14560 14560 W .android.gms.u: JIT profile information will not be recorded: profile file does not exits.
+08-01 08:22:20.796 14560 14560 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+08-01 08:22:20.797 14560 14560 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+08-01 08:22:20.797 14560 14560 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+08-01 08:22:20.816 14560 14560 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+08-01 08:22:20.820 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:20.827 14560 14560 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+08-01 08:22:20.828 14560 14560 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+08-01 08:22:20.848 14560 14560 I bwvl    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+08-01 08:22:20.848 14560 14590 I GMS_MM_Logger: Started.
+08-01 08:22:20.856  1824  2077 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 08:22:20.856  1824  2077 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+08-01 08:22:20.857 14560 14597 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+08-01 08:22:20.858 14560 14597 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+08-01 08:22:20.846 14560 14560 W RenderThread: type=1400 audit(0.0:674): avc: denied { write } for name="property_service" dev="tmpfs" ino=6968 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+08-01 08:22:20.869 14560 14597 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+08-01 08:22:20.871 14560 14597 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+08-01 08:22:20.873 14560 14597 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+08-01 08:22:20.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:22:20.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:22:20.976 25037 25037 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.signin.service.START dat=chimera-action:com.google.android.gms.signin.service.START cmp=com.google.android.gms/.chimera.GmsApiService }
+08-01 08:22:20.976 25037 25037 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.signin.service.START dat=chimera-action:com.google.android.gms.signin.service.START cmp=com.google.android.gms/.chimera.GmsApiService }
+08-01 08:22:21.005 14560 14595 D HostConnection: HostConnection::get() New Host Connection established 0xd2b108a0, tid 14595
+08-01 08:22:21.006 14560 14595 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:22:21.008 14560 14595 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-01 08:22:21.021 14560 14595 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+08-01 08:22:21.021 14560 14595 D EGL_emulation: eglCreateContext: 0xdde5d980: maj 2 min 0 rcv 2
+08-01 08:22:21.036 10808 10821 I .gms.persisten: Background concurrent copying GC freed 116280(5635KB) AllocSpace objects, 10(504KB) LOS objects, 32% free, 12MB/18MB, paused 369us total 101.614ms
+08-01 08:22:21.054 14560 14595 D EGL_emulation: eglMakeCurrent: 0xdde5d980: ver 2 0 (tinfo 0xddf13fc0)
+08-01 08:22:21.061  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4096
+08-01 08:22:21.063  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+08-01 08:22:21.063 14560 14595 W Gralloc3: mapper 3.x is not supported
+08-01 08:22:21.073 14560 14595 D HostConnection: createUnique: call
+08-01 08:22:21.122 14560 14595 D HostConnection: HostConnection::get() New Host Connection established 0xd2b12060, tid 14595
+08-01 08:22:21.122 14560 14595 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:22:21.122 14560 14595 D eglCodecCommon: allocate: Ask for block of size 0x1000
+08-01 08:22:21.122 14560 14595 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ff70a000 size 0x2000
+08-01 08:22:21.129  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4096
+08-01 08:22:21.130  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4096
+08-01 08:22:21.131  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.134  2037  2059 I chatty  : uid=1000(system) android.anim identical 18 lines
+08-01 08:22:21.134  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.140  2037  2063 I ActivityTaskManager: Displayed com.google.android.gms/.auth.api.signin.ui.SignInActivity: +62ms
+08-01 08:22:21.159  2037  3464 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.161  2037  3464 I chatty  : uid=1000(system) Binder:2037_12 identical 38 lines
+08-01 08:22:21.161  2037  3464 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.167 14560 14560 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@1238085
+08-01 08:22:21.175  2037  3464 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.177  2037  3464 I chatty  : uid=1000(system) Binder:2037_12 identical 38 lines
+08-01 08:22:21.177  2037  3464 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.191  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:21.192  1796  1796 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+08-01 08:22:21.194  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:21.194 14560 14595 D EGL_emulation: eglMakeCurrent: 0xdde5d980: ver 2 0 (tinfo 0xddf13fc0)
+08-01 08:22:21.198 14560 14595 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+08-01 08:22:21.211 14560 14560 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@3dcdc7e
+08-01 08:22:21.256  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4096
+08-01 08:22:21.258  1796  1796 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+08-01 08:22:21.260  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4096
+08-01 08:22:21.260  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.261  2037  2059 I chatty  : uid=1000(system) android.anim identical 18 lines
+08-01 08:22:21.261  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.296 14560 14591 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+08-01 08:22:21.297 14560 14591 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+08-01 08:22:21.297 14560 14591 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+08-01 08:22:21.299 14560 14591 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+08-01 08:22:21.299 14560 14591 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@222615031@22.26.15 (100700-461192076):2)
+08-01 08:22:21.299 14560 14591 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@222615031@22.26.15 (100700-461192076):0)
+08-01 08:22:21.383 14560 14591 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+08-01 08:22:21.383 14560 14591 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@222615031@22.26.15 (100700-461192076):2)
+08-01 08:22:21.383 14560 14591 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@222615031@22.26.15 (100700-461192076):0)
+08-01 08:22:21.578  2037  3464 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.581  2037  3464 I chatty  : uid=1000(system) Binder:2037_12 identical 38 lines
+08-01 08:22:21.581  2037  3464 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.583 14560 14560 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@83aa2d6
+08-01 08:22:21.585  2037  2063 E memtrack: Couldn't load memtrack module
+08-01 08:22:21.585  2037  2063 W android.os.Debug: failed to get memory consumption info: -1
+08-01 08:22:21.592 14560 14560 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+08-01 08:22:21.592 14560 14560 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+08-01 08:22:21.608  2037  3464 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.610  2037  3464 I chatty  : uid=1000(system) Binder:2037_12 identical 48 lines
+08-01 08:22:21.610  2037  3464 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.611 14560 14560 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@ebb5fe3
+08-01 08:22:21.633 25037 25495 I PeopleChimeraService: onService. callbacks = apfk@5b90427, request = com.google.android.gms.common.internal.GetServiceRequest@c34d6d4
+08-01 08:22:21.646 10808 10946 I FontLog : Received query Google Sans, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-01 08:22:21.646 10808 10946 I FontLog : Query [Google Sans] resolved to {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-01 08:22:21.648 10808 10946 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-01 08:22:21.648 10808 10946 I FontLog : Fetch {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: Failed to load OwnerAvatar from MDI with cause: %s
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: java.util.concurrent.ExecutionException: bulz
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.s(:com.google.android.gms@222615031@22.26.15 (100700-461192076):3)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.get(:com.google.android.gms@222615031@22.26.15 (100700-461192076):9)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at bbvh.e(:com.google.android.gms@222615031@22.26.15 (100700-461192076):7)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at bbvc.b(:com.google.android.gms@222615031@22.26.15 (100700-461192076):1)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at bbva.d(:com.google.android.gms@222615031@22.26.15 (100700-461192076):3)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at bcpg.f(:com.google.android.gms@222615031@22.26.15 (100700-461192076):1)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at apfj.eo(:com.google.android.gms@222615031@22.26.15 (100700-461192076):1)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at aixe.run(:com.google.android.gms@222615031@22.26.15 (100700-461192076):12)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at chez.run(:com.google.android.gms@222615031@22.26.15 (100700-461192076):2)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at zeu.c(:com.google.android.gms@222615031@22.26.15 (100700-461192076):6)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at zeu.run(:com.google.android.gms@222615031@22.26.15 (100700-461192076):7)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at zjz.run(:com.google.android.gms@222615031@22.26.15 (100700-461192076):0)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at java.lang.Thread.run(Thread.java:919)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: Caused by: bulz
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at buml.a(:com.google.android.gms@222615031@22.26.15 (100700-461192076):2)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at chfe.a(:com.google.android.gms@222615031@22.26.15 (100700-461192076):2)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxy.c(:com.google.android.gms@222615031@22.26.15 (100700-461192076):2)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmya.run(:com.google.android.gms@222615031@22.26.15 (100700-461192076):9)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmzk.execute(:com.google.android.gms@222615031@22.26.15 (100700-461192076):0)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.q(:com.google.android.gms@222615031@22.26.15 (100700-461192076):1)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.j(:com.google.android.gms@222615031@22.26.15 (100700-461192076):8)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.m(:com.google.android.gms@222615031@22.26.15 (100700-461192076):0)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxg.run(:com.google.android.gms@222615031@22.26.15 (100700-461192076):9)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmzk.execute(:com.google.android.gms@222615031@22.26.15 (100700-461192076):0)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.q(:com.google.android.gms@222615031@22.26.15 (100700-461192076):1)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.j(:com.google.android.gms@222615031@22.26.15 (100700-461192076):8)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.m(:com.google.android.gms@222615031@22.26.15 (100700-461192076):0)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxz.e(:com.google.android.gms@222615031@22.26.15 (100700-461192076):0)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmya.run(:com.google.android.gms@222615031@22.26.15 (100700-461192076):13)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmzk.execute(:com.google.android.gms@222615031@22.26.15 (100700-461192076):0)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.q(:com.google.android.gms@222615031@22.26.15 (100700-461192076):1)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.j(:com.google.android.gms@222615031@22.26.15 (100700-461192076):8)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cmxw.p(:com.google.android.gms@222615031@22.26.15 (100700-461192076):2)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cnbq.e(:com.google.android.gms@222615031@22.26.15 (100700-461192076):2)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cnar.run(:com.google.android.gms@222615031@22.26.15 (100700-461192076):6)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	at cnbs.run(:com.google.android.gms@222615031@22.26.15 (100700-461192076):0)
+08-01 08:22:21.651 25037  4034 E BasePeopleOperation: 	... 6 more
+08-01 08:22:21.654 10808 11897 I FontLog : Pulling font file for id = 245, cache size = 5 [CONTEXT service_id=132 ]
+08-01 08:22:21.667 14560 14560 W DividerItem: @android:attr/listDivider was not set in the theme used for this DividerItemDecoration. Please set that attribute all call setDrawable()
+08-01 08:22:21.675 10808 11897 I FontLog : Received query Google Sans, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-01 08:22:21.675 10808 11897 I FontLog : Query [Google Sans] resolved to {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-01 08:22:21.677 10808 11897 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-01 08:22:21.677 10808 11897 I FontLog : Fetch {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-01 08:22:21.681 10808 10946 I FontLog : Pulling font file for id = 246, cache size = 6 [CONTEXT service_id=132 ]
+08-01 08:22:21.700  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4681728
+08-01 08:22:21.704  1796  1796 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+08-01 08:22:21.707  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 4681728
+08-01 08:22:21.714 14560 14595 D EGL_emulation: eglMakeCurrent: 0xdde5d980: ver 2 0 (tinfo 0xddf13fc0)
+08-01 08:22:21.749  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.749  2037  2059 I chatty  : uid=1000(system) android.anim identical 8 lines
+08-01 08:22:21.749  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:21.766 10808 10946 I FontLog : Received query Google Sans, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+08-01 08:22:21.767 10808 10946 I FontLog : Query [Google Sans] resolved to {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-01 08:22:21.768 10808 10946 I FontLog : Font PFD returned from cache for {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+08-01 08:22:21.768 10808 10946 I FontLog : Fetch {Google Sans, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+08-01 08:22:21.784 14560 14595 D EGL_emulation: eglMakeCurrent: 0xdde5d980: ver 2 0 (tinfo 0xddf13fc0)
+08-01 08:22:21.786  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 6103040
+08-01 08:22:21.790 10808 10946 I FontLog : Pulling font file for id = 247, cache size = 6 [CONTEXT service_id=132 ]
+08-01 08:22:21.792 14560 14595 D EGL_emulation: eglMakeCurrent: 0xdde5d980: ver 2 0 (tinfo 0xddf13fc0)
+08-01 08:22:21.810  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 6103040
+08-01 08:22:21.822  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 6103040
+08-01 08:22:21.840 14560 14595 D EGL_emulation: eglMakeCurrent: 0xdde5d980: ver 2 0 (tinfo 0xddf13fc0)
+08-01 08:22:21.841  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 6070272
+08-01 08:22:21.845 14560 14595 D EGL_emulation: eglMakeCurrent: 0xdde5d980: ver 2 0 (tinfo 0xddf13fc0)
+08-01 08:22:21.857  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 6070272
+08-01 08:22:21.871 14560 14595 D EGL_emulation: eglMakeCurrent: 0xdde5d980: ver 2 0 (tinfo 0xddf13fc0)
+08-01 08:22:21.873  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 6045696
+08-01 08:22:21.877 14560 14595 D EGL_emulation: eglMakeCurrent: 0xdde5d980: ver 2 0 (tinfo 0xddf13fc0)
+08-01 08:22:21.889  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 6045696
+08-01 08:22:21.897  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 6045696
+08-01 08:22:21.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:22:21.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:22:21.924 14475 14506 D InteractionController: clickNoSync (707, 1006)
+08-01 08:22:22.163  2037  3689 D WificondControl: Scan result ready event
+08-01 08:22:22.175 10808 11897 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+08-01 08:22:22.415 14475 14506 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:22.416 14475 14475 W RootViewPicker: No activity currently resumed - waiting: 10ms for one to appear.
+08-01 08:22:22.426  2037  3464 I AccountManagerService: the accounts changed, sending broadcast of android.accounts.LOGIN_ACCOUNTS_CHANGED
+08-01 08:22:22.431  2037  2844 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.431  2037  2844 I chatty  : uid=1000(system) Binder:2037_9 identical 8 lines
+08-01 08:22:22.431  2037  2844 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.434 14475 14475 W RootViewPicker: No activity currently resumed - waiting: 50ms for one to appear.
+08-01 08:22:22.444  1778  1778 D Zygote  : Forked child process 14620
+08-01 08:22:22.446 14620 14620 W roid.music:mai: Unexpected CPU variant for X86 using defaults: x86
+08-01 08:22:22.447  2037  2448 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.448  2037  2448 I chatty  : uid=1000(system) Binder:2037_8 identical 28 lines
+08-01 08:22:22.448  2037  2448 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.453 14620 14620 E roid.music:mai: Not starting debugger since process cannot load the jdwp agent.
+08-01 08:22:22.453  2037  2448 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.453  2037  2448 I chatty  : uid=1000(system) Binder:2037_8 identical 8 lines
+08-01 08:22:22.453  2037  2448 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.470 14560 14595 D EGL_emulation: eglMakeCurrent: 0xdde5d980: ver 2 0 (tinfo 0xddf13fc0)
+08-01 08:22:22.475 14560 14595 D OpenGLRenderer: endAllActiveAnimators on 0xba047800 (RippleDrawable) with handle 0xba0a04e0
+08-01 08:22:22.488 14475 14475 W RootViewPicker: No activity currently resumed - waiting: 100ms for one to appear.
+08-01 08:22:22.496 14620 14620 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+08-01 08:22:22.496 14620 14620 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+08-01 08:22:22.496 14620 14620 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+08-01 08:22:22.497 14620 14620 I roid.music:mai: The ClassLoaderContext is a special shared library.
+08-01 08:22:22.498 14620 14620 I roid.music:mai: The ClassLoaderContext is a special shared library.
+08-01 08:22:22.506 14620 14620 I MultiDex: VM with version 2.1.0 has multidex support
+08-01 08:22:22.506 14620 14620 I MultiDex: install
+08-01 08:22:22.506 14620 14620 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+08-01 08:22:22.510 14620 14620 D ProcessNameProvider: Content provider MainProcessTypeInitializerContentProvider created for process MAIN
+08-01 08:22:22.512 14620 14620 D MusicLifecycle: com.google.android.music.store.ConfigContentProvider generated event: Content provider created
+08-01 08:22:22.513 14620 14620 D MusicLifecycle: com.google.android.music.api.MusicPublicContentProvider generated event: Content provider created
+08-01 08:22:22.516 14620 14620 D MusicLifecycle: com.google.android.music.store.MusicContentProvider generated event: Content provider created
+08-01 08:22:22.532 14620 14620 D MusicLifecycle: com.google.android.music.ui.PhoneMusicApplication generated event: Application created
+08-01 08:22:22.532 14620 14620 I AndroidMusic: Application start. Process=MAIN
+08-01 08:22:22.533 10808 10808 W SystemServiceRegistry: No service published for: persistent_data_block
+08-01 08:22:22.552  2037  2448 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.552  2037  2448 I chatty  : uid=1000(system) Binder:2037_8 identical 8 lines
+08-01 08:22:22.552  2037  2448 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.556  2037  2330 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.565  2037  2330 I chatty  : uid=1000(system) Binder:2037_6 identical 38 lines
+08-01 08:22:22.565  2037  2330 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.568  2037  5320 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.574  2037  5320 I chatty  : uid=1000(system) Binder:2037_1F identical 48 lines
+08-01 08:22:22.574  2037  5320 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.594 14475 14475 W RootViewPicker: No activity currently resumed - waiting: 500ms for one to appear.
+08-01 08:22:22.598 14620 14620 D MusicLifecycle: com.google.android.music.store.ConfigContentProvider generated event: initializing
+08-01 08:22:22.598 14620 14620 I BaseStore: ConfigStore database version: 1
+08-01 08:22:22.616  3995  4121 I A       : (REDACTED) GMSCore Auth returned %d accounts.
+08-01 08:22:22.617  3995  4121 I A       : (REDACTED) GoogleOwnersProvider returned %d accounts.
+08-01 08:22:22.640 14620 14620 I roid.music:mai: The ClassLoaderContext is a special shared library.
+08-01 08:22:22.641 14620 14620 I roid.music:mai: The ClassLoaderContext is a special shared library.
+08-01 08:22:22.654 14620 14620 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+08-01 08:22:22.664 14620 14620 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-01 08:22:22.667 14620 14620 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+08-01 08:22:22.667 14620 14620 D AndroidMusic: GMSCore installation verified
+08-01 08:22:22.668  2037  2330 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.668  2037  2330 I chatty  : uid=1000(system) Binder:2037_6 identical 8 lines
+08-01 08:22:22.668  2037  2330 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.675  2037  3689 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.678  2037  3689 I chatty  : uid=1000(system) Binder:2037_16 identical 38 lines
+08-01 08:22:22.678  2037  3689 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.697 14475 14475 D LifecycleMonitor: Lifecycle status change: com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a in: RESUMED
+08-01 08:22:22.697 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { act=com.google.android.gms.auth.GOOGLE_SIGN_IN flg=0x800000 pkg=com.hkxps17.turnup cmp=com.hkxps17.turnup/com.google.android.gms.auth.api.signin.internal.SignInHubActivity (has extras) }, activity=com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a
+08-01 08:22:22.701  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.702  2037  4565 I chatty  : uid=1000(system) Binder:2037_1C identical 8 lines
+08-01 08:22:22.702  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.707 14475 14475 D LifecycleMonitor: Lifecycle status change: com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a in: PAUSED
+08-01 08:22:22.707 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { act=com.google.android.gms.auth.GOOGLE_SIGN_IN flg=0x800000 pkg=com.hkxps17.turnup cmp=com.hkxps17.turnup/com.google.android.gms.auth.api.signin.internal.SignInHubActivity (has extras) }, activity=com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a
+08-01 08:22:22.708  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.711  2037  4565 I chatty  : uid=1000(system) Binder:2037_1C identical 38 lines
+08-01 08:22:22.711  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.723 14475 14475 E LoginActivity: Name: apna dekh
+08-01 08:22:22.723 14475 14475 E LoginActivity: Fam Name: dekh
+08-01 08:22:22.723 14475 14475 E LoginActivity: Email: apnadekhbey@gmail.com
+08-01 08:22:22.723 14475 14475 E LoginActivity: Photo: null
+08-01 08:22:22.727 14475 14475 D LoginActivity: updateUI
+08-01 08:22:22.733 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: RESUMED
+08-01 08:22:22.733 14475 14475 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:22:22.739 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: PAUSED
+08-01 08:22:22.740 14475 14475 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:22:22.740  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.743  2037  4565 I chatty  : uid=1000(system) Binder:2037_1C identical 48 lines
+08-01 08:22:22.743  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.757 14475 14475 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@15c623a
+08-01 08:22:22.768 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@2345cf4 in: PRE_ON_CREATE
+08-01 08:22:22.769 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@2345cf4
+08-01 08:22:22.787 14620 14620 I MusicExperimentManager: Received config change, experiments list is null
+08-01 08:22:22.787 14620 14620 W MusicExperimentManager: Parsing error while updating analysis experiments
+08-01 08:22:22.795 14620 14620 I BaseStore: Store database version: 146
+08-01 08:22:22.835 14620 14620 I PlaybackClient: init: Initializing
+08-01 08:22:22.863 14475 14475 D EMAIL   : apnadekhbey@gmail.com
+08-01 08:22:22.878 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@2345cf4 in: CREATED
+08-01 08:22:22.879 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@2345cf4
+08-01 08:22:22.881 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@2345cf4 in: STARTED
+08-01 08:22:22.882 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@2345cf4
+08-01 08:22:22.883 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@2345cf4 in: RESUMED
+08-01 08:22:22.883 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@2345cf4
+08-01 08:22:22.892 14475 14665 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-01 08:22:22.895 14475 14475 D LifecycleMonitor: Lifecycle status change: com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a in: STOPPED
+08-01 08:22:22.895 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { act=com.google.android.gms.auth.GOOGLE_SIGN_IN flg=0x800000 pkg=com.hkxps17.turnup cmp=com.hkxps17.turnup/com.google.android.gms.auth.api.signin.internal.SignInHubActivity (has extras) }, activity=com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a
+08-01 08:22:22.896 14475 14475 D LifecycleMonitor: Lifecycle status change: com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a in: DESTROYED
+08-01 08:22:22.897 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { act=com.google.android.gms.auth.GOOGLE_SIGN_IN flg=0x800000 pkg=com.hkxps17.turnup cmp=com.hkxps17.turnup/com.google.android.gms.auth.api.signin.internal.SignInHubActivity (has extras) }, activity=com.google.android.gms.auth.api.signin.internal.SignInHubActivity@8abe72a
+08-01 08:22:22.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:22:22.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:22:22.918 14620 14620 D MusicLifecycle: com.google.android.music.AccountsBroadcastReceiver generated event: Broadcast received with context android.app.ReceiverRestrictedContext@25298d0 and intent Intent { act=android.accounts.LOGIN_ACCOUNTS_CHANGED flg=0x5000010 cmp=com.google.android.music/.AccountsBroadcastReceiver }
+08-01 08:22:22.922 14620 14620 D MusicLifecycle: com.google.android.music.net.NetworkConnectivityMonitor$NetworkChangedReceiver generated event: Broadcast received with context com.google.android.music.ui.PhoneMusicApplication@5934fc0 and intent Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x4200010 (has extras) }
+08-01 08:22:22.923  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:22.924 14620 14620 I NetworkConnectivity: Network state changed: [type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), failover: false, available: true, roaming: false]
+08-01 08:22:22.930 14620 14620 D MusicLifecycle: com.google.android.music.download.EncapsulatedBroadcastReceiver$1 generated event: Broadcast received with context com.google.android.music.ui.PhoneMusicApplication@5934fc0 and intent Intent { act=com.google.android.music.ResumeStorageMigration flg=0x10 (has extras) }
+08-01 08:22:22.930 14620 14639 I SignupStatusTask: Starting 'com.google.android.music.sync.google.MusicGcmTaskService
+08-01 08:22:22.932 14620 14620 D MusicLifecycle: com.google.android.music.download.EncapsulatedBroadcastReceiver$1 generated event: Broadcast received with context com.google.android.music.ui.PhoneMusicApplication@5934fc0 and intent Intent { act=com.google.android.music.download.keepon.KeeponSchedulingService.START_DOWNLOAD flg=0x10 }
+08-01 08:22:22.938  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:22.939  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:22.940 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:22.948 14620 14620 I NetworkPolicyMonitor: Download-ability status changed to (true) unmetered wifi/eth: true mobileOrMetered: false
+08-01 08:22:22.955 14620 14620 I NetworkPolicyMonitor: Stream-ability status changed to (true) unmetered wifi/eth: true mobileOrMetered: false
+08-01 08:22:22.971 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:22.975  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.979  2037  2059 I chatty  : uid=1000(system) android.anim identical 28 lines
+08-01 08:22:22.979  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:22.984 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:23.005  1778  1778 D Zygote  : Forked child process 14679
+08-01 08:22:23.008 14679 14679 W oid.apps.photo: Unexpected CPU variant for X86 using defaults: x86
+08-01 08:22:23.017 14679 14679 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+08-01 08:22:23.026 14620 14662 D AwarenessRouter: 0 new fences
+08-01 08:22:23.035 14620 14662 D AwarenessRouter: 0 fences already registered
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: Error while reading from SharedPreferences
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: java.lang.SecurityException: MODE_WORLD_READABLE no longer supported
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at android.app.ContextImpl.checkMode(ContextImpl.java:2622)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:453)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:443)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at com.google.android.gms.ads.identifier.AdvertisingIdClient.getAdvertisingIdInfo(Unknown Source:11)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at com.google.android.music.preferences.MusicPreferences.getAdvertisingIdInfo(MusicPreferences.java:2482)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at com.google.android.music.preferences.MusicPreferences.access$1000(MusicPreferences.java:84)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at com.google.android.music.preferences.MusicPreferences$7.run(MusicPreferences.java:2463)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at com.google.android.music.utils.async.TraceableRunnable.runLogged(TraceableRunnable.java:21)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at com.google.android.music.utils.async.LoggedRunnable.run(LoggedRunnable.java:30)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at android.os.Handler.handleCallback(Handler.java:883)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at com.google.android.music.utils.LoggableHandler.dispatchMessage(LoggableHandler.java:74)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at android.os.Looper.loop(Looper.java:214)
+08-01 08:22:23.036 14620 14640 W AdvertisingIdClient: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+08-01 08:22:23.041 14620 14662 D AwarenessRouter: Successfully removed 0 context fences
+08-01 08:22:23.054 14679 14679 I oid.apps.photo: The ClassLoaderContext is a special shared library.
+08-01 08:22:23.097 14475 14475 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131231144/com.hkxps17.turnup:id/rbright> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Map" and Child at position 1 in parent (view.getId() is <2131231141/com.hkxps17.turnup:id/radioGroup> and Child at position 1 in parent view.getClass().getName() matches: is "androidx.constraintlayout.widget.ConstraintLayout") and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:22:23.161 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@2345cf4 in: PAUSED
+08-01 08:22:23.161 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@2345cf4
+08-01 08:22:23.162  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:23.166  2037  4565 I chatty  : uid=1000(system) Binder:2037_1C identical 48 lines
+08-01 08:22:23.166  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:23.168 14475 14475 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@26638b0
+08-01 08:22:23.181 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@c100fba in: PRE_ON_CREATE
+08-01 08:22:23.182 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@c100fba
+08-01 08:22:23.216 14475 14475 D MapsInitializer: preferredRenderer: null
+08-01 08:22:23.217 14475 14475 D zzca    : preferredRenderer: null
+08-01 08:22:23.222 14475 14475 I zzca    : Making Creator dynamically
+08-01 08:22:23.224  2037  2063 E memtrack: Couldn't load memtrack module
+08-01 08:22:23.224  2037  2063 W android.os.Debug: failed to get memory consumption info: -1
+08-01 08:22:23.242 14475 14475 I DynamiteModule: Considering local module com.google.android.gms.maps_dynamite:0 and remote module com.google.android.gms.maps_dynamite:203115000
+08-01 08:22:23.242 14475 14475 I DynamiteModule: Selected remote version of com.google.android.gms.maps_dynamite, version >= 203115000
+08-01 08:22:23.262 25037 14382 I PmtsSwAccountIntentOp: Processing intent action=android.accounts.LOGIN_ACCOUNTS_CHANGED
+08-01 08:22:23.262 25037 14382 I PmtsSwAccountIntentOp: Account added has already been processed
+08-01 08:22:23.280 10808 14409 I bdrv    : Scheduling Phenotype for a PhenotypeSyncImmediately(5, null) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+08-01 08:22:23.292 14475 14475 I Google Maps Android API: Google Play services client version: 12451000
+08-01 08:22:23.299  3995  3995 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+08-01 08:22:23.302  3995  3995 I GnpSdk  : [ChimeBroadcastReceiver] Intent received for action [android.accounts.LOGIN_ACCOUNTS_CHANGED] package [com.google.android.googlequicksearchbox].
+08-01 08:22:23.303  3995  3995 I GnpSdk  : [ChimeBroadcastReceiver] Phenotype initialized.
+08-01 08:22:23.303  3995  3995 I GnpSdk  : [ChimeBroadcastReceiver] Validation OK for action [android.accounts.LOGIN_ACCOUNTS_CHANGED].
+08-01 08:22:23.303  3995  3995 I GnpSdk  : [ChimeExecutorApiImpl-Tiktok] Submitting Broadcast execution [153152754] to tiktok executor.
+08-01 08:22:23.299 25037 14401 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+08-01 08:22:23.308  3995 11931 I GnpSdk  : [ChimeBroadcastReceiver] Executing action in BroadcastReceiver [android.accounts.LOGIN_ACCOUNTS_CHANGED].
+08-01 08:22:23.313  3995 12785 I Search.LoginHelperImpl: #refresh()
+08-01 08:22:23.313  3995 12785 I Search.LoginHelperImpl: Getting accounts.
+08-01 08:22:23.316 10808 14409 W ChimeraUtils: Module com.google.android.gms.backup_base has empty metadata display_name_string_id
+08-01 08:22:23.336 25037 14401 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+08-01 08:22:23.342 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:23.344 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:23.344 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:23.346 10808 14409 W ChimeraUtils: Module com.google.android.gms.backup_base has empty metadata display_name_string_id
+08-01 08:22:23.379  3995 11931 I GnpSdk  : [ChimeExecutorApiImpl-Tiktok] Finished Broadcast execution [153152754].
+08-01 08:22:23.395  1778  1778 D Zygote  : Forked child process 14731
+08-01 08:22:23.400 14475 14475 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.maps#com.hkxps17.turnup, using defaults.
+08-01 08:22:23.401 14731 14731 W e.process.gapp: Unexpected CPU variant for X86 using defaults: x86
+08-01 08:22:23.404 14731 14731 E e.process.gapp: Not starting debugger since process cannot load the jdwp agent.
+08-01 08:22:23.409 14475 14475 I Google Maps Android API: Google Play services package version: 222615031
+08-01 08:22:23.409 14475 14475 I Google Maps Android API: Google Play services maps renderer version(legacy): 203115000
+08-01 08:22:23.412  1778  1778 I Zygote  : Process 13524 exited due to signal 9 (Killed)
+08-01 08:22:23.418 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:23.418 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:23.419  2037  2066 I libprocessgroup: Successfully killed process cgroup uid 10130 pid 13524 in 44ms
+08-01 08:22:23.420  2037  2066 I libprocessgroup: Successfully killed process cgroup uid 10130 pid 13524 in 0ms
+08-01 08:22:23.430 14731 14731 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+08-01 08:22:23.430 14731 14731 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+08-01 08:22:23.430 14731 14731 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+08-01 08:22:23.431 14731 14731 I e.process.gapp: The ClassLoaderContext is a special shared library.
+08-01 08:22:23.432 14731 14731 I e.process.gapp: The ClassLoaderContext is a special shared library.
+08-01 08:22:23.448 14731 14731 I GoogleHttpClient: GMS http client unavailable, use old client
+08-01 08:22:23.485 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+08-01 08:22:23.485 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:22:23.485 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:22:23.485 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:23.487 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+08-01 08:22:23.491 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:23.493 14475 14475 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+08-01 08:22:23.493 14475 14475 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+08-01 08:22:23.493 14475 14475 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+08-01 08:22:23.493 14475 14475 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+08-01 08:22:23.493 14475 14475 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+08-01 08:22:23.493 14475 14475 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+08-01 08:22:23.493 14475 14475 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+08-01 08:22:23.493 14475 14475 W .hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+08-01 08:22:23.498 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+08-01 08:22:23.498 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:22:23.498 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+08-01 08:22:23.498 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:23.498 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+08-01 08:22:23.498 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:22:23.498 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:23.499 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+08-01 08:22:23.499 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+08-01 08:22:23.499 14475 14475 W .hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+08-01 08:22:23.499 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+08-01 08:22:23.499 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+08-01 08:22:23.499 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+08-01 08:22:23.499 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+08-01 08:22:23.499 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+08-01 08:22:23.500 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+08-01 08:22:23.509 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:23.524 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:23.534  2037  2063 E memtrack: Couldn't load memtrack module
+08-01 08:22:23.534  2037  2063 W android.os.Debug: failed to get memory consumption info: -1
+08-01 08:22:23.552 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:23.555 14475 14475 D MapsInitializer: loadedRenderer: LEGACY
+08-01 08:22:23.555 14475 14475 D zzca    : preferredRenderer: null
+08-01 08:22:23.557 14475 14475 I Google Maps Android API: Google Play services package version: 222615031
+08-01 08:22:23.557 14475 14475 I Google Maps Android API: Google Play services maps renderer version(legacy): 203115000
+08-01 08:22:23.588 10808 12494 I NetworkScheduler.Stats: Task com.google.android.videos/ started execution. cause:7 exec_start_elapsed_seconds: 61372 [CONTEXT service_id=218 ]
+08-01 08:22:23.589  9405 14767 W PlayMovies: UnpinContentCleanerImpl.cleanUp:13 Start clean up task with reason 2
+08-01 08:22:23.589  9405 14767 W PlayMovies:
+08-01 08:22:23.590  9405 14767 W PlayMovies: UnpinContentCleanerImpl.startCleanUp:18 Start cleanup unpinned content
+08-01 08:22:23.590  9405 14767 W PlayMovies:
+08-01 08:22:23.606  9405 14767 W PlayMovies: UnpinContentCleanerImpl.startCleanUp:26 Done cleanup unpinned content: removed 0 files
+08-01 08:22:23.606  9405 14767 W PlayMovies:
+08-01 08:22:23.660 10808 14411 I NetworkScheduler.Stats: Task com.google.android.videos/ finished executing. cause:7 result: 1 elapsed_millis: 85 uptime_millis: 85 exec_start_elapsed_seconds: 61372 [CONTEXT service_id=218 ]
+08-01 08:22:23.709 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:23.783 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:23.784 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:23.787 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:22:23.790 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:23.791 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+08-01 08:22:23.823 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@c100fba in: CREATED
+08-01 08:22:23.823 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@c100fba
+08-01 08:22:23.828 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:23.828 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@c100fba in: STARTED
+08-01 08:22:23.829 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@c100fba
+08-01 08:22:23.829 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@c100fba in: RESUMED
+08-01 08:22:23.830 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@c100fba
+08-01 08:22:23.858 10808 12323 I bdrv    : Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.maps#com.hkxps17.turnup) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+08-01 08:22:23.858 14475 14729 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+08-01 08:22:23.866 14475 14671 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:23.866 14475 14671 I ba      : Successfully registered with Phenotype.
+08-01 08:22:23.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:22:23.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:22:23.924  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:23.928  1796  1796 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+08-01 08:22:23.934  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:23.936 14475 14783 D HostConnection: HostConnection::get() New Host Connection established 0xb888d8c0, tid 14783
+08-01 08:22:23.936 14475 14783 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:22:23.946 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:23.946 14475 14783 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+08-01 08:22:23.947 14475 14783 D EGL_emulation: eglCreateContext: 0xb85e43e0: maj 1 min 0 rcv 1
+08-01 08:22:23.954  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device manifest.
+08-01 08:22:23.955 14475 14783 W Gralloc3: allocator 3.x is not supported
+08-01 08:22:23.966  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 8478720
+08-01 08:22:24.037 14475 14783 D EGL_emulation: eglMakeCurrent: 0xb85e43e0: ver 1 0 (tinfo 0xbe719a50)
+08-01 08:22:24.059 14475 14786 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.059 14475 14786 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:24.073 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.076 14475 14797 I chatty  : uid=10171(com.hkxps17.turnup) androidmapsapi- identical 2 lines
+08-01 08:22:24.078 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.078 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:24.102 14475 14475 W .hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (greylist,core-platform-api, reflection, allowed)
+08-01 08:22:24.102 14475 14475 W .hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (greylist,core-platform-api, reflection, allowed)
+08-01 08:22:24.102 14475 14475 W .hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (greylist,core-platform-api, reflection, allowed)
+08-01 08:22:24.125 14475 14475 D TEST    : []!!!!
+08-01 08:22:24.137 14475 14475 D TEST    : []!!!!
+08-01 08:22:24.145 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.177  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 8478720
+08-01 08:22:24.197  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:24.199  2037  2059 I chatty  : uid=1000(system) android.anim identical 18 lines
+08-01 08:22:24.199  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:24.203 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.234 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: STOPPED
+08-01 08:22:24.234 14475 14475 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.hkxps17.turnup.LoginActivity@7e17953
+08-01 08:22:24.265  1777 14805 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+08-01 08:22:24.387  1777 14804 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+08-01 08:22:24.466 14475 14506 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:24.466 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:24.466 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+08-01 08:22:24.466 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+08-01 08:22:24.467 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:22:24.467 14475 14475 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131231035/com.hkxps17.turnup:id/map_add_button> and Child at position 4 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:22:24.477 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.477 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:24.477 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:22:24.478 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:24.478 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:22:24.480 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:24.480 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:22:24.483 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+08-01 08:22:24.488 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:24.488 14475 14797 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+08-01 08:22:24.501 14475 14475 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+08-01 08:22:24.510 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.528 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.534  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 8478720
+08-01 08:22:24.543 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.551 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.552 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.566 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.569 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.585 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.596 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.600 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.606 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.618 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.632 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.632 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.641 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.654 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.655 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.EventListActivity@2345cf4 in: STOPPED
+08-01 08:22:24.655 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.EventListActivity }, activity=com.hkxps17.turnup.EventListActivity@2345cf4
+08-01 08:22:24.655 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.669 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.669 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.686 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.692 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@c100fba in: PAUSED
+08-01 08:22:24.692 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@c100fba
+08-01 08:22:24.693  2037  2053 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:24.695  2037  2053 I chatty  : uid=1000(system) Binder:2037_1 identical 48 lines
+08-01 08:22:24.695  2037  2053 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:24.700 14475 14475 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@64b4667
+08-01 08:22:24.702 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.706 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.AddLocationActivity@bc797b9 in: PRE_ON_CREATE
+08-01 08:22:24.707 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.AddLocationActivity }, activity=com.hkxps17.turnup.AddLocationActivity@bc797b9
+08-01 08:22:24.721 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.738 14475 14810 I chatty  : uid=10171(com.hkxps17.turnup) androidmapsapi- identical 1 line
+08-01 08:22:24.752 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.766 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.AddLocationActivity@bc797b9 in: CREATED
+08-01 08:22:24.767 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.AddLocationActivity }, activity=com.hkxps17.turnup.AddLocationActivity@bc797b9
+08-01 08:22:24.768 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.AddLocationActivity@bc797b9 in: STARTED
+08-01 08:22:24.768 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.AddLocationActivity }, activity=com.hkxps17.turnup.AddLocationActivity@bc797b9
+08-01 08:22:24.768 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.AddLocationActivity@bc797b9 in: RESUMED
+08-01 08:22:24.769 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.AddLocationActivity }, activity=com.hkxps17.turnup.AddLocationActivity@bc797b9
+08-01 08:22:24.769 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.791 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.795  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:24.800  1796  1796 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+08-01 08:22:24.801  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:24.806 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.808 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.829 14475 14475 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+08-01 08:22:24.829 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.830  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:24.831  2037  2059 I chatty  : uid=1000(system) android.anim identical 18 lines
+08-01 08:22:24.831  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:24.841 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:24.844 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.850 14475 14544 I chatty  : uid=10171(com.hkxps17.turnup) RenderThread identical 1 line
+08-01 08:22:24.877 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:24.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+08-01 08:22:24.913  1795  2479 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+08-01 08:22:25.100 14475 14506 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:25.101 14475 14475 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (view.getId() is <2131230808/com.hkxps17.turnup:id/add_location_title> and view.getParent() view.getParent() view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:22:25.102 14475 14506 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:25.103 14475 14551 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:25.105 14475 14475 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (view.getId() is <2131230807/com.hkxps17.turnup:id/add_location_text> and view.getParent() view.getParent() view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:22:25.109 14475 14506 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:25.110 14475 14551 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:25.110 14475 14475 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (view.getId() is <2131231027/com.hkxps17.turnup:id/location_done_button> and view.getParent() view.getParent() view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:22:25.111 14475 14506 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:25.111 14475 14551 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+08-01 08:22:25.113 14475 14475 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (view.getId() is <2131231026/com.hkxps17.turnup:id/location_delete_button> and view.getParent() view.getParent() view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+08-01 08:22:25.120 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.AddLocationActivity@bc797b9 in: PAUSED
+08-01 08:22:25.120 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.AddLocationActivity }, activity=com.hkxps17.turnup.AddLocationActivity@bc797b9
+08-01 08:22:25.122  2037  2053 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:25.126  2037  2053 I chatty  : uid=1000(system) Binder:2037_1 identical 48 lines
+08-01 08:22:25.126  2037  2053 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:25.126 14508 14508 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@16e073a
+08-01 08:22:25.143 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:25.152 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.LoginActivity@7e17953 in: DESTROYED
+08-01 08:22:25.152 14475 14475 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+08-01 08:22:25.172 14508 14538 D HostConnection: HostConnection::get() New Host Connection established 0xd5d4d190, tid 14538
+08-01 08:22:25.177 14508 14538 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:22:25.182 14508 14538 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-01 08:22:25.192 14508 14538 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+08-01 08:22:25.192 14508 14538 D EGL_emulation: eglCreateContext: 0xd5d1a480: maj 2 min 0 rcv 2
+08-01 08:22:25.236 14508 14538 D EGL_emulation: eglMakeCurrent: 0xd5d1a480: ver 2 0 (tinfo 0xd5d0f010)
+08-01 08:22:25.242  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:25.243  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+08-01 08:22:25.244 14508 14538 W Gralloc3: mapper 3.x is not supported
+08-01 08:22:25.245 14508 14538 D HostConnection: createUnique: call
+08-01 08:22:25.246 14508 14538 D HostConnection: HostConnection::get() New Host Connection established 0xd5d4d3c0, tid 14538
+08-01 08:22:25.248 14508 14538 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+08-01 08:22:25.249 14508 14538 D eglCodecCommon: allocate: Ask for block of size 0x1000
+08-01 08:22:25.249 14508 14538 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffff4000 size 0x2000
+08-01 08:22:25.250  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:25.252 14508 14538 D EGL_emulation: eglMakeCurrent: 0xd5d1a480: ver 2 0 (tinfo 0xd5d0f010)
+08-01 08:22:25.253  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:25.255 14508 14538 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+08-01 08:22:25.335  2037  2325 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:25.342  2037  2325 I chatty  : uid=1000(system) Binder:2037_5 identical 48 lines
+08-01 08:22:25.342  2037  2325 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:25.347 14508 14508 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@b29738c
+08-01 08:22:25.368 14475 14783 W .hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->position:I (greylist, JNI, allowed)
+08-01 08:22:25.368 14475 14783 W .hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->limit:I (greylist, JNI, allowed)
+08-01 08:22:25.368 14475 14783 W .hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->_elementSizeShift:I (greylist, JNI, allowed)
+08-01 08:22:25.371 14475 14810 W .hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+08-01 08:22:25.387  1796  1796 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:25.389  1796 11341 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:25.392  1796 11341 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9334784
+08-01 08:22:25.398 14508 14538 D EGL_emulation: eglMakeCurrent: 0xd5d1a480: ver 2 0 (tinfo 0xd5d0f010)
+08-01 08:22:25.400 14475 14475 D LifecycleMonitor: Lifecycle status change: com.hkxps17.turnup.MapsActivity@c100fba in: STOPPED
+08-01 08:22:25.400 14475 14475 V ActivityScenario: Activity lifecycle changed event received but ignored because the intent does not match. startActivityIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkxps17.turnup/.LoginActivity }, activity.getIntent()=Intent { cmp=com.hkxps17.turnup/.MapsActivity }, activity=com.hkxps17.turnup.MapsActivity@c100fba
+08-01 08:22:25.406  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:25.407  2037  2059 I chatty  : uid=1000(system) android.anim identical 18 lines
+08-01 08:22:25.407  2037  2059 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:25.414  2037  2063 I ActivityTaskManager: Displayed com.hkxps17.turnup.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +218ms
+08-01 08:22:25.435 14475 14544 D EGL_emulation: eglMakeCurrent: 0xdde5cb40: ver 2 0 (tinfo 0xdde95b20)
+08-01 08:22:25.436  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:25.437  2037  4565 I chatty  : uid=1000(system) Binder:2037_1C identical 8 lines
+08-01 08:22:25.437  2037  4565 W InputReader: Device has associated, but no associated display id.
+08-01 08:22:25.444 14475 14506 I TestRunner: finished: newLocationTest(com.hkxps17.turnup.NewLocationTest)
+

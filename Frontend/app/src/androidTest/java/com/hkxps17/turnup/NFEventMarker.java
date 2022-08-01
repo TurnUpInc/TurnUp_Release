@@ -6,6 +6,7 @@ import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
+import static androidx.test.espresso.matcher.ViewMatchers.withContentDescription;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withParent;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
@@ -27,35 +28,32 @@ import androidx.test.uiautomator.UiDevice;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
+import org.hamcrest.core.IsInstanceOf;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class NewLocationTest {
+public class NFEventMarker {
 
     @Rule
     public ActivityScenarioRule<LoginActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(LoginActivity.class);
 
     @Test
-    public void newLocationTest() {
-        UiDevice device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
+    public void nFEventMarker() {
 
-        ViewInteraction hj = onView(
-                allOf(withText("Sign in"),
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.guest_button), withText("Continue as Guest"),
                         childAtPosition(
-                                allOf(withId(R.id.sign_in_button),
-                                        childAtPosition(
-                                                withClassName(is("androidx.constraintlayout.widget.ConstraintLayout")),
-                                                3)),
-                                0),
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                4),
                         isDisplayed()));
-        hj.perform(click());
-        SystemClock.sleep(1000);
+        materialButton.perform(click());
 
-        device.click(707, 1006);
         ViewInteraction appCompatRadioButton = onView(
                 allOf(withId(R.id.rbright), withText("Map"),
                         childAtPosition(
@@ -67,40 +65,22 @@ public class NewLocationTest {
                         isDisplayed()));
         appCompatRadioButton.perform(click());
 
-        ViewInteraction imageButton = onView(
-                allOf(withId(R.id.map_add_button),
-                        childAtPosition(
+        SystemClock.sleep(500);
+
+        ViewInteraction switch_ = onView(
+                allOf(withId(R.id.add_location), childAtPosition(
                                 childAtPosition(
                                         withId(android.R.id.content),
                                         0),
-                                4),
+                                7),
                         isDisplayed()));
-        imageButton.perform(click());
+        switch_.perform(click());
 
-        ViewInteraction editText = onView(
-                allOf(withId(R.id.add_location_title),
-                        withParent(withParent(withId(R.id.linearLayout))),
+        SystemClock.sleep(500);
+
+        ViewInteraction view = onView(
+                allOf(withParent(allOf(withParent(IsInstanceOf.<View>instanceOf(android.widget.FrameLayout.class)))),
                         isDisplayed()));
-        editText.check(matches(isDisplayed()));
-
-        ViewInteraction editText2 = onView(
-                allOf(withId(R.id.add_location_text),
-                        withParent(withParent(withId(R.id.linearLayout))),
-                        isDisplayed()));
-        editText2.check(matches(isDisplayed()));
-
-        ViewInteraction imageButton2 = onView(
-                allOf(withId(R.id.location_done_button),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        imageButton2.check(matches(isDisplayed()));
-
-        ViewInteraction imageButton3 = onView(
-                allOf(withId(R.id.location_delete_button),
-                        withParent(withParent(withId(android.R.id.content))),
-                        isDisplayed()));
-        imageButton3.check(matches(isDisplayed()));
-
     }
 
     private static Matcher<View> childAtPosition(
