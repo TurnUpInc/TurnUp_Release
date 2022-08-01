@@ -1,0 +1,124 @@
+2022-08-01 08:48:18.614 7797-7858/com.hkxps17.turnup I/TestRunner: started: deleteEventTest(com.hkxps17.turnup.DeleteEventTest)
+2022-08-01 08:48:18.626 7797-7858/com.hkxps17.turnup W/Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+2022-08-01 08:48:19.863 7797-7797/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@abf2ada
+2022-08-01 08:48:20.082 7797-7902/com.hkxps17.turnup W/libc: Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+2022-08-01 08:48:20.188 7797-7797/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+2022-08-01 08:48:20.189 7797-7797/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+2022-08-01 08:48:20.309 7797-7797/com.hkxps17.turnup I/.hkxps17.turnu: The ClassLoaderContext is a special shared library.
+2022-08-01 08:48:20.349 7797-7797/com.hkxps17.turnup I/.hkxps17.turnu: The ClassLoaderContext is a special shared library.
+2022-08-01 08:48:20.067 7797-7797/com.hkxps17.turnup W/RenderThread: type=1400 audit(0.0:46): avc: denied { write } for name="property_service" dev="tmpfs" ino=7413 scontext=u:r:untrusted_app:s0:c184,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+2022-08-01 08:48:20.439 7797-7797/com.hkxps17.turnup I/DynamiteModule: Considering local module com.google.android.gms.signinbutton_dynamite:0 and remote module com.google.android.gms.signinbutton_dynamite:2
+2022-08-01 08:48:20.439 7797-7797/com.hkxps17.turnup I/DynamiteModule: Selected remote version of com.google.android.gms.signinbutton_dynamite, version >= 2
+2022-08-01 08:48:20.905 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:48:20.908 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 08:48:20.908 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:48:20.908 7797-7910/com.hkxps17.turnup I/chatty: uid=10184(com.hkxps17.turnup) pool-13-thread- identical 1 line
+2022-08-01 08:48:20.908 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:48:20.908 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:48:20.912 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:48:20.912 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 08:48:20.913 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:48:20.913 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:48:20.913 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:48:20.913 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+2022-08-01 08:48:20.920 7797-7858/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+2022-08-01 08:48:20.921 7797-7858/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+2022-08-01 08:48:20.921 7797-7858/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+2022-08-01 08:48:21.009 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+2022-08-01 08:48:21.009 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+2022-08-01 08:48:21.010 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+2022-08-01 08:48:21.010 7797-7898/com.hkxps17.turnup W/OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2022-08-01 08:48:21.032 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+2022-08-01 08:48:21.032 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+2022-08-01 08:48:21.032 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+2022-08-01 08:48:21.032 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+2022-08-01 08:48:21.032 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+2022-08-01 08:48:21.032 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+2022-08-01 08:48:21.032 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+2022-08-01 08:48:21.036 7797-7898/com.hkxps17.turnup W/Gralloc3: mapper 3.x is not supported
+2022-08-01 08:48:21.032 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+2022-08-01 08:48:21.062 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+2022-08-01 08:48:21.062 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+2022-08-01 08:48:21.062 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+2022-08-01 08:48:21.062 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+2022-08-01 08:48:21.063 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+2022-08-01 08:48:21.063 7797-7910/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+2022-08-01 08:48:21.074 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 08:48:21.075 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 08:48:21.145 7797-7908/com.hkxps17.turnup W/.hkxps17.turnu: Verification of android.os.IInterface com.google.android.gms.auth.api.signin.internal.zbe.createServiceInterface(android.os.IBinder) took 220.566ms
+2022-08-01 08:48:21.283 7797-7858/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+2022-08-01 08:48:21.288 7797-7797/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+2022-08-01 08:48:21.288 7797-7797/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+2022-08-01 08:48:21.289 7797-7797/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+2022-08-01 08:48:21.289 7797-7858/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+2022-08-01 08:48:21.289 7797-7858/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 08:48:21.291 7797-7858/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 08:48:21.291 7797-7858/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 08:48:21.293 7797-7797/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+2022-08-01 08:48:21.293 7797-7797/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+2022-08-01 08:48:21.293 7797-7797/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+2022-08-01 08:48:21.305 7797-7797/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Sign in" and Child at position 0 in parent (view.getId() is <2131231188/com.hkxps17.turnup:id/sign_in_button> and Child at position 3 in parent view.getClass().getName() matches: is "androidx.constraintlayout.widget.ConstraintLayout") and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 08:48:21.358 7797-7908/com.hkxps17.turnup W/.hkxps17.turnu: Verification of void com.google.android.gms.common.api.internal.zaad.zac(com.google.android.gms.common.api.internal.BasePendingResult, boolean) took 120.217ms
+2022-08-01 08:48:21.565 7797-7797/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@ef3976a
+2022-08-01 08:48:22.013 7797-7808/com.hkxps17.turnup I/.hkxps17.turnu: NativeAlloc concurrent copying GC freed 14634(1904KB) AllocSpace objects, 2(40KB) LOS objects, 49% free, 2630KB/5260KB, paused 4.383ms total 948.339ms
+2022-08-01 08:48:23.385 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 08:48:23.385 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_trace_event_count_fg'.
+2022-08-01 08:48:23.385 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 08:48:23.385 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_trace_event_count_bg'.
+2022-08-01 08:48:23.391 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 08:48:23.391 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_network_event_count_fg'.
+2022-08-01 08:48:23.391 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 08:48:23.394 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_network_event_count_bg'.
+2022-08-01 08:48:23.396 7797-7910/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_log_source'.
+2022-08-01 08:48:23.401 7797-7847/com.hkxps17.turnup W/System: Ignoring header If-None-Match because its value was null.
+2022-08-01 08:48:24.506 7797-7858/com.hkxps17.turnup W/.hkxps17.turnu: JNI critical lock held for 19.556ms on Thread[24,tid=7858,Runnable,Thread*=0xe8ab1200,peer=0x194c11b0,"Instr: androidx.test.runner.AndroidJUnitRunner"]
+2022-08-01 08:48:24.564 7797-7797/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 10ms for one to appear.
+2022-08-01 08:48:24.587 7797-7797/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 50ms for one to appear.
+2022-08-01 08:48:24.639 7797-7797/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 100ms for one to appear.
+2022-08-01 08:48:24.870 7797-7797/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 500ms for one to appear.
+2022-08-01 08:48:26.109 7797-7797/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 2000ms for one to appear.
+2022-08-01 08:48:28.129 7797-7797/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 30000ms for one to appear.
+2022-08-01 08:48:32.067 7797-7797/com.hkxps17.turnup E/FirebaseInstanceId: binding to the service failed
+2022-08-01 08:48:59.403 7797-7858/com.hkxps17.turnup E/TestRunner: failed: deleteEventTest(com.hkxps17.turnup.DeleteEventTest)
+2022-08-01 08:48:59.403 7797-7858/com.hkxps17.turnup E/TestRunner: ----- begin exception -----
+2022-08-01 08:48:59.417 7797-7858/com.hkxps17.turnup E/TestRunner: androidx.test.espresso.NoActivityResumedException: No activities in stage RESUMED. Did you forget to launch the activity. (test.getActivity() or similar)?
+        at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+        at java.lang.Thread.getStackTrace(Thread.java:1720)
+        at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)
+        at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
+        at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)
+        at androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)
+        at androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:4)
+        at com.hkxps17.turnup.DeleteEventTest.deleteEventTest(DeleteEventTest.java:75)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+        at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+        at org.junit.runners.Suite.runChild(Suite.java:128)
+        at org.junit.runners.Suite.runChild(Suite.java:27)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+        at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+        at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+        at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:444)
+        at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)
+2022-08-01 08:48:59.417 7797-7858/com.hkxps17.turnup E/TestRunner: ----- end exception -----
+2022-08-01 08:48:59.422 7797-7858/com.hkxps17.turnup I/TestRunner: finished: deleteEventTest(com.hkxps17.turnup.DeleteEventTest)
