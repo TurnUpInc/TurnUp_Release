@@ -1,0 +1,304 @@
+2022-08-01 09:04:28.801 11628-11673/com.hkxps17.turnup I/TestRunner: started: addEventTest1(com.hkxps17.turnup.AddEventTest)
+2022-08-01 09:04:28.819 11628-11673/com.hkxps17.turnup W/Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+2022-08-01 09:04:29.734 11628-11628/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@abf2ada
+2022-08-01 09:04:29.793 11628-11712/com.hkxps17.turnup W/libc: Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+2022-08-01 09:04:29.787 11628-11628/com.hkxps17.turnup W/RenderThread: type=1400 audit(0.0:73): avc: denied { write } for name="property_service" dev="tmpfs" ino=7413 scontext=u:r:untrusted_app:s0:c188,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+2022-08-01 09:04:30.007 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+2022-08-01 09:04:30.009 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+2022-08-01 09:04:30.123 11628-11628/com.hkxps17.turnup I/.hkxps17.turnu: The ClassLoaderContext is a special shared library.
+2022-08-01 09:04:30.143 11628-11628/com.hkxps17.turnup I/.hkxps17.turnu: The ClassLoaderContext is a special shared library.
+2022-08-01 09:04:30.197 11628-11628/com.hkxps17.turnup I/DynamiteModule: Considering local module com.google.android.gms.signinbutton_dynamite:0 and remote module com.google.android.gms.signinbutton_dynamite:2
+2022-08-01 09:04:30.197 11628-11628/com.hkxps17.turnup I/DynamiteModule: Selected remote version of com.google.android.gms.signinbutton_dynamite, version >= 2
+2022-08-01 09:04:30.505 11628-11673/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+2022-08-01 09:04:30.505 11628-11673/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+2022-08-01 09:04:30.505 11628-11673/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+2022-08-01 09:04:30.533 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 09:04:30.536 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 09:04:30.536 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 09:04:30.536 11628-11716/com.hkxps17.turnup I/chatty: uid=10188(com.hkxps17.turnup) pool-13-thread- identical 1 line
+2022-08-01 09:04:30.537 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 09:04:30.537 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 09:04:30.540 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 09:04:30.540 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 09:04:30.544 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 09:04:30.544 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 09:04:30.544 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+2022-08-01 09:04:30.544 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+2022-08-01 09:04:30.553 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekLong(JZ)J (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeLong(JJZ)V (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeInt(JIZ)V (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekInt(JZ)I (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByte(JB)V (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByte(J)B (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->pokeByteArray(J[BII)V (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Llibcore/io/Memory;->peekByteArray(J[BII)V (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Ljava/nio/Buffer;->address:J (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, reflection, allowed)
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, reflection, allowed)
+2022-08-01 09:04:30.557 11628-11709/com.hkxps17.turnup W/OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2022-08-01 09:04:30.554 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, reflection, allowed)
+2022-08-01 09:04:30.580 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, reflection, allowed)
+2022-08-01 09:04:30.582 11628-11709/com.hkxps17.turnup W/Gralloc3: mapper 3.x is not supported
+2022-08-01 09:04:30.638 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:04:30.638 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:04:30.809 11628-11673/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+2022-08-01 09:04:30.829 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+2022-08-01 09:04:30.829 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+2022-08-01 09:04:30.829 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+2022-08-01 09:04:30.832 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+2022-08-01 09:04:30.832 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+2022-08-01 09:04:30.832 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+2022-08-01 09:04:30.844 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Sign in" and Child at position 0 in parent (view.getId() is <2131231188/com.hkxps17.turnup:id/sign_in_button> and Child at position 3 in parent view.getClass().getName() matches: is "androidx.constraintlayout.widget.ConstraintLayout") and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 09:04:30.869 11628-11673/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+2022-08-01 09:04:30.871 11628-11673/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 09:04:30.900 11628-11673/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+2022-08-01 09:04:30.900 11628-11673/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 09:04:31.107 11628-11628/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@1929a2f
+2022-08-01 09:04:32.773 11628-11628/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 10ms for one to appear.
+2022-08-01 09:04:32.785 11628-11628/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 50ms for one to appear.
+2022-08-01 09:04:32.836 11628-11628/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 100ms for one to appear.
+2022-08-01 09:04:32.939 11628-11628/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 500ms for one to appear.
+2022-08-01 09:04:33.439 11628-11628/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 2000ms for one to appear.
+2022-08-01 09:04:35.029 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 09:04:35.030 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_trace_event_count_fg'.
+2022-08-01 09:04:35.030 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 09:04:35.032 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_trace_event_count_bg'.
+2022-08-01 09:04:35.034 11628-11664/com.hkxps17.turnup W/System: Ignoring header If-None-Match because its value was null.
+2022-08-01 09:04:35.034 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 09:04:35.034 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_network_event_count_fg'.
+2022-08-01 09:04:35.035 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_time_limit_sec'.
+2022-08-01 09:04:35.035 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_rl_network_event_count_bg'.
+2022-08-01 09:04:35.078 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_log_source'.
+2022-08-01 09:04:35.314 11628-11789/com.hkxps17.turnup W/.hkxps17.turnu: Verification of boolean com.google.firebase.iid.zzw.zza(com.google.firebase.iid.zzah) took 140.534ms
+2022-08-01 09:04:35.448 11628-11628/com.hkxps17.turnup W/RootViewPicker: No activity currently resumed - waiting: 30000ms for one to appear.
+2022-08-01 09:04:36.860 11628-11628/com.hkxps17.turnup E/LoginActivity: Name: Kaushik Kolla
+2022-08-01 09:04:36.860 11628-11628/com.hkxps17.turnup E/LoginActivity: Fam Name: Kolla
+2022-08-01 09:04:36.860 11628-11628/com.hkxps17.turnup E/LoginActivity: Email: kolla.kaushik123@gmail.com
+2022-08-01 09:04:36.860 11628-11628/com.hkxps17.turnup E/LoginActivity: Photo: https://lh3.googleusercontent.com/a-/AFdZucruHLsUoRu9YufvrQT-focsIib8y25T61I-gjiXJA
+2022-08-01 09:04:37.036 11628-11628/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@71a2189
+2022-08-01 09:04:37.634 11628-11839/com.hkxps17.turnup W/.hkxps17.turnu: Verification of java.util.List okhttp3.HttpUrl.queryParameterValues(java.lang.String) took 143.953ms
+2022-08-01 09:04:37.649 11628-11639/com.hkxps17.turnup I/.hkxps17.turnu: Background young concurrent copying GC freed 15762(1264KB) AllocSpace objects, 18(872KB) LOS objects, 35% free, 3476KB/5357KB, paused 1.483ms total 297.176ms
+2022-08-01 09:04:38.410 11628-11839/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+2022-08-01 09:04:38.454 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:04:38.455 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:04:38.456 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:04:38.456 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:04:38.475 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 09:04:38.475 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 09:04:38.478 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getLong(Ljava/lang/Object;J)J (greylist,core-platform-api, linking, allowed)
+2022-08-01 09:04:38.482 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 09:04:38.530 11628-11839/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 09:04:38.538 11628-11839/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 09:04:38.538 11628-11839/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+2022-08-01 09:04:38.538 11628-11839/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putInt(Ljava/lang/Object;JI)V (greylist, linking, allowed)
+2022-08-01 09:04:38.539 11628-11839/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->putLong(Ljava/lang/Object;JJ)V (greylist, linking, allowed)
+2022-08-01 09:04:38.673 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->get()Ldalvik/system/CloseGuard; (greylist,core-platform-api, reflection, allowed)
+2022-08-01 09:04:38.673 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->open(Ljava/lang/String;)V (greylist,core-platform-api, reflection, allowed)
+2022-08-01 09:04:38.673 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Ldalvik/system/CloseGuard;->warnIfOpen()V (greylist,core-platform-api, reflection, allowed)
+2022-08-01 09:04:38.813 11628-11628/com.hkxps17.turnup E/FirebaseInstanceId: binding to the service failed
+2022-08-01 09:04:38.926 11628-11639/com.hkxps17.turnup I/.hkxps17.turnu: NativeAlloc concurrent copying GC freed 6972(660KB) AllocSpace objects, 2(104KB) LOS objects, 49% free, 3464KB/6929KB, paused 20us total 208.070ms
+2022-08-01 09:04:39.239 11628-11628/com.hkxps17.turnup W/UiControllerImpl: Waiting for: DELAY_HAS_PAST for 100 iterations.
+2022-08-01 09:04:39.292 11628-11916/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 09:04:39.292 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:04:39.292 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:04:39.293 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:04:39.293 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:04:39.294 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 09:04:40.124 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:04:40.124 11628-11917/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 09:04:40.124 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:04:40.124 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 09:04:40.124 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:04:40.124 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:04:40.125 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 09:04:40.222 11628-11912/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 09:04:40.222 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:04:40.222 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:04:40.222 11628-11716/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 09:04:40.222 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:04:40.223 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:04:40.223 11628-11716/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 09:05:05.459 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230800/com.hkxps17.turnup:id/add_button> and Child at position 5 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 09:05:05.667 11628-11628/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@5b48a8
+2022-08-01 09:05:06.421 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:06.423 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:06.429 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'replace text()' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:06.460 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'close keyboard' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:06.462 11628-11628/com.hkxps17.turnup W/CloseKeyboardAction: Attempting to close soft keyboard, while it is not shown.
+2022-08-01 09:05:06.471 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:06.473 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:06.492 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'long click' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:07.256 11628-11628/com.hkxps17.turnup I/AssistStructure: Flattened final assist data: 2960 bytes, containing 2 windows, 15 views
+2022-08-01 09:05:07.852 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:07.853 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:07.857 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'replace text(https://notAnImage.com)' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:07.918 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'close keyboard' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:07.920 11628-11628/com.hkxps17.turnup W/CloseKeyboardAction: Attempting to close soft keyboard, while it is not shown.
+2022-08-01 09:05:07.929 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230993/com.hkxps17.turnup:id/image_upload_button> and view.getContentDescription() is "Upload Image" and Child at position 0 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 09:05:08.225 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:08.227 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:08.236 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'long click' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:09.085 11628-11709/com.hkxps17.turnup I/chatty: uid=10188(com.hkxps17.turnup) RenderThread identical 1 line
+2022-08-01 09:05:09.187 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:09.191 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:09.193 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'replace text(https://brand3.sites.olt.ubc.ca/files/2018/09/5NarrowLogo_ex_768.png)' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:09.335 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'close keyboard' action on view (view.getId() is <2131230994/com.hkxps17.turnup:id/img_url> and Child at position 0 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:09.337 11628-11628/com.hkxps17.turnup W/CloseKeyboardAction: Attempting to close soft keyboard, while it is not shown.
+2022-08-01 09:05:09.344 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230993/com.hkxps17.turnup:id/image_upload_button> and view.getContentDescription() is "Upload Image" and Child at position 0 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 09:05:09.690 11628-11628/com.hkxps17.turnup I/ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (view.getId() is <2131230803/com.hkxps17.turnup:id/add_event_image> and view.getParent() (view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout> and view.getParent() view.getId() is <2131231165/com.hkxps17.turnup:id/scrollView2>) and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 09:05:09.692 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <2131230805/com.hkxps17.turnup:id/add_event_title> and Child at position 1 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:09.694 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:09.696 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'replace text(Test Event)' action on view (view.getId() is <2131230805/com.hkxps17.turnup:id/add_event_title> and Child at position 1 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:09.716 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'close keyboard' action on view (view.getId() is <2131230805/com.hkxps17.turnup:id/add_event_title> and Child at position 1 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:09.718 11628-11628/com.hkxps17.turnup W/CloseKeyboardAction: Attempting to close soft keyboard, while it is not shown.
+2022-08-01 09:05:09.721 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230936/com.hkxps17.turnup:id/event_done_button> and Child at position 2 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err: java.io.IOException: grpc failed
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at android.location.Geocoder.getFromLocationName(Geocoder.java:178)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at com.hkxps17.turnup.AddEventActivity.getLocationFromAddress(AddEventActivity.java:261)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at com.hkxps17.turnup.AddEventActivity.apiCall(AddEventActivity.java:176)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at com.hkxps17.turnup.AddEventActivity.access$200(AddEventActivity.java:47)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at com.hkxps17.turnup.AddEventActivity$4.onClick(AddEventActivity.java:136)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at android.view.View.performClick(View.java:7125)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at android.view.View.performClickInternal(View.java:7102)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at android.view.View.access$3500(View.java:801)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at android.view.View$PerformClick.run(View.java:27336)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at android.os.Handler.handleCallback(Handler.java:883)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at android.os.Handler.dispatchMessage(Handler.java:100)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+2022-08-01 09:05:11.378 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:1)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:6)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:7)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:1)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.Tap.sendSingleTap(Tap.java:5)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.Tap.access$100(Tap.java:1)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.Tap$1.sendTap(Tap.java:3)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:6)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:22)
+2022-08-01 09:05:11.379 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.ViewInteraction.access$100(ViewInteraction.java:1)
+2022-08-01 09:05:11.380 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:2)
+2022-08-01 09:05:11.380 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)
+2022-08-01 09:05:11.380 11628-11628/com.hkxps17.turnup W/System.err:     at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2022-08-01 09:05:11.381 11628-11628/com.hkxps17.turnup W/System.err:     at android.os.Handler.handleCallback(Handler.java:883)
+2022-08-01 09:05:11.381 11628-11628/com.hkxps17.turnup W/System.err:     at android.os.Handler.dispatchMessage(Handler.java:100)
+2022-08-01 09:05:11.381 11628-11628/com.hkxps17.turnup W/System.err:     at android.os.Looper.loop(Looper.java:214)
+2022-08-01 09:05:11.381 11628-11628/com.hkxps17.turnup W/System.err:     at android.app.ActivityThread.main(ActivityThread.java:7356)
+2022-08-01 09:05:11.382 11628-11628/com.hkxps17.turnup W/System.err:     at java.lang.reflect.Method.invoke(Native Method)
+2022-08-01 09:05:11.382 11628-11628/com.hkxps17.turnup W/System.err:     at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+2022-08-01 09:05:11.382 11628-11628/com.hkxps17.turnup W/System.err:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+2022-08-01 09:05:11.848 11628-11628/com.hkxps17.turnup I/ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please fill all fields"}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please fill all fields"
+2022-08-01 09:05:11.854 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <2131230801/com.hkxps17.turnup:id/add_event_date> and Child at position 1 in parent Child at position 2 in parent view.getClass().getName() matches: is "android.widget.LinearLayout")
+2022-08-01 09:05:11.857 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:11.861 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230801/com.hkxps17.turnup:id/add_event_date> and Child at position 1 in parent Child at position 2 in parent view.getClass().getName() matches: is "android.widget.LinearLayout")
+2022-08-01 09:05:12.377 11628-11639/com.hkxps17.turnup I/.hkxps17.turnu: NativeAlloc concurrent copying GC freed 49072(2265KB) AllocSpace objects, 8(368KB) LOS objects, 49% free, 5001KB/10002KB, paused 74us total 192.218ms
+2022-08-01 09:05:12.683 11628-11709/com.hkxps17.turnup I/chatty: uid=10188(com.hkxps17.turnup) RenderThread identical 1 line
+2022-08-01 09:05:12.741 11628-11709/com.hkxps17.turnup I/chatty: uid=10188(com.hkxps17.turnup) RenderThread identical 1 line
+2022-08-01 09:05:12.972 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getClass().getName() matches: is "androidx.appcompat.widget.AppCompatImageButton" and view.getContentDescription() is "Next month" and Child at position 2 in parent (view.getClass().getName() matches: is "android.widget.DayPickerView" and Child at position 0 in parent view.getClass().getName() matches: is "com.android.internal.widget.DialogViewAnimator"))
+2022-08-01 09:05:12.974 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:12.977 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getClass().getName() matches: is "androidx.appcompat.widget.AppCompatImageButton" and view.getContentDescription() is "Next month" and Child at position 2 in parent (view.getClass().getName() matches: is "android.widget.DayPickerView" and Child at position 0 in parent view.getClass().getName() matches: is "com.android.internal.widget.DialogViewAnimator"))
+2022-08-01 09:05:13.284 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <16908313/android:id/button1> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "OK" and Child at position 3 in parent Child at position 0 in parent view.getClass().getName() matches: is "android.widget.ScrollView")
+2022-08-01 09:05:13.286 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:13.288 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <16908313/android:id/button1> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "OK" and Child at position 3 in parent Child at position 0 in parent view.getClass().getName() matches: is "android.widget.ScrollView")
+2022-08-01 09:05:13.591 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <16908313/android:id/button1> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "OK" and Child at position 3 in parent Child at position 0 in parent view.getClass().getName() matches: is "android.widget.ScrollView")
+2022-08-01 09:05:13.592 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:13.595 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <16908313/android:id/button1> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "OK" and Child at position 3 in parent Child at position 0 in parent view.getClass().getName() matches: is "android.widget.ScrollView")
+2022-08-01 09:05:13.938 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230936/com.hkxps17.turnup:id/event_done_button> and Child at position 2 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err: java.io.IOException: grpc failed
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at android.location.Geocoder.getFromLocationName(Geocoder.java:178)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at com.hkxps17.turnup.AddEventActivity.getLocationFromAddress(AddEventActivity.java:261)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at com.hkxps17.turnup.AddEventActivity.apiCall(AddEventActivity.java:176)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at com.hkxps17.turnup.AddEventActivity.access$200(AddEventActivity.java:47)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at com.hkxps17.turnup.AddEventActivity$4.onClick(AddEventActivity.java:136)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at android.view.View.performClick(View.java:7125)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at android.view.View.performClickInternal(View.java:7102)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at android.view.View.access$3500(View.java:801)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at android.view.View$PerformClick.run(View.java:27336)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at android.os.Handler.handleCallback(Handler.java:883)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at android.os.Handler.dispatchMessage(Handler.java:100)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:1)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.base.UiControllerImpl.injectMotionEvent(UiControllerImpl.java:6)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:7)
+2022-08-01 09:05:14.314 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.MotionEvents.sendUp(MotionEvents.java:1)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.Tap.sendSingleTap(Tap.java:5)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.Tap.access$100(Tap.java:1)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.Tap$1.sendTap(Tap.java:3)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:6)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:22)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.ViewInteraction.access$100(ViewInteraction.java:1)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:2)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at android.os.Handler.handleCallback(Handler.java:883)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at android.os.Handler.dispatchMessage(Handler.java:100)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at android.os.Looper.loop(Looper.java:214)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at android.app.ActivityThread.main(ActivityThread.java:7356)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at java.lang.reflect.Method.invoke(Native Method)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+2022-08-01 09:05:14.315 11628-11628/com.hkxps17.turnup W/System.err:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+2022-08-01 09:05:14.644 11628-11628/com.hkxps17.turnup I/ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please fill all fields"}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please fill all fields"
+2022-08-01 09:05:14.649 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <2131230804/com.hkxps17.turnup:id/add_event_location> and Child at position 1 in parent Child at position 3 in parent view.getClass().getName() matches: is "android.widget.LinearLayout")
+2022-08-01 09:05:14.652 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:14.659 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'replace text(UBC)' action on view (view.getId() is <2131230804/com.hkxps17.turnup:id/add_event_location> and Child at position 1 in parent Child at position 3 in parent view.getClass().getName() matches: is "android.widget.LinearLayout")
+2022-08-01 09:05:14.718 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'close keyboard' action on view (view.getId() is <2131230804/com.hkxps17.turnup:id/add_event_location> and Child at position 1 in parent Child at position 3 in parent view.getClass().getName() matches: is "android.widget.LinearLayout")
+2022-08-01 09:05:14.720 11628-11628/com.hkxps17.turnup W/CloseKeyboardAction: Attempting to close soft keyboard, while it is not shown.
+2022-08-01 09:05:14.728 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230936/com.hkxps17.turnup:id/event_done_button> and Child at position 2 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 09:05:15.601 11628-11628/com.hkxps17.turnup I/ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please fill all fields"}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please fill all fields"
+2022-08-01 09:05:15.608 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'scroll to' action on view (view.getId() is <2131230943/com.hkxps17.turnup:id/event_spinner> and Child at position 1 in parent Child at position 4 in parent view.getClass().getName() matches: is "android.widget.LinearLayout")
+2022-08-01 09:05:15.610 11628-11628/com.hkxps17.turnup I/ScrollToAction: View is already displayed. Returning.
+2022-08-01 09:05:15.612 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230943/com.hkxps17.turnup:id/event_spinner> and Child at position 1 in parent Child at position 4 in parent view.getClass().getName() matches: is "android.widget.LinearLayout")
+2022-08-01 09:05:15.786 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden field Landroid/widget/AbsListView;->mIsChildViewEnabled:Z (greylist, reflection, allowed)
+2022-08-01 09:05:16.034 11628-11709/com.hkxps17.turnup I/chatty: uid=10188(com.hkxps17.turnup) RenderThread identical 2 lines
+2022-08-01 09:05:16.327 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'load adapter data' action on view Child at position 0 in parent view.getClass().getName() matches: is "android.widget.PopupWindow$PopupBackgroundView"
+2022-08-01 09:05:16.353 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view  displaying data matching: ANYTHING within adapter view matching: Child at position 0 in parent view.getClass().getName() matches: is "android.widget.PopupWindow$PopupBackgroundView"
+2022-08-01 09:05:16.851 11628-11709/com.hkxps17.turnup I/chatty: uid=10188(com.hkxps17.turnup) RenderThread identical 1 line
+2022-08-01 09:05:16.938 11628-11628/com.hkxps17.turnup W/.hkxps17.turnu: JNI critical lock held for 20.482ms on Thread[1,tid=11628,Runnable,Thread*=0xe8a37800,peer=0x72d0d1f0,"main"]
+2022-08-01 09:05:17.369 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230936/com.hkxps17.turnup:id/event_done_button> and Child at position 2 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 09:05:18.060 11628-11981/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 09:05:18.062 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:05:18.062 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:05:18.063 11628-12027/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 09:05:18.063 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:05:18.064 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:05:18.065 11628-12027/com.hkxps17.turnup I/FirebasePerformance: Did not receive a HTTP Response Code
+2022-08-01 09:05:18.065 11628-12027/com.hkxps17.turnup W/FirebasePerformance: Unable to process the PerfMetric due to missing or invalid values. See earlier log statements for additional information on the specific missing/invalid values.
+2022-08-01 09:05:18.111 11628-11628/com.hkxps17.turnup I/ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please fill all fields"}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Please fill all fields"
+2022-08-01 09:05:18.149 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'replace text(Test Description)' action on view (view.getId() is <2131230802/com.hkxps17.turnup:id/add_event_description> and Child at position 8 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:18.169 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'close keyboard' action on view (view.getId() is <2131230802/com.hkxps17.turnup:id/add_event_description> and Child at position 8 in parent Child at position 1 in parent view.getId() is <2131231021/com.hkxps17.turnup:id/linearLayout>)
+2022-08-01 09:05:18.171 11628-11628/com.hkxps17.turnup W/CloseKeyboardAction: Attempting to close soft keyboard, while it is not shown.
+2022-08-01 09:05:18.206 11628-11628/com.hkxps17.turnup I/ViewInteraction: Performing 'single click' action on view (view.getId() is <2131230936/com.hkxps17.turnup:id/event_done_button> and Child at position 2 in parent Child at position 0 in parent view.getId() is <16908290/android:id/content> and (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle))
+2022-08-01 09:05:18.425 11628-11628/com.hkxps17.turnup W/ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@153121c
+2022-08-01 09:05:18.827 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:05:18.827 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:05:18.828 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:05:18.828 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:05:18.828 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 09:05:18.830 11628-12029/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 09:05:18.830 11628-12029/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 09:05:18.847 11628-11628/com.hkxps17.turnup W/System.err: com.android.volley.ParseError: org.json.JSONException: Value New of type java.lang.String cannot be converted to JSONObject
+2022-08-01 09:05:18.847 11628-11628/com.hkxps17.turnup W/System.err:     at com.android.volley.toolbox.JsonObjectRequest.parseNetworkResponse(JsonObjectRequest.java:103)
+2022-08-01 09:05:18.847 11628-11628/com.hkxps17.turnup W/System.err:     at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:144)
+2022-08-01 09:05:18.847 11628-11628/com.hkxps17.turnup W/System.err:     at com.android.volley.NetworkDispatcher.processRequest(NetworkDispatcher.java:111)
+2022-08-01 09:05:18.847 11628-11628/com.hkxps17.turnup W/System.err:     at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:90)
+2022-08-01 09:05:18.847 11628-11628/com.hkxps17.turnup W/System.err: Caused by: org.json.JSONException: Value New of type java.lang.String cannot be converted to JSONObject
+2022-08-01 09:05:18.847 11628-11628/com.hkxps17.turnup W/System.err:     at org.json.JSON.typeMismatch(JSON.java:112)
+2022-08-01 09:05:18.847 11628-11628/com.hkxps17.turnup W/System.err:     at org.json.JSONObject.<init>(JSONObject.java:168)
+2022-08-01 09:05:18.847 11628-11628/com.hkxps17.turnup W/System.err:     at org.json.JSONObject.<init>(JSONObject.java:181)
+2022-08-01 09:05:18.848 11628-11628/com.hkxps17.turnup W/System.err:     at com.android.volley.toolbox.JsonObjectRequest.parseNetworkResponse(JsonObjectRequest.java:98)
+2022-08-01 09:05:18.848 11628-11628/com.hkxps17.turnup W/System.err: 	... 3 more
+2022-08-01 09:05:18.848 11628-11628/com.hkxps17.turnup E/error: com.android.volley.ParseError: org.json.JSONException: Value New of type java.lang.String cannot be converted to JSONObject
+2022-08-01 09:05:19.235 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:05:19.235 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:05:19.236 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_enabled'.
+2022-08-01 09:05:19.236 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_disabled_android_versions'.
+2022-08-01 09:05:19.239 11628-12027/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_vc_network_request_sampling_rate'.
+2022-08-01 09:05:19.243 11628-12039/com.hkxps17.turnup W/FirebaseRemoteConfig: No value of type 'FirebaseRemoteConfigValue' exists for parameter key 'fpr_session_max_duration_min'.
+2022-08-01 09:05:19.243 11628-12039/com.hkxps17.turnup W/.hkxps17.turnu: Accessing hidden method Lsun/misc/Unsafe;->getInt(Ljava/lang/Object;J)I (greylist, linking, allowed)
+2022-08-01 09:05:21.222 11628-11673/com.hkxps17.turnup I/TestRunner: finished: addEventTest1(com.hkxps17.turnup.AddEventTest)
