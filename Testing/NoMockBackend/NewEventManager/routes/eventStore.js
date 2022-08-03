@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { MongoClient } = require("mongodb");
-const client = new MongoClient("mongodb://localhost:27017");
+const client = new MongoClient("mongodb://20.122.91.139:2541");
 
 // Gets event corresponding to the EventId
 router.get("/:EventID", async (req, res) => {
@@ -72,8 +72,10 @@ router.delete("/:EventID/:UserID", async (req, res) => {
     .db("EventManager")
     .collection("events")
     .findOne({ e_id: eventID});
-    if (event === null) 
+    if (event === null) {
       res.status(404).send("Event not found");
+      return;
+    }
     let stats = await client
       .db("EventManager")
       .collection("events")

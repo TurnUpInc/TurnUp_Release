@@ -1,5 +1,6 @@
 const { MongoClient } = require("mongodb");
-const uri = "mongodb://localhost:27017";
+const axios = require('axios');
+const uri = "mongodb://20.122.91.139:2541";
 const express = require("express");
 const app = express();
 const client = new MongoClient(uri);
@@ -13,16 +14,21 @@ app.get("/locations-by-coordinates", async (req, res) => {
   let long1 = req.query.longitude1;
   let lat2 = req.query.latitude2;
   let long2 = req.query.longitude2;
-  //get lat and long
   let returnVal = [];
   let locs;
-  await axios.get("http://localhost:8080/locations").then((res) => {
-    locs = res.data;
-  });
-
-  locs.array.forEach((element) => {
+  const result = await client
+      .db("test")
+      .collection("locations")
+      .find()
+      .toArray();
+  locs = result;
+  console.log(locs)
+  locs.forEach((element) => {
     let loc_lat = element.coordinates[0];
     let loc_long = element.coordinates[1];
+    console.log("@@@")
+    console.log(loc_lat);
+    console.log(loc_long);
     if (
       loc_long >= long1 &&
       loc_lat >= lat1 &&
@@ -32,11 +38,12 @@ app.get("/locations-by-coordinates", async (req, res) => {
       returnVal.push(element);
     }
   });
+  console.log(returnVal)
 
-  if (returnVal.length == 0) {
+  if (returnVal.length !== 0) {
     res.status(200).send(returnVal);
   } else {
-    res.status(404).send("No Events Available!");
+    res.status(404).send("No locs found found")
   }
 });
 
