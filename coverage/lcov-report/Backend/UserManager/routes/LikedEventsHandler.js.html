@@ -3,15 +3,15 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for routes/LikedLocationsHandler.js</title>
+    <title>Code coverage report for Backend/UserManager/routes/LikedEventsHandler.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../prettify.css" />
-    <link rel="stylesheet" href="../base.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../sort-arrow-sprite.png);
+            background-image: url(../../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">routes</a> LikedLocationsHandler.js</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">Backend/UserManager/routes</a> LikedEventsHandler.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>39/39</span>
+                <span class='fraction'>40/40</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>39/39</span>
+                <span class='fraction'>40/40</span>
             </div>
         
             
@@ -152,7 +152,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -187,6 +186,7 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -229,9 +229,8 @@ const router = express.Router();
 const axios = require('axios').default;
 &nbsp;
 &nbsp;
-&nbsp;
 /**
- *  Fetches the liked locations of the requested user
+ *  Fetches the liked events of the requested user
  */
  router.get("/:UserId", async (req, res)=&gt;{
     try{
@@ -240,7 +239,7 @@ const axios = require('axios').default;
             response = resp.data;
         });
         console.log(response)
-        res.status(200).send(response.likedLocations) 
+        res.status(200).send(response.likedEvents) 
     }
     catch(err){
         console.log(err)
@@ -250,24 +249,25 @@ const axios = require('axios').default;
 &nbsp;
 &nbsp;
 /**
- * Adds a location to the liked locations list
+ * Adds a event to the liked events list
  */
- router.post("/:UserId/:LocationID", async (req, res)=&gt;{
+ router.post("/:UserId/:EventID", async (req, res)=&gt;{
     try{
         req.body.id = req.params.UserId;
         let user_data
         await axios.get('http://localhost:8080/users/'+req.params.UserId).then(resp =&gt; {
             user_data = resp.data;
         });
-        const location_arr = user_data.likedLocations
-        <span class="missing-if-branch" title="else path not taken" >E</span>if(!location_arr.includes(req.params.LocationID)){
-            location_arr.push(req.params.LocationID)
+        const event_arr = user_data.likedEvents
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(!event_arr.includes(req.params.EventID)){
+            event_arr.push(req.params.EventID)
         }
-        console.log(location_arr)        
+        console.log(event_arr)        
         await axios.put('http://localhost:8080/users/'+req.params.UserId, {
-            "likedLocations" : location_arr
+            "likedEvents" : event_arr
         });
-        res.status(200).send(location_arr)
+        console.log("Updated the user")
+        res.status(200).send(event_arr)
     }
     catch(err){
         console.log(err)
@@ -276,25 +276,25 @@ const axios = require('axios').default;
 })
 &nbsp;
 /**
- * Deletes user from the database
+ * Deletes liked event for the user from the database
  */
- router.delete("/:UserId/:LocationID", async (req, res)=&gt;{
+ router.delete("/:UserId/:EventID", async (req, res)=&gt;{
     try{
         req.body.id = req.params.UserId;
         let user_data
         await axios.get('http://localhost:8080/users/'+req.params.UserId).then(resp =&gt; {
             user_data = resp.data;
         });
-        const location_arr = user_data.likedLocations
-        const index = location_arr.indexOf(req.params.LocationID);
+        const event_arr = user_data.likedEvents
+        const index = event_arr.indexOf(req.params.EventID);
         <span class="missing-if-branch" title="else path not taken" >E</span>if (index &gt; -1) {
-            location_arr.splice(index, 1);
+            event_arr.splice(index, 1);
         }
-        console.log(location_arr)        
+        console.log(event_arr)        
         await axios.put('http://localhost:8080/users/'+req.params.UserId, {
-            "likedLocations" : location_arr
+            "likedEvents" : event_arr
         });
-        res.status(200).send(location_arr)
+        res.status(200).send(event_arr)
     }
     catch(err){
         console.log(err)
@@ -310,16 +310,16 @@ module.exports = router
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Aug 02 2022 21:57:34 GMT-0700 (Pacific Daylight Time)
+                at 2022-08-03T05:02:56.051Z
             </div>
-        <script src="../prettify.js"></script>
+        <script src="../../../prettify.js"></script>
         <script>
             window.onload = function () {
                 prettyPrint();
             };
         </script>
-        <script src="../sorter.js"></script>
-        <script src="../block-navigation.js"></script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
     </body>
 </html>
     

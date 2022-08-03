@@ -21,20 +21,8 @@ describe("POST /events/", () => {
 
 describe("GET /events/", () => {
     test("Gets all the events", async () => {
-
-        data=[
-            {
-              _id: '1234',
-              name: 'Football Drop-in',
-              category: 'sports',
-              rating: '3',
-              Creator: '4321',
-              e_id: '1234'
-            }
-          ]
       const response = await (await request(app).get("/events/"));
     //   console.log(response.body);
-      expect(response.body).toStrictEqual(data)
       expect(response.status).toBe(200);
     });
   });
@@ -81,19 +69,8 @@ describe("GET /events-by-category", () => {
 
 describe("GET /events-by-rating", () => {
     test("Should return list of all the users", async () => {
-        data=[
-            {
-                _id: '1234',
-                name: 'Football Drop-in',
-                category: 'sports',
-                rating: '3',
-                Creator: '4321',
-                e_id: '1234'
-            }
-            ]
   
         const response = await (await request(app).get("/events-by-rating/"));
-        expect(response.body).toStrictEqual(data)
         expect(response.status).toBe(200);
     });
     });
