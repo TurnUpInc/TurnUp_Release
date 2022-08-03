@@ -94,9 +94,10 @@ describe("GET(‘locations-by-cooridnates)", () => {
     it("With coordinates not present", async () => {
         const response = await request(app).get("/locations-by-cooridnates").expect(404);
     });
-    // it ("With valid coordiantes", async () => {
-    //     const response = await request(app).get("/locations-by-cooridnates?latitude1=40&longitude1=74&latitude2=100&longitude2=100").expect(200);
-    // });
+    it ("With valid coordiantes", async () => {
+        const response = await request(app).get("/locations-by-coordinates?latitude1=40&longitude1=74&latitude2=100&longitude2=100").expect(200);
+        expect(response.body.length).toBeGreaterThan(0);
+    });
 });
 
 describe("put(incrlike/:locationID)", () =>{

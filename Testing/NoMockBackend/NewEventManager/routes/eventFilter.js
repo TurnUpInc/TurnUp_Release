@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { MongoClient } = require("mongodb");
-const client = new MongoClient("mongodb://localhost:27017");
+const client = new MongoClient("mongodb://20.122.91.139:2541");
 
 // Gets event corresponding to the category
 router.get("/events-by-category", async (req, res) => {
