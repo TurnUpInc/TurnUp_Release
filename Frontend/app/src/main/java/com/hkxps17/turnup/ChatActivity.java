@@ -169,8 +169,8 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
                     PendingIntent pendingIntent = PendingIntent.getActivity(ChatActivity.this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
                     NotificationCompat.Builder builder = new NotificationCompat.Builder(ChatActivity.this, CHANNEL_ID)
                             .setSmallIcon(R.drawable.ic_message)
-                            .setContentTitle("My notification")
-                            .setContentText("Hello World!")
+                            .setContentTitle("Message from "+username+"at "+time+":")
+                            .setContentText(message)
                             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                             // Set the intent that will fire when the user taps the notification
                             .setContentIntent(pendingIntent)
