@@ -80,7 +80,7 @@
                     android:layout_height="match_parent"
                     android:paddingStart="5dp"
                     android:text="Event Date"
-                    android:textColor="#a9a9a9"
+                    android:textColor="@color/white"
                     android:textSize="17sp" />
             </LinearLayout>
 
@@ -104,7 +104,7 @@
                     android:layout_height="25dp"
                     android:layout_marginLeft="5dp"
                     android:text="Event Location"
-                    android:textColor="#a9a9a9"
+                    android:textColor="@color/white"
                     android:textSize="17dp" />
             </LinearLayout>
         </LinearLayout>

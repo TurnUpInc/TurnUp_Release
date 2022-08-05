@@ -59,11 +59,33 @@
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend_Old/app/src/main/res/layout/activity_list.xml" value="0.18115942028985507" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend_Old/app/src/main/res/layout/activity_login.xml" value="0.1458966565349544" />
         <entry key="..\:/UBC/CPEN321/TurnUp/Frontend_Old/app/src/main/res/layout/map_location_marker.xml" value="0.18115942028985507" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/background_account.xml" value="0.1845" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/background_add.xml" value="0.1845" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/background_done.xml" value="0.1845" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/background_liked_list.xml" value="0.1845" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/background_list.xml" value="0.1845" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/background_location.xml" value="0.1845" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/background_manage.xml" value="0.1535" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/background_message.xml" value="0.1845" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/background_search.xml" value="0.1845" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/chat_background_green.xml" value="0.297" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/chat_background_purple.xml" value="0.297" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/drawable/reset_background.xml" value="0.1845" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/activity_add_event.xml" value="0.35705045278137126" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/activity_add_location.xml" value="0.1" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/activity_chat.xml" value="0.1" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/activity_event.xml" value="0.20742753623188406" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/activity_liked_events.xml" value="0.1" />
         <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/activity_list.xml" value="0.1" />
         <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/activity_maps.xml" value="0.1458966565349544" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/activity_user.xml" value="0.264" />
         <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/event_list_item.xml" value="0.3" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/item_chat_box.xml" value="0.1" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/liked_event_item.xml" value="0.1" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/manage_event_item.xml" value="0.1" />
         <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/map_event_marker.xml" value="0.1458966565349544" />
+        <entry key="..\:/UBC/CPEN321/TurnUp/TurnUp_Release/Frontend/app/src/main/res/layout/map_location_marker.xml" value="0.1" />
       </map>
     </option>
   </component>

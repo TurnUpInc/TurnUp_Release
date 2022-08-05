@@ -4,7 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,7 +24,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -36,14 +35,14 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.gson.Gson;
 import com.hkxps17.turnup.databinding.ActivityMapsBinding;
 import com.squareup.picasso.Picasso;
 
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
@@ -61,19 +60,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     int trigger = 1;
     int flag = 1;
 
-    ArrayList<String> EventTitles = new ArrayList<>();
-    ArrayList<String> EventLocations = new ArrayList<>();
-    ArrayList<String> EventDates = new ArrayList<>();
-    ArrayList<String> EventRatings = new ArrayList<>();
-    ArrayList<String> EventCategories = new ArrayList<>();
-    ArrayList<String> EventDescriptions = new ArrayList<>();
-    ArrayList<String> EventImages = new ArrayList<>();
-    ArrayList<String> likedBy = new ArrayList<>();
-    ArrayList<String> EventCoordinates = new ArrayList<>();
-    ArrayList<String> LocationCoordinates = new ArrayList<>();
-    ArrayList<String> LocationTitles = new ArrayList<>();
-    ArrayList<String> LocationLikes = new ArrayList<>();
-    ArrayList<String> LocationVisits = new ArrayList<>();
+    List<String> EventTitles = new ArrayList<>();
+    List<String> EventLocations = new ArrayList<>();
+    List<String> EventDates = new ArrayList<>();
+    List<String> EventRatings = new ArrayList<>();
+    List<String> EventCategories = new ArrayList<>();
+    List<String> EventDescriptions = new ArrayList<>();
+    List<String> EventImages = new ArrayList<>();
+    List<String> likedBy = new ArrayList<>();
+    List<String> EventCoordinates = new ArrayList<>();
+    List<String> LocationCoordinates = new ArrayList<>();
+    List<String> LocationTitles = new ArrayList<>();
+    List<String> LocationLikes = new ArrayList<>();
+    List<String> LocationVisits = new ArrayList<>();
 
     private GoogleMap mMap;
 
@@ -84,75 +83,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         rbLeft = findViewById(R.id.rbleft);
         rbRight = findViewById(R.id.rbright);
 
+        clearEventsList();
+        clearLocationLists();
+
         Set<String> retS = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getStringSet("id", new HashSet<String>());
         List<String> retL = new ArrayList<String>(retS);
         emailID = retL.get(0);
-
-        String getAllLocationsApiUrl = "http://20.122.91.139:8081/locations";
-        StringRequest locationsReq = new StringRequest(Request.Method.GET, getAllLocationsApiUrl, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                try {
-                    JSONArray jsonLocationsArray = new JSONArray(response);
-                    clearArrayLists();
-
-                    for(int i = 0; i<jsonLocationsArray.length(); i++) {
-                        JSONObject jsonLocationObj = jsonLocationsArray.getJSONObject(i);
-                        LocationTitles.add(jsonLocationObj.getString("title"));
-                        LocationLikes.add(jsonLocationObj.getString("likes"));
-                        LocationVisits.add(jsonLocationObj.getString("vists"));
-                        LocationCoordinates.add(jsonLocationObj.getString("coordinates"));
-                    }
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Toast.makeText(MapsActivity.this, "Loading Markers!", Toast.LENGTH_LONG).show();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                error.printStackTrace();
-                Toast.makeText(MapsActivity.this, "Volley Error", Toast.LENGTH_LONG).show();
-            }
-        });
-        RequestQueue queue = Volley.newRequestQueue(MapsActivity.this);
-        queue.add(locationsReq);
-
-        String getAllEventsApiUrl = "http://20.122.91.139:8081/events";
-        StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllEventsApiUrl, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                try {
-                    JSONArray jsonEventsArray = new JSONArray(response);
-
-                    for(int i = 0; i<jsonEventsArray.length(); i++) {
-                        JSONObject jsonEventObj = jsonEventsArray.getJSONObject(i);
-                        EventTitles.add(jsonEventObj.getString("title"));
-                        EventLocations.add(jsonEventObj.getString("location"));
-                        EventDates.add(jsonEventObj.getString("date"));
-                        EventDescriptions.add(jsonEventObj.getString("description"));
-                        EventImages.add(jsonEventObj.getString("photoURL"));
-                        EventRatings.add(jsonEventObj.getString("rating"));
-                        EventCategories.add(jsonEventObj.getString("category"));
-                        EventCoordinates.add(jsonEventObj.getString("coordinates"));
-                        likedBy.add(jsonEventObj.getString("likedBy"));
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Toast.makeText(MapsActivity.this, "Loading Markers!", Toast.LENGTH_LONG).show();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                error.printStackTrace();
-                Toast.makeText(MapsActivity.this, "Volley Error", Toast.LENGTH_LONG).show();
-            }
-        });
-        queue.add(eventsReq);
-
 
         ActivityMapsBinding binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -165,6 +102,54 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mapFragment.getMapAsync(this);
         }
 
+    }
+
+    private void extractEvents() {
+        Gson gson = new Gson();
+        String et = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("title", null);
+        EventTitles = Arrays.asList(gson.fromJson(et, String[].class));
+
+        String el = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("location",  null);
+        EventLocations = Arrays.asList(gson.fromJson(el, String[].class));
+        String eda = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("dates",  null);
+        EventDates = Arrays.asList(gson.fromJson(eda, String[].class));
+        String ede = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("decs",  null);
+        EventDescriptions = Arrays.asList(gson.fromJson(ede, String[].class));
+        String ei = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("img",  null);
+        EventImages = Arrays.asList(gson.fromJson(ei, String[].class));
+        String er = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("rating",  null);
+        EventRatings = Arrays.asList(gson.fromJson(er, String[].class));
+        String ec = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("cat",  null);
+        EventCategories = Arrays.asList(gson.fromJson(ec, String[].class));
+        String ecd = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("cord",  null);
+        EventCoordinates = Arrays.asList(gson.fromJson(ecd, String[].class));
+        String elb = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("lb",  null);
+        likedBy = Arrays.asList(gson.fromJson(elb, String[].class));
+    }
+
+    private void extractLocs() {
+        Gson gson = new Gson();
+        String lt = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("lt", null);
+        LocationTitles = Arrays.asList(gson.fromJson(lt, String[].class));
+        String ll = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("ll", null);
+        LocationLikes = Arrays.asList(gson.fromJson(ll, String[].class));
+        String lv = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("lv", null);
+        LocationVisits = Arrays.asList(gson.fromJson(lv, String[].class));
+        String lc = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+                .getString("lc", null);
+        LocationCoordinates = Arrays.asList(gson.fromJson(lc, String[].class));
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -207,11 +192,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         ArrayList<LatLng> locs = new ArrayList<>();
         ArrayList<LatLng> evnts = new ArrayList<>();
 
-        evnts.clear();
-        updateEventCoordinates(evnts);
+        extractLocs();
         locs.clear();
         updateLocationCoordinates(locs);
-
+        evnts.clear();
+        updateEventCoordinates(evnts);
 
         googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
@@ -265,6 +250,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     flag = 1;
                     mMap.clear();
                     locs.clear();
+                    extractLocs();
                     updateLocationCoordinates(locs);
                     CustomInfoAdapterLocation adapter = new CustomInfoAdapterLocation(MapsActivity.this);
                     mMap.setInfoWindowAdapter(adapter);
@@ -278,7 +264,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     flag = 0;
                     mMap.clear();
                     evnts.clear();
+                    extractEvents();
                     updateEventCoordinates(evnts);
+
                     CustomInfoAdapter adapter = new CustomInfoAdapter(MapsActivity.this);
                     mMap.setInfoWindowAdapter(adapter);
 
@@ -391,7 +379,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    public void clearArrayLists() {
+    public void clearEventsList() {
         EventTitles.clear();
         EventLocations.clear();
         EventDates.clear();
@@ -401,7 +389,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         EventImages.clear();
         likedBy.clear();
         EventCoordinates.clear();
+    }
 
+    public void clearLocationLists() {
         LocationLikes.clear();
         LocationCoordinates.clear();
         LocationTitles.clear();
