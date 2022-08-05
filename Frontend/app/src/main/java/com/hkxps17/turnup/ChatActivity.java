@@ -16,7 +16,9 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.os.Bundle;
+
 import androidx.preference.PreferenceManager;
+
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -72,7 +74,6 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         Gson gson = new Gson();
 
 
-
         Intent intent = ChatActivity.this.getIntent();
 
         eventId = intent.getStringExtra("EventTitle");
@@ -96,7 +97,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         linearLayoutManager.setStackFromEnd(true);
         mRecyclerViewChat.setAdapter(chatAdapter);
         connectUser();
-        mSocket.on("output"+eventId, onNewMessageView);
+        mSocket.on("output" + eventId, onNewMessageView);
         mSocket.on("message", onNewMessage);
     }
 
@@ -163,21 +164,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
                     String time = data.optString("time");
                     mChatList.add(username + " (" + time + "): \n" + message);
                     createNotificationChannel();
-                    // Create an explicit intent for an Activity in your app
-                    Intent intent = new Intent(ChatActivity.this, ChatActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    PendingIntent pendingIntent = PendingIntent.getActivity(ChatActivity.this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
-                    NotificationCompat.Builder builder = new NotificationCompat.Builder(ChatActivity.this, CHANNEL_ID)
-                            .setSmallIcon(R.drawable.ic_message)
-                            .setContentTitle("Message from "+username+"at "+time+":")
-                            .setContentText(message)
-                            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                            // Set the intent that will fire when the user taps the notification
-                            .setContentIntent(pendingIntent)
-                            .setAutoCancel(true);
-                    NotificationManagerCompat notificationManager = NotificationManagerCompat.from(ChatActivity.this);
-                    //notificationId is a unique int for each notification that you must define
-                    notificationManager.notify(0, builder.build());
+                    makeNotification("Message from " + username + "at " + time + ":", message);
                     RecyclerView mRecyclerViewChat = findViewById(R.id.rv_chat);
                     mRecyclerViewChat.scrollToPosition(mChatList.size() - 1);
                     if (chatAdapter != null)
@@ -190,9 +177,11 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
     public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatViewHolder> {
 
         private final ArrayList<String> mChatList;
+
         public ChatAdapter(ArrayList<String> mChatList) {
             this.mChatList = mChatList;
         }
+
         List<String> crColor = new ArrayList<>();
 
         @NonNull
@@ -218,8 +207,8 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
             TextView mTextViewLeft;
             List<String> crColor = new ArrayList<>();
 
-            public ChatViewHolder (@NonNull View itemView) {
-                super (itemView);
+            public ChatViewHolder(@NonNull View itemView) {
+                super(itemView);
                 mTextViewLeft = itemView.findViewById(R.id.tv_chat_message_left);
                 Gson gson = new Gson();
                 String ColorSet = PreferenceManager.getDefaultSharedPreferences(ChatActivity.this)
@@ -241,6 +230,24 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         }
+    }
+
+    private void makeNotification(String heading, String text) {
+        // Create an explicit intent for an Activity in your app
+        Intent intent = new Intent(ChatActivity.this, ChatActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        PendingIntent pendingIntent = PendingIntent.getActivity(ChatActivity.this, 0, intent, PendingIntent.FLAG_IMMUTABLE);
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(ChatActivity.this, CHANNEL_ID)
+                .setSmallIcon(R.drawable.ic_message)
+                .setContentTitle(heading)
+                .setContentText(text)
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                // Set the intent that will fire when the user taps the notification
+                .setContentIntent(pendingIntent)
+                .setAutoCancel(true);
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(ChatActivity.this);
+        //notificationId is a unique int for each notification that you must define
+        notificationManager.notify(0, builder.build());
     }
 
     private void createNotificationChannel() {
