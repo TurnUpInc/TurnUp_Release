@@ -58,6 +58,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
 
     String emailID = "";
     String eventId = "";
+    String username = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,7 +135,8 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
                     for (int i = 0; i < messageHistory.length(); i++) {
                         JSONObject message = messageHistory.optJSONObject(i);
                         String messageText = message.optString("text");
-                        String username = message.optString("username");
+                        String id = message.optString("username");
+                        String username = id.substring(0, id.indexOf("@"));
                         String time = message.optString("time");
                         mChatList.add(username + " (" + time + "):  " + messageText);
                         if (chatAdapter != null)
@@ -155,7 +157,8 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
                 public void run() {
                     JSONObject data = (JSONObject) args[0];
                     String message = data.optString("text");
-                    String username = data.optString("username");
+                    String id = data.optString("username");
+                    String username = id.substring(0, id.indexOf("@"));
                     String time = data.optString("time");
                     mChatList.add(username + " (" + time + "): \n" + message);
                     createNotificationChannel();
