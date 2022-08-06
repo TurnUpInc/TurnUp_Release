@@ -48,7 +48,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener  {
 
     AppCompatRadioButton rbLeft;
     AppCompatRadioButton rbRight;
@@ -102,6 +102,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             mapFragment.getMapAsync(this);
         }
 
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, this);
+    }
+
+    @Override
+    public void onLocationChanged(@NonNull Location location) {
+        double lat = location.getLatitude();
+        double lng = location.getLongitude();
+
+        for(int i = 0; i<EventCoordinates.size(); i++) {
+            String coords [] = EventCategories.get(i).split(";");
+
+            if(Math.abs(Double.parseDouble(coords[0]) - lat)<=100 && Math.abs(Double.parseDouble(coords[1]) - lng)<=100) {
+                LocationVisits.set(i, String.valueOf(Integer.parseInt(LocationVisits.get(i)) + 1));
+            }
+        }
     }
 
     private void extractEvents() {
