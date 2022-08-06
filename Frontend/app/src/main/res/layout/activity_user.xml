@@ -36,6 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:width="130dp"
         android:ems="7"
         android:inputType="textPersonName"
         android:text="Guest"
@@ -49,16 +50,17 @@
         android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="4dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/managelist"
         app:layout_constraintTop_toBottomOf="@+id/color4_spinner1" />
 
     <Button
         android:id="@+id/sign_out_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/black"
@@ -68,6 +70,7 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/reset_prefs"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/your_name"
         app:layout_constraintTop_toBottomOf="@+id/done_button" />
 
 

@@ -97,6 +97,13 @@ public class UserActivity extends AppCompatActivity {
             findViewById(R.id.manageview).setVisibility(View.INVISIBLE);
             findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
             name.setText(emailID);
+            findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent login = new Intent(UserActivity.this, LoginActivity.class);
+                    startActivity(login);
+                }
+            });
         } else {
             name.setText(emailID.substring(0, emailID.indexOf("@")));
             findViewById(R.id.sign_out_button).setVisibility(View.VISIBLE);
@@ -106,13 +113,7 @@ public class UserActivity extends AppCompatActivity {
         RequestQueue queue = Volley.newRequestQueue(UserActivity.this);
         queue.add(eventsReq);
 
-        findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent login = new Intent(UserActivity.this, LoginActivity.class);
-                startActivity(login);
-            }
-        });
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
