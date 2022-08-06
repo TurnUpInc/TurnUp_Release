@@ -36,7 +36,7 @@ import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class aaGuestLoginTest {
+public class AAGuestLoginTest {
 
     @Rule
     public ActivityScenarioRule<LoginActivity> mActivityScenarioRule =
@@ -63,7 +63,7 @@ public class aaGuestLoginTest {
                                 5),
                         isDisplayed()));
         appCompatImageButton.perform(click());
-        onView(withText("Please Log In!")).inRoot(new aaGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
+        onView(withText("Please Log In!")).inRoot(new AAGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
 
         ViewInteraction appCompatImageButton2 = onView(
                 allOf(withId(R.id.liked_button),
@@ -74,7 +74,7 @@ public class aaGuestLoginTest {
                                 6),
                         isDisplayed()));
         appCompatImageButton2.perform(click());
-        onView(withText("Please Log In!")).inRoot(new aaGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
+        onView(withText("Please Log In!")).inRoot(new AAGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
 
         DataInteraction constraintLayout = onData(anything())
                 .inAdapterView(allOf(withId(R.id.listview),
@@ -93,7 +93,7 @@ public class aaGuestLoginTest {
                                 3),
                         isDisplayed()));
         appCompatImageButton3.perform(click());
-        onView(withText("Please Log In!")).inRoot(new aaGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
+        onView(withText("Please Log In!")).inRoot(new AAGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
 
         pressBack();
 
@@ -117,7 +117,7 @@ public class aaGuestLoginTest {
                                 4),
                         isDisplayed()));
         imageButton.perform(click());
-        onView(withText("Please Log In!")).inRoot(new aaGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
+        onView(withText("Please Log In!")).inRoot(new AAGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
 
         ViewInteraction imageButton2 = onView(
                 allOf(withId(R.id.map_liked_button),
@@ -128,7 +128,7 @@ public class aaGuestLoginTest {
                                 5),
                         isDisplayed()));
         imageButton2.perform(click());
-        onView(withText("Please Log In!")).inRoot(new aaGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
+        onView(withText("Please Log In!")).inRoot(new AAGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
     }
 
     private static Matcher<View> childAtPosition(
