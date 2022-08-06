@@ -3,11 +3,14 @@ package com.hkxps17.turnup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,42 +18,50 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
+import yuku.ambilwarna.AmbilWarnaDialog;
 
 public class UserActivity extends AppCompatActivity {
 
     ListView listView;
     ImageButton done;
-    EditText name;
+    Button reset;
+    Button signOut;
+    TextView name;
+    int mDefaultColor;
+    int elF = 0;
+    int meF = 0;
+    int leF = 0;
+    int msg = 0;
+    List<String> meColor = new ArrayList<>();
 
-    String[] colors = {"Green", "Blue", "Pink"};
-    String[] prefs = {"Green", "Blue", "Pink"};
-    String[] userprf = {"Green", "Blue", "Pink"};
-
-    String emailID = "";
+    String emailId = "";
+    String username = "";
+    String[] me = {"0", "1"};
+    String[] el = {"0", "1"};
+    String[] le = {"0", "1"};
+    String[] cr = {"0", "1"};
 
     ArrayList<String> EventTitles = new ArrayList<>();
     ArrayList<String> EventLocations = new ArrayList<>();
@@ -71,18 +82,52 @@ public class UserActivity extends AppCompatActivity {
         Set<String> retS = PreferenceManager.getDefaultSharedPreferences(UserActivity.this)
                 .getStringSet("id", new HashSet<String>());
         List<String> retL = new ArrayList<String>(retS);
-        emailID = retL.get(0);
+        emailId = retL.get(0);
 
-        if (Objects.equals(emailID, "Guest")) {
-            findViewById(R.id.managelist).setVisibility(View.INVISIBLE);
-            findViewById(R.id.manageview).setVisibility(View.INVISIBLE);
+        Gson gson = new Gson();
+
+        String ColorSet = PreferenceManager.getDefaultSharedPreferences(UserActivity.this)
+                .getString("meColor", null);
+        if (ColorSet != null) {
+            meColor = Arrays.asList(gson.fromJson(ColorSet, String[].class));
         }
 
+        name = findViewById(R.id.your_name);
+
+        if (Objects.equals(emailId, "Guest")) {
+            username = emailId;
+            findViewById(R.id.managelist).setVisibility(View.INVISIBLE);
+            findViewById(R.id.manageview).setVisibility(View.INVISIBLE);
+            findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
+            name.setText(username);
+            findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent login = new Intent(UserActivity.this, LoginActivity.class);
+                    startActivity(login);
+                }
+            });
+        } else {
+            username = emailId.substring(0, emailId.indexOf("@"));
+            name.setText(username);
+            findViewById(R.id.sign_out_button).setVisibility(View.VISIBLE);
+        }
+
+        signOut = findViewById(R.id.sign_out_button);
+        signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent so = new Intent(UserActivity.this, LoginActivity.class);
+                so.putExtra("signout", "yes");
+                startActivity(so);
+            }
+        });
         StringRequest eventsReq = apiCall();
         RequestQueue queue = Volley.newRequestQueue(UserActivity.this);
         queue.add(eventsReq);
 
-        Log.d("EMAILUSER", emailID);
+
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -99,63 +144,192 @@ public class UserActivity extends AppCompatActivity {
             }
         });
 
-        name = findViewById(R.id.your_name);
-        name.setText(emailID);
 
-        setColor(R.id.color1_spinner);
+        reset = findViewById(R.id.reset_prefs);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(UserActivity.this, "UI has Reset!", Toast.LENGTH_SHORT).show();
+                me[0] = String.valueOf(Color.parseColor("#2D388A"));
+                me[1] = String.valueOf(Color.parseColor("#00AEEF"));
+                le[0] = String.valueOf(Color.parseColor("#6867AC"));
+                le[1] = String.valueOf(Color.parseColor("#CE7BB0"));
+                el[0] = String.valueOf(Color.parseColor("#043927"));
+                el[1] = String.valueOf(Color.parseColor("#33C58E"));
+                cr[0] = String.valueOf(Color.parseColor("#2D388A"));
+                cr[1] = String.valueOf(Color.parseColor("#00AEEF"));
+                elF = 1;
+                leF = 1;
+                meF = 1;
+                msg = 1;
+                submitChanges();
+            }
+        });
 
-        setColor(R.id.color2_spinner);
-
-        setColor(R.id.color3_spinner);
-
+        setColorL(R.id.color1_spinner1);
+        setColorR(R.id.color1_spinner2);
+        setColorL(R.id.color2_spinner1);
+        setColorR(R.id.color2_spinner2);
+        setColorL(R.id.color3_spinner1);
+        setColorR(R.id.color3_spinner2);
+        setColorL(R.id.color4_spinner1);
+        setColorR(R.id.color4_spinner2);
 
         done = findViewById(R.id.done_button);
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                List<String> prefList = Arrays.asList(prefs);
-                Set<String> tasksSet = new HashSet<String>(prefList);
-                PreferenceManager.getDefaultSharedPreferences(UserActivity.this)
-                        .edit()
-                        .putStringSet("tasks_set", tasksSet)
-                        .commit();
 
-                Log.d("TEST", prefList.toString() + "!!");
-                Intent list = new Intent(UserActivity.this, EventListActivity.class);
-                startActivity(list);
+                submitChanges();
             }
         });
     }
 
+    private void submitChanges() {
+        Gson gson = new Gson();
 
-    private void setColor(int resource) {
-        Spinner color = findViewById(resource);
-        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(UserActivity.this, android.R.layout.simple_spinner_item, colors);
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        color.setAdapter(adapter1);
+        if (elF == 1) {
+            String s1 = gson.toJson(el);
+            PreferenceManager.getDefaultSharedPreferences(UserActivity.this)
+                    .edit()
+                    .putString("elColor", s1)
+                    .commit();
 
-        if (Objects.equals(userprf[0], "Blue")) color.setSelection(1);
-        else if (Objects.equals(userprf[0], "Pink")) color.setSelection(2);
-        else color.setSelection(0);
+        }
+        if (meF == 1) {
+            String s2 = gson.toJson(me);
+            PreferenceManager.getDefaultSharedPreferences(UserActivity.this)
+                    .edit()
+                    .putString("meColor", s2)
+                    .commit();
+
+        }
+        if (leF == 1) {
+            String s3 = gson.toJson(le);
+            PreferenceManager.getDefaultSharedPreferences(UserActivity.this)
+                    .edit()
+                    .putString("leColor", s3)
+                    .commit();
+        }
+        if (msg == 1) {
+            String s4 = gson.toJson(cr);
+            PreferenceManager.getDefaultSharedPreferences(UserActivity.this)
+                    .edit()
+                    .putString("crColor", s4)
+                    .commit();
+        }
+
+        Intent list = new Intent(UserActivity.this, EventListActivity.class);
+        startActivity(list);
+    }
 
 
-        color.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+    private void setColorL(int btnL) {
+        mDefaultColor = ContextCompat.getColor(UserActivity.this, R.color.black);
+        Button cBtnL = findViewById(btnL);
+        cBtnL.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if (i == 0) prefs[0] = "ListGreen";
-                else if (i == 1) prefs[0] = "ListBlue";
-                else prefs[0] = "ListPink";
+            public void onClick(View view) {
+                if (Objects.equals(username, "Guest")) {
+                    Toast.makeText(UserActivity.this, "Please Log In!", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    AmbilWarnaDialog colorPicker = new AmbilWarnaDialog(UserActivity.this, mDefaultColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
+                        @Override
+                        public void onCancel(AmbilWarnaDialog dialog) {
+                            Log.d("Nothing", "Cancel selection");
+                        }
+
+                        @Override
+                        public void onOk(AmbilWarnaDialog dialog, int color) {
+                            mDefaultColor = color;
+                            if (btnL == R.id.color1_spinner1) {
+                                el[0] = String.valueOf(mDefaultColor);
+                                if (Objects.equals(el[1], "1")) {
+                                    el[1] = String.valueOf(R.color.black);
+                                }
+                                elF = 1;
+                            } else if (btnL == R.id.color2_spinner1) {
+                                me[0] = String.valueOf(mDefaultColor);
+                                if (Objects.equals(me[1], "1")) {
+                                    me[1] = String.valueOf(R.color.black);
+                                }
+                                meF = 1;
+                            } else if (btnL == R.id.color3_spinner1) {
+                                le[0] = String.valueOf(mDefaultColor);
+                                if (Objects.equals(le[1], "1")) {
+                                    le[1] = String.valueOf(R.color.black);
+                                }
+                                leF = 1;
+                            } else {
+                                cr[0] = String.valueOf(mDefaultColor);
+                                if (Objects.equals(cr[1], "1")) {
+                                    cr[1] = String.valueOf(R.color.black);
+                                }
+                                msg = 1;
+                            }
+                            cBtnL.setBackgroundColor(mDefaultColor);
+                        }
+                    });
+                    colorPicker.show();
+                }
             }
+        });
+    }
 
+    private void setColorR(int btnR) {
+        mDefaultColor = ContextCompat.getColor(UserActivity.this, R.color.black);
+        Button cBtnR = findViewById(btnR);
+        cBtnR.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-                Log.d("Nothing", "nothing selected");
+            public void onClick(View view) {
+                AmbilWarnaDialog colorPicker = new AmbilWarnaDialog(UserActivity.this, mDefaultColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
+                    @Override
+                    public void onCancel(AmbilWarnaDialog dialog) {
+                        Log.d("Nothing", "Cancel selection");
+                    }
+
+                    @Override
+                    public void onOk(AmbilWarnaDialog dialog, int color) {
+                        mDefaultColor = color;
+                        if (btnR == R.id.color1_spinner2) {
+                            el[1] = String.valueOf(mDefaultColor);
+                            if (Objects.equals(el[0], "0")) {
+                                el[0] = String.valueOf(R.color.black);
+                            }
+                            elF = 1;
+                        }
+                        else if (btnR == R.id.color2_spinner2) {
+                            me[1] = String.valueOf(mDefaultColor);
+                            if (Objects.equals(me[0], "0")) {
+                                me[0] = String.valueOf(R.color.black);
+                            }
+                            meF = 1;
+                        }
+                        else if (btnR == R.id.color3_spinner2){
+                            le[1] = String.valueOf(mDefaultColor);
+                            if (Objects.equals(le[0], "0")) {
+                                le[0] = String.valueOf(R.color.black);
+                            }
+                            leF = 1;
+                        }
+                        else {
+                            cr[1] = String.valueOf(mDefaultColor);
+                            if (Objects.equals(cr[0], "0")) {
+                                cr[0] = String.valueOf(R.color.black);
+                            }
+                            msg = 1;
+                        }
+                        cBtnR.setBackgroundColor(mDefaultColor);
+                    }
+                });
+                colorPicker.show();
             }
         });
     }
 
     private StringRequest apiCall() {
-        String getAllMyEventsApiUrl = "http://20.122.91.139:8081/myevents/"+emailID;
+        String getAllMyEventsApiUrl = "http://20.122.91.139:8081/myevents/"+ username;
         StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllMyEventsApiUrl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -174,7 +348,7 @@ public class UserActivity extends AppCompatActivity {
                         likedBy.add(jsonEventObj.getString("likedBy"));
                     }
 
-                    if (!Objects.equals(emailID, "Guest")) {
+                    if (!Objects.equals(username, "Guest")) {
                         ManageEventAdapter eventAdapter = new ManageEventAdapter(UserActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]));
                         listView.setAdapter(eventAdapter);
                     }
@@ -221,20 +395,20 @@ public class UserActivity extends AppCompatActivity {
             TextView title = eventItem.findViewById(R.id.EventTitle);
             TextView date = eventItem.findViewById(R.id.EventDate);
             TextView loc = eventItem.findViewById(R.id.EventLocation);
+            View res = eventItem.findViewById(R.id.manage_event_background);
             title.setText(eTitles[position]);
             date.setText((eDates[position]));
             loc.setText(eLocations[position]);
-
-            Set<String> tasksSet = PreferenceManager.getDefaultSharedPreferences(context)
-                    .getStringSet("tasks_set", new HashSet<String>());
-            List<String> tasksList = new ArrayList<String>(tasksSet);
-            if (!tasksList.isEmpty()) {
-                if (tasksList.contains("ManageGreen"))
-                    eventItem.findViewById(R.id.manage_event_background).setBackground(getDrawable(R.drawable.background_list));
-                else if (tasksList.contains("ManagePink"))
-                    eventItem.findViewById(R.id.manage_event_background).setBackground(getDrawable(R.drawable.background_liked_list));
-                else
-                    eventItem.findViewById(R.id.manage_event_background).setBackground(getDrawable(R.drawable.background_manage));
+            if (!(meColor.isEmpty())) {
+                int[] color = new int[2];
+                color[0] = Integer.parseInt(meColor.get(0));
+                color[1] = Integer.parseInt(meColor.get(1));
+                if (res != null) {
+                    Drawable background = res.getBackground();
+                    GradientDrawable gradientDrawable = (GradientDrawable) background;
+                    gradientDrawable.setColors(color);
+                    gradientDrawable.setOrientation(GradientDrawable.Orientation.BL_TR);
+                }
             }
 
             return eventItem;

@@ -6,20 +6,34 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/black"
         tools:context=".ChatActivity">
+
+        <TextView
+            android:id="@+id/ctitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Event Name"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_chat"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@id/ll_send" />
+            android:layout_below="@+id/ctitle"
+            android:layout_marginBottom="60dp" />
 
         <LinearLayout
             android:id="@+id/ll_send"
-            android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/et_chat_box"
@@ -27,6 +41,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight=".7"
                 android:hint="Message"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 android:inputType="text"
                 android:maxLines="1" />
 
@@ -35,7 +51,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight=".3"
-                android:text="Send"/>
+                android:text="Send" />
         </LinearLayout>
 
     </RelativeLayout>

@@ -22,6 +22,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -122,6 +123,7 @@ public class AddEventActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 category = adapterView.getItemAtPosition(i).toString();
+                ((TextView) view).setTextColor(getResources().getColor(R.color.white, null));
             }
 
             @Override

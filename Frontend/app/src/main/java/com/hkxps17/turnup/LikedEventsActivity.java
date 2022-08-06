@@ -7,8 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
+import android.media.Image;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,12 +29,14 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -40,7 +45,9 @@ public class LikedEventsActivity extends AppCompatActivity {
 
     ListView listView;
     ImageButton search;
+    ImageButton accountButton;
     String emailID = "";
+    List<String> leColor = new ArrayList<>();
 
     ArrayList<String> EventTitles = new ArrayList<>();
     ArrayList<String> EventLocations = new ArrayList<>();
@@ -60,6 +67,23 @@ public class LikedEventsActivity extends AppCompatActivity {
                 .getStringSet("id", new HashSet<String>());
         List<String> retL = new ArrayList<String>(retS);
         emailID = retL.get(0);
+
+        Gson gson = new Gson();
+
+        String ColorSet = PreferenceManager.getDefaultSharedPreferences(LikedEventsActivity.this)
+                .getString("leColor", null);
+        if (ColorSet != null) {
+            leColor = Arrays.asList(gson.fromJson(ColorSet, String[].class));
+        }
+
+        accountButton = findViewById(R.id.account_button);
+        accountButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent acc = new Intent(LikedEventsActivity.this, UserActivity.class);
+                startActivity(acc);
+            }
+        });
 
         listView = findViewById(R.id.likedListView);
 
@@ -143,22 +167,21 @@ public class LikedEventsActivity extends AppCompatActivity {
             TextView title = eventItem.findViewById(R.id.EventTitle);
             TextView date = eventItem.findViewById(R.id.EventDate);
             TextView loc = eventItem.findViewById(R.id.EventLocation);
-
+            View res = eventItem.findViewById(R.id.liked_event_background);
             title.setText(eTitles[position]);
             date.setText((eDates[position]));
             loc.setText(eLocations[position]);
 
-            Set<String> tasksSet = PreferenceManager.getDefaultSharedPreferences(context)
-                    .getStringSet("tasks_set", new HashSet<String>());
-            List<String> tasksList = new ArrayList<String>(tasksSet);
-            Log.d("TEST", tasksList.toString() + "!");
-            if (!tasksList.isEmpty()) {
-                if (tasksList.contains("LikeGreen"))
-                    eventItem.findViewById(R.id.liked_event_background).setBackground(getDrawable(R.drawable.background_list));
-                else if (tasksList.contains("LikeBlue"))
-                    eventItem.findViewById(R.id.liked_event_background).setBackground(getDrawable(R.drawable.background_manage));
-                else
-                    eventItem.findViewById(R.id.liked_event_background).setBackground(getDrawable(R.drawable.background_liked_list));
+            if (!(leColor.isEmpty())) {
+                int[] color = new int[2];
+                color[0] = Integer.parseInt(leColor.get(0));
+                color[1] = Integer.parseInt(leColor.get(1));
+                if (res != null) {
+                    Drawable background = res.getBackground();
+                    GradientDrawable gradientDrawable = (GradientDrawable) background;
+                    gradientDrawable.setColors(color);
+                    gradientDrawable.setOrientation(GradientDrawable.Orientation.BL_TR);
+                }
             }
 
             return eventItem;

@@ -97,7 +97,8 @@
                     android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:hint="Paste Image URL"
-                    android:textColorHint="@color/white" />
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white" />
 
                 <EditText
                     android:id="@+id/add_event_title"
@@ -107,6 +108,7 @@
                     android:hint="Event Title"
                     android:textColorHint="#d3d3d3"
                     android:textSize="35sp"
+                    android:textColor="@color/white"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -159,6 +161,7 @@
                         android:hint="Event Location"
                         android:textAlignment="center"
                         android:textColorHint="#d3d3d3"
+                        android:textColor="@color/white"
                         android:textSize="20sp" />
                 </LinearLayout>
 
@@ -225,6 +228,7 @@
                     android:paddingBottom="150dp"
                     android:textColorHint="#d3d3d3"
                     android:textSize="20sp"
+                    android:textColor="@color/white"
                     tools:ignore="RtlSymmetry" />
 
             </LinearLayout>

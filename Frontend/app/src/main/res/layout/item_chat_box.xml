@@ -11,10 +11,11 @@
             android:id="@+id/tv_chat_message_left"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:background="@drawable/chat_background_purple"
+            android:layout_gravity="center"
+            android:background="@drawable/background_manage"
             android:padding="7sp"
             android:textSize="18sp"
+            android:textColor="@color/white"
             android:visibility="visible" />
 
 

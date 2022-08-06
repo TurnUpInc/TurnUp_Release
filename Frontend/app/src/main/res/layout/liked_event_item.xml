@@ -48,7 +48,7 @@
                 android:layout_height="match_parent"
                 android:paddingStart="5dp"
                 android:text="Event Date"
-                android:textColor="#ababab"
+                android:textColor="@color/white"
                 android:textSize="17sp" />
         </LinearLayout>
 
@@ -72,7 +72,7 @@
                 android:layout_height="25dp"
                 android:layout_marginStart="5dp"
                 android:text="Event Location"
-                android:textColor="#ababab"
+                android:textColor="@color/white"
                 android:textSize="17sp" />
         </LinearLayout>
 
