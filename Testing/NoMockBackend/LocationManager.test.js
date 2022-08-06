@@ -1,7 +1,7 @@
 const request = require("supertest");
 // const app = require("../../EventManager/eventManager.js");
 const app = require("./NewLocationManager/locationServer.js");
-var test_e_id;
+// var test_e_id;
 
 describe("POST(‘locations/:UserID’)", () => {
   it("Create new loc with creator set to UserID", async () => {
@@ -18,7 +18,7 @@ describe("POST(‘locations/:UserID’)", () => {
       .expect(200);
     expect(response.text).toBeDefined();
     expect(typeof response.text).toBe("string");
-    test_e_id = response.text;
+    // test_e_id = response.text;
   });
 });
 
@@ -92,7 +92,7 @@ describe("DELETE(‘location/:LocationID/)", () => {
 
 describe("GET(‘locations-by-cooridnates)", () => {
     it("With coordinates not present", async () => {
-        const response = await request(app).get("/locations-by-cooridnates").expect(404);
+        await request(app).get("/locations-by-cooridnates").expect(404);
     });
     it ("With valid coordiantes", async () => {
         const response = await request(app).get("/locations-by-coordinates?latitude1=40&longitude1=74&latitude2=100&longitude2=100").expect(200);

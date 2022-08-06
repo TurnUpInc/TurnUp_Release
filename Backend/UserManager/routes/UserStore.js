@@ -28,7 +28,7 @@ const client = new MongoClient(uri)
     try{
         id = req.params.UserId;
         console.log("In the test ID:"+id)
-        var result = await client.db("UserDB").collection("users").find({"id": id}).toArray()
+        var result = await client.db("UserDB").collection("users").find({id}).toArray()
         console.log(result)
         res.status(200).json(result[0]) 
     }
@@ -87,7 +87,7 @@ const client = new MongoClient(uri)
     try{
         var id = req.params.UserId;
         req.body.id = id
-        await client.db("UserDB").collection("users").updateOne({'id':id},  { "$set" : req.body  }, {upsert:false})
+        await client.db("UserDB").collection("users").updateOne({id},  { "$set" : req.body  }, {upsert:false})
         res.status(200).send("User updated successfully\n") 
     }
     catch(err){
@@ -102,7 +102,7 @@ const client = new MongoClient(uri)
  router.delete("/:UserId", async (req, res)=>{
     try{
         var id = req.params.UserId;
-        await client.db("UserDB").collection("users").deleteMany({'id':id})
+        await client.db("UserDB").collection("users").deleteMany({id})
         res.status(200).send("User deleted successfully\n") 
     }
     catch(err){
