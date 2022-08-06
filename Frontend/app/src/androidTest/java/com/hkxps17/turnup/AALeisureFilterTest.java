@@ -30,7 +30,7 @@ import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class aaLeisureFilterTest {
+public class AALeisureFilterTest {
 
     @Rule
     public ActivityScenarioRule<LoginActivity> mActivityScenarioRule =

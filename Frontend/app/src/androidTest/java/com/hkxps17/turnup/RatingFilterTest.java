@@ -24,7 +24,6 @@ import androidx.test.filters.LargeTest;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
-import org.hamcrest.core.IsInstanceOf;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -94,36 +93,31 @@ public class RatingFilterTest {
 
         ViewInteraction radioButton = onView(
                 allOf(withId(R.id.chip1), withText("Sort Events By Rating"),
-                        withParent(allOf(withId(R.id.chipGroupFilter),
-                                withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class)))),
+                        withParent(allOf(withId(R.id.chipGroupFilter))),
                         isDisplayed()));
         radioButton.check(matches(isDisplayed()));
 
         ViewInteraction radioButton2 = onView(
                 allOf(withId(R.id.chip5), withText("Club/Party/Concert"),
-                        withParent(allOf(withId(R.id.chipGroupFilter),
-                                withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class)))),
+                        withParent(allOf(withId(R.id.chipGroupFilter))),
                         isDisplayed()));
         radioButton2.check(matches(isDisplayed()));
 
         ViewInteraction radioButton3 = onView(
                 allOf(withId(R.id.chip2), withText("Adventure Events"),
-                        withParent(allOf(withId(R.id.chipGroupFilter),
-                                withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class)))),
+                        withParent(allOf(withId(R.id.chipGroupFilter))),
                         isDisplayed()));
         radioButton3.check(matches(isDisplayed()));
 
         ViewInteraction radioButton4 = onView(
                 allOf(withId(R.id.chip3), withText("Leisure Events"),
-                        withParent(allOf(withId(R.id.chipGroupFilter),
-                                withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class)))),
+                        withParent(allOf(withId(R.id.chipGroupFilter))),
                         isDisplayed()));
         radioButton4.check(matches(isDisplayed()));
 
         ViewInteraction radioButton5 = onView(
                 allOf(withId(R.id.chip4), withText("Sports Events"),
-                        withParent(allOf(withId(R.id.chipGroupFilter),
-                                withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class)))),
+                        withParent(allOf(withId(R.id.chipGroupFilter))),
                         isDisplayed()));
         radioButton5.check(matches(isDisplayed()));
     }

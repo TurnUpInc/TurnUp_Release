@@ -1,12 +1,5 @@
 package com.hkxps17.turnup;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -16,9 +9,6 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.os.Bundle;
-
-import androidx.preference.PreferenceManager;
-
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -28,6 +18,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+import androidx.preference.PreferenceManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 
@@ -70,9 +68,6 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
                 .getStringSet("id", new HashSet<String>());
         List<String> retL = new ArrayList<String>(retS);
         emailID = retL.get(0);
-
-        Gson gson = new Gson();
-
 
         Intent intent = ChatActivity.this.getIntent();
 
@@ -181,8 +176,6 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
         public ChatAdapter(ArrayList<String> mChatList) {
             this.mChatList = mChatList;
         }
-
-        List<String> crColor = new ArrayList<>();
 
         @NonNull
         @Override

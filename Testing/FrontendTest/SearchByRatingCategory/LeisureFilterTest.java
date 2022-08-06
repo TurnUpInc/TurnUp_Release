@@ -69,6 +69,16 @@ public class LeisureFilterTest {
                         isDisplayed()));
         chip.perform(click());
 
+        ViewInteraction appCompatImageButton2 = onView(
+                allOf(withId(R.id.search_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                4),
+                        isDisplayed()));
+        appCompatImageButton2.perform(click());
+
         ViewInteraction textView = onView(
                 allOf(withId(R.id.EventCategory), withText("Leisure"),
                         withParent(withParent(withId(R.id.event_list_background))),
