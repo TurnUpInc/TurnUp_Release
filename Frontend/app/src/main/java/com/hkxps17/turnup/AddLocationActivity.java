@@ -2,12 +2,15 @@ package com.hkxps17.turnup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
+
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -19,6 +22,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.gms.maps.model.LatLng;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -27,6 +31,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Set;
 
 public class AddLocationActivity extends AppCompatActivity {
@@ -43,6 +48,39 @@ public class AddLocationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_location);
 
+        Intent i = AddLocationActivity.this.getIntent();
+        String cord = i.getStringExtra("cords");
+        double latitude;
+        double longitude;
+        address = findViewById(R.id.add_location_text);
+        Log.d("TAG", "IM HERE2");
+        if (cord != null) {
+            Log.d("TAG", "IM HERE");
+            String[] latlong =  cord.split(",");
+            latitude = Double.parseDouble(latlong[0]);
+            longitude = Double.parseDouble(latlong[1]);
+            Geocoder geocoder;
+            String strAdd = "";
+
+            geocoder = new Geocoder(this, Locale.getDefault());
+            try {
+                List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
+                if (addresses != null) {
+                    Address returnedAddress = addresses.get(0);
+                    StringBuilder strReturnedAddress = new StringBuilder("");
+
+                    for (int k = 0; k <= returnedAddress.getMaxAddressLineIndex(); k++) {
+                        strReturnedAddress.append(returnedAddress.getAddressLine(k)).append("\n");
+                    }
+                    strAdd = strReturnedAddress.toString();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            address.setText(strAdd);
+            Log.d("TAG", strAdd);
+        }
+
         Set<String> retS = PreferenceManager.getDefaultSharedPreferences(AddLocationActivity.this)
                 .getStringSet("id", new HashSet<String>());
         List<String> retL = new ArrayList<String>(retS);
@@ -52,7 +90,9 @@ public class AddLocationActivity extends AppCompatActivity {
         delete = findViewById(R.id.location_delete_button);
 
         name = findViewById(R.id.add_location_title);
-        address = findViewById(R.id.add_location_text);
+
+
+
 
         done.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,7 +120,7 @@ public class AddLocationActivity extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent map = new Intent(AddLocationActivity.this, MapsActivity.class);
+                Intent map = new Intent(AddLocationActivity.this, EventListActivity.class);
                 startActivity(map);
             }
         });

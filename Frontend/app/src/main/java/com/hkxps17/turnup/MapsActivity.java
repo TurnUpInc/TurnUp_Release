@@ -1,9 +1,16 @@
 package com.hkxps17.turnup;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
+
+import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -48,7 +55,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener  {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
 
     AppCompatRadioButton rbLeft;
     AppCompatRadioButton rbRight;
@@ -107,7 +114,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, this);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, MapsActivity.this);
     }
 
     @Override
@@ -218,6 +225,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         evnts.clear();
         updateEventCoordinates(evnts);
 
+        mMap.setOnMapLongClickListener(new GoogleMap.OnMapLongClickListener() {
+            @Override
+            public void onMapLongClick(@NonNull LatLng latLng) {
+                mMap.addMarker(new MarkerOptions()
+                        .position(latLng)
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
+                Intent newLoc = new Intent(MapsActivity.this, AddLocationActivity.class);
+                newLoc.putExtra("cords",latLng.latitude + "," + latLng.longitude);
+                Log.d("TAG", latLng.toString());
+                startActivity(newLoc);
+            }
+        });
+        
         googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(@NonNull Marker marker) {
@@ -255,10 +275,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onClick(View view) {
                 if (trigger == 1) {
                     mySwitch.setVisibility(View.INVISIBLE);
+                    add.setVisibility(View.INVISIBLE);
+                    likedEvents.setVisibility(View.INVISIBLE);
                     trigger *= -1;
                 }
                 else {
                     mySwitch.setVisibility(View.VISIBLE);
+                    add.setVisibility(View.VISIBLE);
+                    likedEvents.setVisibility(View.VISIBLE);
                     trigger *= -1;
                 }
             }
