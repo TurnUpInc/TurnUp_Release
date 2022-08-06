@@ -9,9 +9,6 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-
-import androidx.core.content.ContextCompat;
-import androidx.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,7 +21,9 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatRadioButton;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
+import androidx.preference.PreferenceManager;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -133,48 +132,48 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void extractEvents() {
         Gson gson = new Gson();
-        String et = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String et = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("title", null);
         EventTitles = Arrays.asList(gson.fromJson(et, String[].class));
 
-        String el = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String el = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("location",  null);
         EventLocations = Arrays.asList(gson.fromJson(el, String[].class));
-        String eda = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String eda = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("dates",  null);
         EventDates = Arrays.asList(gson.fromJson(eda, String[].class));
-        String ede = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String ede = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("decs",  null);
         EventDescriptions = Arrays.asList(gson.fromJson(ede, String[].class));
-        String ei = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String ei = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("img",  null);
         EventImages = Arrays.asList(gson.fromJson(ei, String[].class));
-        String er = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String er = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("rating",  null);
         EventRatings = Arrays.asList(gson.fromJson(er, String[].class));
-        String ec = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String ec = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("cat",  null);
         EventCategories = Arrays.asList(gson.fromJson(ec, String[].class));
-        String ecd = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String ecd = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("cord",  null);
         EventCoordinates = Arrays.asList(gson.fromJson(ecd, String[].class));
-        String elb = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String elb = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("lb",  null);
         likedBy = Arrays.asList(gson.fromJson(elb, String[].class));
     }
 
     private void extractLocs() {
         Gson gson = new Gson();
-        String lt = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String lt = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("lt", null);
         LocationTitles = Arrays.asList(gson.fromJson(lt, String[].class));
-        String ll = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String ll = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("ll", null);
         LocationLikes = Arrays.asList(gson.fromJson(ll, String[].class));
-        String lv = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String lv = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("lv", null);
         LocationVisits = Arrays.asList(gson.fromJson(lv, String[].class));
-        String lc = androidx.preference.PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
+        String lc = PreferenceManager.getDefaultSharedPreferences(MapsActivity.this)
                 .getString("lc", null);
         LocationCoordinates = Arrays.asList(gson.fromJson(lc, String[].class));
     }

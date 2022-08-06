@@ -4,7 +4,6 @@ package com.hkxps17.turnup;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
-import static androidx.test.espresso.matcher.RootMatchers.withDecorView;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
@@ -13,6 +12,7 @@ import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.is;
 
 import android.os.IBinder;
+import android.os.SystemClock;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
@@ -50,6 +50,8 @@ public class AddLocationGuest {
                                 4),
                         isDisplayed()));
         materialButton.perform(click());
+
+        SystemClock.sleep(1000);
 
         ViewInteraction appCompatRadioButton = onView(
                 allOf(withId(R.id.rbright), withText("Map"),

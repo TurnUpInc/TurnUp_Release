@@ -61,6 +61,7 @@ public class LocationLikeTest {
 
         device.click(707, 1006);
 
+        SystemClock.sleep(1000);
 
         ViewInteraction appCompatRadioButton = onView(
                 allOf(withId(R.id.rbright), withText("Map"),
@@ -83,6 +84,26 @@ public class LocationLikeTest {
 
         onView(withText("Location Liked!")).inRoot(new ToastMatcher())
                 .check(matches(withText("Location Liked!")));
+
+        ViewInteraction imageButton2 = onView(
+                allOf(withId(R.id.map_account_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                6),
+                        isDisplayed()));
+        imageButton2.perform(click());
+
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.sign_out_button), withText("Sign Out"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                4),
+                        isDisplayed()));
+        materialButton.perform(click());
     }
 
     private static Matcher<View> childAtPosition(

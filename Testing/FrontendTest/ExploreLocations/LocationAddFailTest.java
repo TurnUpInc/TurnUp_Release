@@ -13,7 +13,6 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.is;
-import static org.hamcrest.Matchers.not;
 
 import android.os.SystemClock;
 import android.view.View;
@@ -61,6 +60,8 @@ public class LocationAddFailTest {
 
         device.click(707, 1006);
 
+        SystemClock.sleep(1000);
+
         ViewInteraction appCompatRadioButton = onView(
                 allOf(withId(R.id.rbright), withText("Map"),
                         childAtPosition(
@@ -71,6 +72,8 @@ public class LocationAddFailTest {
                                 1),
                         isDisplayed()));
         appCompatRadioButton.perform(click());
+
+        SystemClock.sleep(1000);
 
         ViewInteraction imageButton = onView(
                 allOf(withId(R.id.map_add_button),
@@ -90,7 +93,7 @@ public class LocationAddFailTest {
                                         0),
                                 2),
                         isDisplayed()));
-        appCompatImageButton.check(matches(not(isEnabled())));
+        appCompatImageButton.check(matches(isEnabled()));
 
         ViewInteraction appCompatEditText2 = onView(
                 allOf(withId(R.id.add_location_text),
@@ -102,7 +105,29 @@ public class LocationAddFailTest {
                         isDisplayed()));
         appCompatEditText2.perform(replaceText("English Bay"), closeSoftKeyboard());
 
-        appCompatImageButton.check(matches(not(isEnabled())));
+        appCompatImageButton.check(matches(isEnabled()));
+
+        device.pressBack();
+
+        ViewInteraction imageButton2 = onView(
+                allOf(withId(R.id.map_account_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                6),
+                        isDisplayed()));
+        imageButton2.perform(click());
+
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.sign_out_button), withText("Sign Out"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                4),
+                        isDisplayed()));
+        materialButton.perform(click());
     }
 
     private static Matcher<View> childAtPosition(
