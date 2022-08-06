@@ -43,7 +43,7 @@ public class GuestLoginTest {
             new ActivityScenarioRule<>(LoginActivity.class);
 
     @Test
-    public void guestLoginTest() {
+    public void aaGuestLoginTest() {
         ViewInteraction materialButton = onView(
                 allOf(withId(R.id.guest_button), withText("Continue as Guest"),
                         childAtPosition(

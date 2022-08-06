@@ -59,8 +59,7 @@ public class DefaultFilterTest {
 
         ViewInteraction radioButton = onView(
                 allOf(withId(R.id.chip1), withText("Sort Events By Rating"),
-                        withParent(allOf(withId(R.id.chipGroupFilter),
-                                withParent(IsInstanceOf.<View>instanceOf(android.view.ViewGroup.class)))),
+                        withParent(allOf(withId(R.id.chipGroupFilter))),
                         isDisplayed()));
         radioButton.check(matches(isDisplayed()));
     }
