@@ -115,6 +115,28 @@ public class LocationAddTest {
                         isDisplayed()));
         appCompatImageButton.check(matches(isEnabled()));
         appCompatImageButton.perform(click());
+
+        SystemClock.sleep(1000);
+
+        ViewInteraction imageButton2 = onView(
+                allOf(withId(R.id.account_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                7),
+                        isDisplayed()));
+        imageButton2.perform(click());
+
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.sign_out_button), withText("Sign Out"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                4),
+                        isDisplayed()));
+        materialButton.perform(click());
     }
 
     private static Matcher<View> childAtPosition(

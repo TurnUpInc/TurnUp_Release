@@ -329,7 +329,7 @@ public class UserActivity extends AppCompatActivity {
     }
 
     private StringRequest apiCall() {
-        String getAllMyEventsApiUrl = "http://20.122.91.139:8081/myevents/"+ username;
+        String getAllMyEventsApiUrl = "http://20.122.91.139:8081/myevents/"+ emailId;
         StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllMyEventsApiUrl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

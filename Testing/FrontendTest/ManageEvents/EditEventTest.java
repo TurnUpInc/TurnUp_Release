@@ -5,7 +5,6 @@ import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.replaceText;
-import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
@@ -14,15 +13,12 @@ import static org.hamcrest.Matchers.allOf;
 import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.is;
 
-import android.os.IBinder;
 import android.os.SystemClock;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
-import android.view.WindowManager;
 
 import androidx.test.espresso.DataInteraction;
-import androidx.test.espresso.Root;
 import androidx.test.espresso.ViewInteraction;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -77,8 +73,8 @@ public class EditEventTest {
                 .inAdapterView(allOf(withId(R.id.manage_listview),
                         childAtPosition(
                                 withClassName(is("androidx.constraintlayout.widget.ConstraintLayout")),
-                                13)))
-                .atPosition(1);
+                                22)))
+                .atPosition(0);
         constraintLayout.perform(click());
 
         ViewInteraction appCompatEditText = onView(
@@ -90,15 +86,6 @@ public class EditEventTest {
                                 1)));
         appCompatEditText.perform(replaceText("UBC Bookstore"));
 
-//        ViewInteraction appCompatEditText2 = onView(
-//                allOf(withId(R.id.add_event_location), withText("UBC Bookstore"),
-//                        childAtPosition(
-//                                childAtPosition(
-//                                        withClassName(is("android.widget.LinearLayout")),
-//                                        3),
-//                                1),
-//                        isDisplayed()));
-//        appCompatEditText2.perform(closeSoftKeyboard());
 
         ViewInteraction appCompatImageButton2 = onView(
                 allOf(withId(R.id.event_done_button),
@@ -109,28 +96,26 @@ public class EditEventTest {
                                 2),
                         isDisplayed()));
         appCompatImageButton2.perform(click());
-        onView(withText("Event Edited!")).inRoot(new EditEventTest.ToastMatcher()).check(matches(withText("Event Edited!")));
-    }
 
-    public class ToastMatcher extends TypeSafeMatcher<Root> {
+        ViewInteraction imageButton2 = onView(
+                allOf(withId(R.id.account_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                7),
+                        isDisplayed()));
+        imageButton2.perform(click());
 
-        @Override
-        public void describeTo(Description description) {
-            description.appendText("is toast");
-        }
-
-        @Override
-        public boolean matchesSafely(Root root) {
-            int type = root.getWindowLayoutParams().get().type;
-            if ((type == WindowManager.LayoutParams.TYPE_TOAST)) {
-                IBinder windowToken = root.getDecorView().getWindowToken();
-                IBinder appToken = root.getDecorView().getApplicationWindowToken();
-                if (windowToken == appToken) {
-                    return true;
-                }
-            }
-            return false;
-        }
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.sign_out_button), withText("Sign Out"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                4),
+                        isDisplayed()));
+        materialButton.perform(click());
     }
 
     private static Matcher<View> childAtPosition(

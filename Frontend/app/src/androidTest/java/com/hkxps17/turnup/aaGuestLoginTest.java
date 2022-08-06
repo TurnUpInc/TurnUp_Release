@@ -1,7 +1,9 @@
 package com.hkxps17.turnup;
 
 
+import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.Espresso.pressBack;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
@@ -9,22 +11,21 @@ import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.is;
 
 import android.os.IBinder;
-import android.os.SystemClock;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.view.WindowManager;
 
+import androidx.test.espresso.DataInteraction;
 import androidx.test.espresso.Root;
 import androidx.test.espresso.ViewInteraction;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
-import androidx.test.platform.app.InstrumentationRegistry;
-import androidx.test.uiautomator.UiDevice;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
@@ -35,33 +36,66 @@ import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class LocationLikeTest {
+public class aaGuestLoginTest {
 
     @Rule
     public ActivityScenarioRule<LoginActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(LoginActivity.class);
 
     @Test
-    public void locationLikeTest() {
-
-        UiDevice device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
-
-        ViewInteraction hj = onView(
-                allOf(withText("Sign in"),
+    public void aaGuestLoginTest() {
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.guest_button), withText("Continue as Guest"),
                         childAtPosition(
-                                allOf(withId(R.id.sign_in_button),
-                                        childAtPosition(
-                                                withClassName(is("androidx.constraintlayout.widget.ConstraintLayout")),
-                                                3)),
-                                0),
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                4),
                         isDisplayed()));
-        hj.perform(click());
+        materialButton.perform(click());
 
-        SystemClock.sleep(1000);
+        ViewInteraction appCompatImageButton = onView(
+                allOf(withId(R.id.add_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                5),
+                        isDisplayed()));
+        appCompatImageButton.perform(click());
+        onView(withText("Please Log In!")).inRoot(new aaGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
 
-        device.click(707, 1006);
+        ViewInteraction appCompatImageButton2 = onView(
+                allOf(withId(R.id.liked_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                6),
+                        isDisplayed()));
+        appCompatImageButton2.perform(click());
+        onView(withText("Please Log In!")).inRoot(new aaGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
 
-        SystemClock.sleep(1000);
+        DataInteraction constraintLayout = onData(anything())
+                .inAdapterView(allOf(withId(R.id.listview),
+                        childAtPosition(
+                                withClassName(is("androidx.constraintlayout.widget.ConstraintLayout")),
+                                2)))
+                .atPosition(0);
+        constraintLayout.perform(click());
+
+        ViewInteraction appCompatImageButton3 = onView(
+                allOf(withId(R.id.event_like_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                3),
+                        isDisplayed()));
+        appCompatImageButton3.perform(click());
+        onView(withText("Please Log In!")).inRoot(new aaGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
+
+        pressBack();
 
         ViewInteraction appCompatRadioButton = onView(
                 allOf(withId(R.id.rbright), withText("Map"),
@@ -74,36 +108,27 @@ public class LocationLikeTest {
                         isDisplayed()));
         appCompatRadioButton.perform(click());
 
-        SystemClock.sleep(2000);
-
-        device.click(505, 901);
-
-        SystemClock.sleep(1000);
-
-        device.click(526, 1092);
-
-        onView(withText("Location Liked!")).inRoot(new ToastMatcher())
-                .check(matches(withText("Location Liked!")));
-
-        ViewInteraction imageButton2 = onView(
-                allOf(withId(R.id.map_account_button),
-                        childAtPosition(
-                                childAtPosition(
-                                        withId(android.R.id.content),
-                                        0),
-                                6),
-                        isDisplayed()));
-        imageButton2.perform(click());
-
-        ViewInteraction materialButton = onView(
-                allOf(withId(R.id.sign_out_button), withText("Sign Out"),
+        ViewInteraction imageButton = onView(
+                allOf(withId(R.id.map_add_button),
                         childAtPosition(
                                 childAtPosition(
                                         withId(android.R.id.content),
                                         0),
                                 4),
                         isDisplayed()));
-        materialButton.perform(click());
+        imageButton.perform(click());
+        onView(withText("Please Log In!")).inRoot(new aaGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
+
+        ViewInteraction imageButton2 = onView(
+                allOf(withId(R.id.map_liked_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                5),
+                        isDisplayed()));
+        imageButton2.perform(click());
+        onView(withText("Please Log In!")).inRoot(new aaGuestLoginTest.ToastMatcher()).check(matches(withText("Please Log In!")));
     }
 
     private static Matcher<View> childAtPosition(

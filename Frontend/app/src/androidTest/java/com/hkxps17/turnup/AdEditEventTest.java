@@ -1,24 +1,24 @@
 package com.hkxps17.turnup;
 
 
+import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
-import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withClassName;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.is;
 
-import android.os.IBinder;
 import android.os.SystemClock;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
-import android.view.WindowManager;
 
-import androidx.test.espresso.Root;
+import androidx.test.espresso.DataInteraction;
 import androidx.test.espresso.ViewInteraction;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -35,15 +35,14 @@ import org.junit.runner.RunWith;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class LocationLikeTest {
+public class AdEditEventTest {
 
     @Rule
     public ActivityScenarioRule<LoginActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(LoginActivity.class);
 
     @Test
-    public void locationLikeTest() {
-
+    public void editEventTest1() {
         UiDevice device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
 
         ViewInteraction hj = onView(
@@ -57,41 +56,54 @@ public class LocationLikeTest {
                         isDisplayed()));
         hj.perform(click());
 
-        SystemClock.sleep(1000);
+        SystemClock.sleep(1500);
+        device.click(525, 985);
 
-        device.click(707, 1006);
-
-        SystemClock.sleep(1000);
-
-        ViewInteraction appCompatRadioButton = onView(
-                allOf(withId(R.id.rbright), withText("Map"),
-                        childAtPosition(
-                                allOf(withId(R.id.radioGroup),
-                                        childAtPosition(
-                                                withClassName(is("androidx.constraintlayout.widget.ConstraintLayout")),
-                                                1)),
-                                1),
-                        isDisplayed()));
-        appCompatRadioButton.perform(click());
-
-        SystemClock.sleep(2000);
-
-        device.click(505, 901);
-
-        SystemClock.sleep(1000);
-
-        device.click(526, 1092);
-
-        onView(withText("Location Liked!")).inRoot(new ToastMatcher())
-                .check(matches(withText("Location Liked!")));
-
-        ViewInteraction imageButton2 = onView(
-                allOf(withId(R.id.map_account_button),
+        ViewInteraction appCompatImageButton = onView(
+                allOf(withId(R.id.account_button),
                         childAtPosition(
                                 childAtPosition(
                                         withId(android.R.id.content),
                                         0),
-                                6),
+                                7),
+                        isDisplayed()));
+        appCompatImageButton.perform(click());
+
+        DataInteraction constraintLayout = onData(anything())
+                .inAdapterView(allOf(withId(R.id.manage_listview),
+                        childAtPosition(
+                                withClassName(is("androidx.constraintlayout.widget.ConstraintLayout")),
+                                22)))
+                .atPosition(0);
+        constraintLayout.perform(click());
+
+        ViewInteraction appCompatEditText = onView(
+                allOf(withId(R.id.add_event_location),
+                        childAtPosition(
+                                childAtPosition(
+                                        withClassName(is("android.widget.LinearLayout")),
+                                        3),
+                                1)));
+        appCompatEditText.perform(replaceText("UBC Bookstore"));
+
+
+        ViewInteraction appCompatImageButton2 = onView(
+                allOf(withId(R.id.event_done_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                2),
+                        isDisplayed()));
+        appCompatImageButton2.perform(click());
+
+        ViewInteraction imageButton2 = onView(
+                allOf(withId(R.id.account_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                7),
                         isDisplayed()));
         imageButton2.perform(click());
 
@@ -123,26 +135,5 @@ public class LocationLikeTest {
                         && view.equals(((ViewGroup) parent).getChildAt(position));
             }
         };
-    }
-
-    public class ToastMatcher extends TypeSafeMatcher<Root> {
-
-        @Override
-        public void describeTo(Description description) {
-            description.appendText("is toast");
-        }
-
-        @Override
-        public boolean matchesSafely(Root root) {
-            int type = root.getWindowLayoutParams().get().type;
-            if ((type == WindowManager.LayoutParams.TYPE_TOAST)) {
-                IBinder windowToken = root.getDecorView().getWindowToken();
-                IBinder appToken = root.getDecorView().getApplicationWindowToken();
-                if (windowToken == appToken) {
-                    return true;
-                }
-            }
-            return false;
-        }
     }
 }

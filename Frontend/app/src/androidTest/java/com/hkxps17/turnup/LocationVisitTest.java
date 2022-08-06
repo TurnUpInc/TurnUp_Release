@@ -80,8 +80,26 @@ public class LocationVisitTest {
 
         device.click(526, 1092);
 
-        onView(withText("Location Visited!")).inRoot(new ToastMatcher())
-                .check(matches(withText("Location Visited!")));
+        ViewInteraction imageButton2 = onView(
+                allOf(withId(R.id.map_account_button),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                6),
+                        isDisplayed()));
+        imageButton2.perform(click());
+
+        ViewInteraction materialButton = onView(
+                allOf(withId(R.id.sign_out_button), withText("Sign Out"),
+                        childAtPosition(
+                                childAtPosition(
+                                        withId(android.R.id.content),
+                                        0),
+                                4),
+                        isDisplayed()));
+        materialButton.perform(click());
+
     }
 
     private static Matcher<View> childAtPosition(

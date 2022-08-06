@@ -110,7 +110,7 @@ public class AddLocationActivity extends AppCompatActivity {
 
                 postLocation(location, "http://20.122.91.139:8081/location");
 
-                Intent map = new Intent(AddLocationActivity.this, MapsActivity.class);
+                Intent map = new Intent(AddLocationActivity.this, EventListActivity.class);
                 startActivity(map);
 
                 Toast.makeText(AddLocationActivity.this, "Location Added!", Toast.LENGTH_LONG).show();
