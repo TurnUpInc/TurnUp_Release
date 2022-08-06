@@ -55,7 +55,7 @@ app.put('/incrlike/:locationID', async (req, res) => {
         await client.db('test').collection('locations').update({ 'l_id': locID },{ $inc: { 'likes': 1 }});
         res.status(200).send('Location Liked! \n')
     } 
-    catch {
+    catch(err) {
         console.log(err)
         res.send(400).send(err)
     }

@@ -103,7 +103,7 @@ app.get("/locations", async (req, res) => {
       .find()
       .toArray();
     res.status(200).send(result);
-  } catch {
+  } catch(err) {
     console.log(err);
     res.send(400).send(err);
   }
