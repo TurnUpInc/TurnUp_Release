@@ -55,7 +55,8 @@ public class UserActivity extends AppCompatActivity {
     int msg = 0;
     List<String> meColor = new ArrayList<>();
 
-    String emailID = "";
+    String emailId = "";
+    String username = "";
     String[] me = {"0", "1"};
     String[] el = {"0", "1"};
     String[] le = {"0", "1"};
@@ -80,7 +81,8 @@ public class UserActivity extends AppCompatActivity {
         Set<String> retS = PreferenceManager.getDefaultSharedPreferences(UserActivity.this)
                 .getStringSet("id", new HashSet<String>());
         List<String> retL = new ArrayList<String>(retS);
-        emailID = retL.get(0);
+        emailId = retL.get(0);
+        username = emailId.substring(0, emailId.indexOf("@"));
 
         Gson gson = new Gson();
 
@@ -92,11 +94,11 @@ public class UserActivity extends AppCompatActivity {
 
         name = findViewById(R.id.your_name);
 
-        if (Objects.equals(emailID, "Guest")) {
+        if (Objects.equals(username, "Guest")) {
             findViewById(R.id.managelist).setVisibility(View.INVISIBLE);
             findViewById(R.id.manageview).setVisibility(View.INVISIBLE);
             findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
-            name.setText(emailID);
+            name.setText(username);
             findViewById(R.id.sign_in_button).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -105,7 +107,7 @@ public class UserActivity extends AppCompatActivity {
                 }
             });
         } else {
-            name.setText(emailID.substring(0, emailID.indexOf("@")));
+            name.setText(username.substring(0, username.indexOf("@")));
             findViewById(R.id.sign_out_button).setVisibility(View.VISIBLE);
         }
 
@@ -217,7 +219,7 @@ public class UserActivity extends AppCompatActivity {
         cBtnL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (Objects.equals(emailID, "Guest")) {
+                if (Objects.equals(username, "Guest")) {
                     Toast.makeText(UserActivity.this, "Please Log In!", Toast.LENGTH_SHORT).show();
                 }
                 else {
@@ -316,7 +318,7 @@ public class UserActivity extends AppCompatActivity {
     }
 
     private StringRequest apiCall() {
-        String getAllMyEventsApiUrl = "http://20.122.91.139:8081/myevents/"+emailID;
+        String getAllMyEventsApiUrl = "http://20.122.91.139:8081/myevents/"+ username;
         StringRequest eventsReq = new StringRequest(Request.Method.GET, getAllMyEventsApiUrl, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -335,7 +337,7 @@ public class UserActivity extends AppCompatActivity {
                         likedBy.add(jsonEventObj.getString("likedBy"));
                     }
 
-                    if (!Objects.equals(emailID, "Guest")) {
+                    if (!Objects.equals(username, "Guest")) {
                         ManageEventAdapter eventAdapter = new ManageEventAdapter(UserActivity.this, EventTitles.toArray(new String[0]), EventLocations.toArray(new String[0]), EventDates.toArray(new String[0]));
                         listView.setAdapter(eventAdapter);
                     }
