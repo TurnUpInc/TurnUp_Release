@@ -3,7 +3,7 @@ var app = express();
 const axios = require('axios').default;
 
 const {MongoClient} = require('mongodb')
-const uri = 'mongodb://localhost:27017'
+const uri = 'mongodb://20.122.91.139:2541'
 
 const client = new MongoClient(uri)
 
@@ -158,5 +158,24 @@ app.get('/locations/:locationID', async (req, res) => {
     }
 })
 
+async function run(){
+    try{
+        await client.connect()
+        console.log("Successfully connected to the database")
 
+
+        var server = app.listen(8040, (req, res)=>{
+            var host = server.address().address
+            var port = server.address().port
+            console.log("UserStore successfully running at: http://%s:%s", host, port)
+        
+        })
+    }
+    catch(err){
+        console.log(err)
+        await client.close()
+    }
+}
+
+run()
 

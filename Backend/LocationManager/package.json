@@ -1,0 +1,17 @@
+{
+  "name": "locationmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "locationServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node locationServer.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

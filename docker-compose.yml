@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  chat:
+    build:
+      context: .
+    command: npm start
+    volumes:
+      - .:/chat/
+      - /chat/node_modules
+    ports:
+      -5000:5000
+    
+
+  user-manager:
+    build:
+      context: .
+    command: npm start
+    volumes:
+      - .:/UserManager/
+      - /UserManager/node_modules
+    ports:
+      -8080:8080
+
+  location-manager:
+    build:
+      context: .
+    command: npm start
+    volumes:
+      - .:/LocationManager/
+      - /LocationManager/node_modules
+    ports:
+      -8040:8040
+
+  event-manager:
+    build:
+      context: .
+    command: npm start
+    volumes:
+      - .:/EventManager/
+      - /EventManager/node_modules
+    ports:
+      -8000:8000
+
