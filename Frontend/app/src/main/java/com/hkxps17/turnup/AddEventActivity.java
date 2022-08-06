@@ -65,6 +65,7 @@ public class AddEventActivity extends AppCompatActivity {
     String photoURL;
     JSONObject event = new JSONObject();
     int pos = 0;
+    int imgDone = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +103,7 @@ public class AddEventActivity extends AppCompatActivity {
                 if (!photoURL.equals("")){
                     imgURL.setText("");
                     Picasso.get().load(photoURL).into(img);
+                    imgDone = 1;
                 }
             }
         });
@@ -194,7 +196,12 @@ public class AddEventActivity extends AppCompatActivity {
                 Log.e("check", putUrl);
                 putEvent(event, putUrl);
             } else {
-                postEvent(event, "http://20.122.91.139:8081/event/" + emailID);
+                if (imgDone == 1) {
+                    postEvent(event, "http://20.122.91.139:8081/event/" + emailID);
+                }
+                else {
+                    Toast.makeText(AddEventActivity.this, "Please add a picture and post again!", Toast.LENGTH_LONG).show();
+                }
             }
             Intent list = new Intent(AddEventActivity.this, EventListActivity.class);
             startActivity(list);
