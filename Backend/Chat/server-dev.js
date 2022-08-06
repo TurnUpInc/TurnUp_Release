@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 
-mongo.connect('mongodb://20.122.91.139:27017', function(err, client){
+mongo.connect('mongodb://20.122.91.139:2541', function(err, client){
     if(err){
         throw err;
     }

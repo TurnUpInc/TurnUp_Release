@@ -7,7 +7,7 @@ const likedLocationsRoute = require('./routes/LikedLocationsHandler')
 const likedEventsRoute = require('./routes/LikedEventsHandler')
 
 const {MongoClient} = require("mongodb")
-const uri = "mongodb://localhost:27017"
+const uri = "mongodb://20.122.91.139:2541"
 const client = new MongoClient(uri)
 
 app.use(express.json())
