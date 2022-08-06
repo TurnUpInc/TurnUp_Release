@@ -47,6 +47,7 @@ public class UserActivity extends AppCompatActivity {
     ListView listView;
     ImageButton done;
     Button reset;
+    Button signOut;
     TextView name;
     int mDefaultColor;
     int elF = 0;
@@ -82,7 +83,6 @@ public class UserActivity extends AppCompatActivity {
                 .getStringSet("id", new HashSet<String>());
         List<String> retL = new ArrayList<String>(retS);
         emailId = retL.get(0);
-        username = emailId.substring(0, emailId.indexOf("@"));
 
         Gson gson = new Gson();
 
@@ -94,7 +94,8 @@ public class UserActivity extends AppCompatActivity {
 
         name = findViewById(R.id.your_name);
 
-        if (Objects.equals(username, "Guest")) {
+        if (Objects.equals(emailId, "Guest")) {
+            username = emailId;
             findViewById(R.id.managelist).setVisibility(View.INVISIBLE);
             findViewById(R.id.manageview).setVisibility(View.INVISIBLE);
             findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
@@ -107,10 +108,20 @@ public class UserActivity extends AppCompatActivity {
                 }
             });
         } else {
-            name.setText(username.substring(0, username.indexOf("@")));
+            username = emailId.substring(0, emailId.indexOf("@"));
+            name.setText(username);
             findViewById(R.id.sign_out_button).setVisibility(View.VISIBLE);
         }
 
+        signOut = findViewById(R.id.sign_out_button);
+        signOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent so = new Intent(UserActivity.this, LoginActivity.class);
+                so.putExtra("signout", "yes");
+                startActivity(so);
+            }
+        });
         StringRequest eventsReq = apiCall();
         RequestQueue queue = Volley.newRequestQueue(UserActivity.this);
         queue.add(eventsReq);
